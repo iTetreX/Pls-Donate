@@ -632,6 +632,8 @@ while not pcall(boothclaim) do
     errCount = errCount + 1
 end
 
+require(game.ReplicatedStorage.Remotes).Event("SetDonatedVisibility"):FireServer(false)
+
 hopSet()
 --Walks to booth
 local Controls = require(Players.LocalPlayer.PlayerScripts:WaitForChild("PlayerModule")):GetControls()
