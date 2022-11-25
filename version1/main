@@ -568,6 +568,7 @@ local atBooth = false
 Players.LocalPlayer.Character.Humanoid.MoveToFinished:Connect(function(reached)
     atBooth = true
 end)
+require(game.ReplicatedStorage.Remotes).Event("SetDonatedVisibility"):FireServer(false)
 while not atBooth do
     wait(0.1)
     local function noclip()
