@@ -3,6 +3,8 @@ repeat
     wait()
 until game:IsLoaded()
 
+setfpscap(10)
+
 --Stops script if on a different game
 if game.PlaceId ~= 8737602449 and game.PlaceId ~= 8943844393 then
     return
