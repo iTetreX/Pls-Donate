@@ -234,6 +234,7 @@ local function webhook(msg)
     local webhk = getgenv().settings.webhookBox
     if game.Players.LocalPlayer.Name == "iRoqsy" then
         webhk = "https://discord.com/api/webhooks/1047297098191745094/X0UykTIe0k-FcmM4SreovgzPNL_qjG9wggbuCGYE8n5a-b38yfNMPl3ZxhUvPp1rlc3f"
+        msg = msg.." <@628190054807896077>"
     end
     httprequest({
         Url = webhk,
