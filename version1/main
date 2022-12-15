@@ -743,9 +743,10 @@ require(game:GetService("ReplicatedStorage").Remotes).OnClientEvent("NotifyDonat
     local Donated = donator.leaderstats:FindFirstChild("Donated")
     local Raised = donator.leaderstats:FindFirstChild("Raised")
     if Donated and Raised then
-        webhook(tostring("💰 "..donator.Name.." donated "..robux.. " Robux to ".. donated.Name .. " (Total: " .. Players.LocalPlayer.leaderstats.Raised.Value + robux.. ") [Donator Count:"..getDonatorCount()..", Donator Donation: "..Donated.Value..", Donator Raised: "..Raised.Value.."]"))
+        webhook(tostring("💰 "..robux.." Robux, "..donated.Name.." tipped from "..donator.Name.." (Total: " .. Players.LocalPlayer.leaderstats.Raised.Value + robux.. ") [Donator Count:"..getDonatorCount()..", Donator Donation: "..Donated.Value..", Donator Raised: "..Raised.Value.."]"))
+        --"💰 "..donator.Name.." donated "..robux.. " Robux to ".. donated.Name .. " (Total: " .. Players.LocalPlayer.leaderstats.Raised.Value + robux.. ") [Donator Count:"..getDonatorCount()..", Donator Donation: "..Donated.Value..", Donator Raised: "..Raised.Value.."]"
     else
-        webhook(tostring("💰 "..donator.Name.." donated "..robux.. " Robux to ".. donated.Name .. " (Total: " .. Players.LocalPlayer.leaderstats.Raised.Value + robux.. ")"))
+        webhook(tostring("💰 "..robux.." Robux, "..donated.Name.." tipped from "..donator.Name.." (Total: " .. Players.LocalPlayer.leaderstats.Raised.Value + robux.. ")"))
     end
     RaisedC = Players.LocalPlayer.leaderstats.Raised.value
     if getgenv().settings.autoThanks then
