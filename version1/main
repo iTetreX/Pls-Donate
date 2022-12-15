@@ -9,7 +9,7 @@ setfpscap(5)
 if game.PlaceId ~= 8737602449 and game.PlaceId ~= 8943844393 then
     return
 end
-print(1)
+print("1")
 
 if getgenv().loaded then
     return
@@ -34,7 +34,7 @@ else
         VirtualUser:ClickButton2(Vector2.new())
     end)
 end
-print(2)
+print("2")
 
 --Variables
 local unclaimed = {}
@@ -48,7 +48,7 @@ local httprequest = (syn and syn.request) or http and http.request or http_reque
 local httpservice = game:GetService('HttpService')
 queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/version1/main'))()")
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/version1/library"))()
-print(3)
+print("3")
 
 local function claimGifts()
     pcall(function()
@@ -77,7 +77,7 @@ local function claimGifts()
     end)
 end
 task.spawn(claimGifts)
-print(4)
+print("4")
 
 getgenv().settings = {}
 --Load Settings
@@ -107,7 +107,7 @@ if #getgenv().settings ~= sNames then
     end
     writefile('plsdonatesettings.txt', httpservice:JSONEncode(getgenv().settings))
 end
-print(5)
+print("5")
 
 --Save Settings
 local settingsLock = true
