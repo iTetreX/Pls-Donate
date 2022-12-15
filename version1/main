@@ -33,7 +33,6 @@ else
         VirtualUser:ClickButton2(Vector2.new())
     end)
 end
-print("2")
 
 --Variables
 local unclaimed = {}
@@ -47,7 +46,6 @@ local httprequest = (syn and syn.request) or http and http.request or http_reque
 local httpservice = game:GetService('HttpService')
 queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/version1/main'))()")
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/version1/library"))()
-print("3")
 
 local function claimGifts()
     pcall(function()
@@ -76,7 +74,6 @@ local function claimGifts()
     end)
 end
 task.spawn(claimGifts)
-print("4")
 
 getgenv().settings = {}
 --Load Settings
@@ -94,7 +91,6 @@ if isfile("plsdonatesettings.txt") then
         end)
     delfile("plsdonatesettings.txt")
     end
-
 end
 local sNames = {"textUpdateToggle", "textUpdateDelay", "serverHopToggle", "serverHopDelay", "hexBox", "goalBox", "webhookToggle", "webhookBox", "webhookBox2", "danceChoice", "thanksMessage", "signToggle", "customBoothText", "signUpdateToggle", "signText", "signHexBox", "autoThanks", "autoBeg", "begMessage", "begDelay", "fpsLimit", "render", "thanksDelay", "vcServer"}
 local sValues = {true, 30, true, 30, "#32CD32", 5, false, "", "Disabled", {"Thank you", "Thanks!", "ty :)", "tysm!"}, false, "WEEKLY GOAL: $C / $G", false, "your text here", "#ffffff", true, false, {"Please donate", "I'm so close to my goal!", "donate to me", "please"}, 300, 60, false, 3, false}
@@ -106,7 +102,6 @@ if #getgenv().settings ~= sNames then
     end
     writefile('plsdonatesettings.txt', httpservice:JSONEncode(getgenv().settings))
 end
-print("5")
 
 --Save Settings
 local settingsLock = true
@@ -138,7 +133,6 @@ local function serverHop()
         game:GetService("TeleportService"):TeleportToPlaceInstance(gameId, servers[math.random(1, #servers)], Players.LocalPlayer)
     end)
 end
-print("6")
 
 local function waitServerHop()
     task.wait(getgenv().settings.serverHopDelay * 60)
@@ -173,7 +167,6 @@ local function slider(value, whichSlider)
         return slider(getgenv().settings[whichSlider], whichSlider)
     end
 end
-print("7")
 
 --Booth update function
 local function update()
@@ -248,7 +241,6 @@ local function webhook(msg)
         Headers = {["content-type"] = "application/json"}
     })
 end
-print("8")
     
 --GUI
 local Window = library:AddWindow("Loading...",
@@ -275,10 +267,8 @@ local textUpdateToggle = boothTab:AddSwitch("Text Update", function(bool)
         update()
     end
 end)
-print("8")
 textUpdateToggle:Set(getgenv().settings.textUpdateToggle)
 task.wait(12.5)
-print("9")
 local textUpdateDelay = boothTab:AddSlider("Text Update Delay (S)", function(x) 
     if settingsLock then
        return 
@@ -341,7 +331,6 @@ boothTab:AddButton("Save", function()
         update()
     end
 end)
-print("10")
 local helpLabel = boothTab:AddLabel("$C = Current, $G = Goal, 221 Character Limit")
 helpLabel.TextSize = 9
 helpLabel.TextXAlignment = Enum.TextXAlignment.Center
@@ -419,7 +408,6 @@ signHexBox.Text = getgenv().settings.signHexBox
 else
     signTab:AddLabel('Requires Sign Gamepass')
 end
-print("11")
 
 --Chat Settings
 local autoThanks = chatTab:AddSwitch("Auto Thank You", function(bool)
@@ -500,7 +488,6 @@ bm:AddButton("Save", function()
     getgenv().settings.begMessage = bsplit
     saveSettings()
 end)
-print("12")
 
 --Webhook Settings
 local webhookToggle = webhookTab:AddSwitch("Discord Webhook Notifications", function(bool)
@@ -595,7 +582,6 @@ local danceDropdown = otherTab:AddDropdown("[ ".. getgenv().settings.danceChoice
         Players:Chat("/e dance".. object)
     end
 end)
-print("13")
 danceDropdown:Add("Disabled")
 danceDropdown:Add("1")
 danceDropdown:Add("2")
@@ -664,7 +650,6 @@ end
 
 require(game.ReplicatedStorage.Remotes).Event("SetDonatedVisibility"):FireServer(false)
 
-print("14")
 hopSet()
 --Walks to booth
 local Controls = require(Players.LocalPlayer.PlayerScripts:WaitForChild("PlayerModule")):GetControls()
@@ -703,18 +688,64 @@ end
 if getgenv().settings.autoBeg then
     spamming = task.spawn(begging)
 end
+
+function getDonatorCount()
+	local totalDonate = 0
+	local donators = 0
+	for _,v in pairs(Players:GetPlayers()) do
+		local playerDonate = v.leaderstats:FindFirstChild("Donated")
+		if playerDonate then
+			if playerDonate.Value > 25 then
+				totalDonate += playerDonate.Value
+				donators += 1
+			end
+		end
+	end
+    return donators
+end
+
+local function getTime()
+    timeH = os.date("*t").hour
+    if timeH < 10 then
+        TimeH = "0"..timeH
+    end
+    timeM = os.date("*t").min
+    if timeM < 10 then
+        timeM = "0"..timeM
+    end
+    timeS = os.date("*t").sec
+    if timeS < 10 then
+        timeS = "0"..timeS
+    end
+    time = timeH..":"..timeM..":"..timeS
+    return time
+end
+
+local function getDate()
+    local dateY = os.date("*t").year
+    if dateY < 10 then
+        dateY = "0"..dateY
+    end
+    local dateM = os.date("*t").month
+    if dateM < 10 then
+        dateM = "0"..dateM
+    end
+    local dateD = os.date("*t").day
+    if dateD < 10 then
+        dateD = "0"..dateD
+    end
+    local date = dateD.."."..dateM.."."..dateY
+    return date
+end
+
 local RaisedC = Players.LocalPlayer.leaderstats.Raised.value
-Players.LocalPlayer.leaderstats.Raised.Changed:Connect(function()
-    hopSet()
-    if getgenv().settings.webhookToggle and getgenv().settings.webhookBox then
-        local LogService = Game:GetService("LogService")
-        local logs = LogService:GetLogHistory()
-        --Tries to grabs donation message from logs
-        if string.find(logs[#logs].message, Players.LocalPlayer.DisplayName) then
-            webhook(tostring(logs[#logs].message.. " (Total: ".. Players.LocalPlayer.leaderstats.Raised.value.. ")"))
-        else
-            webhook(tostring("💰 Somebody tipped ".. Players.LocalPlayer.leaderstats.Raised.value - RaisedC.. " Robux to ".. Players.LocalPlayer.DisplayName.. " (Total: " .. Players.LocalPlayer.leaderstats.Raised.value.. ")"))
-        end
+require(game:GetService("ReplicatedStorage").Remotes).OnClientEvent("NotifyDonationParticipants"):Connect(function(donator, donated, robux)
+    local Donated = donator.leaderstats:FindFirstChild("Donated")
+    local Raised = donator.leaderstats:FindFirstChild("Raised")
+    if Donated and Raised then
+        webhook(tostring("💰 "..donator.Name.." donated "..robux.. " Robux to ".. donated.Name .. " (Total: " .. Players.LocalPlayer.leaderstats.Raised.Value + robux.. ") [Donator Count:"..getDonatorCount()..", Donator Donation: "..Donated.Value..", Donator Raised: "..Raised.Value.."]"))
+    else
+        webhook(tostring("💰 "..donator.Name.." donated "..robux.. " Robux to ".. donated.Name .. " (Total: " .. Players.LocalPlayer.leaderstats.Raised.Value + robux.. ")"))
     end
     RaisedC = Players.LocalPlayer.leaderstats.Raised.value
     if getgenv().settings.autoThanks then
@@ -735,4 +766,3 @@ while task.wait(getgenv().settings.serverHopDelay * 60) do
         hopSet()
     end
 end
-print("15")
