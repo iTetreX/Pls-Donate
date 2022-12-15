@@ -9,7 +9,6 @@ setfpscap(5)
 if game.PlaceId ~= 8737602449 and game.PlaceId ~= 8943844393 then
     return
 end
-print("1")
 
 if getgenv().loaded then
     return
@@ -139,6 +138,7 @@ local function serverHop()
         game:GetService("TeleportService"):TeleportToPlaceInstance(gameId, servers[math.random(1, #servers)], Players.LocalPlayer)
     end)
 end
+print("6")
 
 local function waitServerHop()
     task.wait(getgenv().settings.serverHopDelay * 60)
@@ -173,6 +173,7 @@ local function slider(value, whichSlider)
         return slider(getgenv().settings[whichSlider], whichSlider)
     end
 end
+print("7")
 
 --Booth update function
 local function update()
@@ -247,6 +248,7 @@ local function webhook(msg)
         Headers = {["content-type"] = "application/json"}
     })
 end
+print("8")
     
 --GUI
 local Window = library:AddWindow("Loading...",
@@ -273,8 +275,10 @@ local textUpdateToggle = boothTab:AddSwitch("Text Update", function(bool)
         update()
     end
 end)
+print("8")
 textUpdateToggle:Set(getgenv().settings.textUpdateToggle)
 task.wait(12.5)
+print("9")
 local textUpdateDelay = boothTab:AddSlider("Text Update Delay (S)", function(x) 
     if settingsLock then
        return 
@@ -337,6 +341,7 @@ boothTab:AddButton("Save", function()
         update()
     end
 end)
+print("10")
 local helpLabel = boothTab:AddLabel("$C = Current, $G = Goal, 221 Character Limit")
 helpLabel.TextSize = 9
 helpLabel.TextXAlignment = Enum.TextXAlignment.Center
@@ -414,6 +419,7 @@ signHexBox.Text = getgenv().settings.signHexBox
 else
     signTab:AddLabel('Requires Sign Gamepass')
 end
+print("11")
 
 --Chat Settings
 local autoThanks = chatTab:AddSwitch("Auto Thank You", function(bool)
@@ -494,7 +500,7 @@ bm:AddButton("Save", function()
     getgenv().settings.begMessage = bsplit
     saveSettings()
 end)
-
+print("12")
 
 --Webhook Settings
 local webhookToggle = webhookTab:AddSwitch("Discord Webhook Notifications", function(bool)
@@ -589,6 +595,7 @@ local danceDropdown = otherTab:AddDropdown("[ ".. getgenv().settings.danceChoice
         Players:Chat("/e dance".. object)
     end
 end)
+print("13")
 danceDropdown:Add("Disabled")
 danceDropdown:Add("1")
 danceDropdown:Add("2")
@@ -657,6 +664,7 @@ end
 
 require(game.ReplicatedStorage.Remotes).Event("SetDonatedVisibility"):FireServer(false)
 
+print("14")
 hopSet()
 --Walks to booth
 local Controls = require(Players.LocalPlayer.PlayerScripts:WaitForChild("PlayerModule")):GetControls()
@@ -727,3 +735,4 @@ while task.wait(getgenv().settings.serverHopDelay * 60) do
         hopSet()
     end
 end
+print("15")
