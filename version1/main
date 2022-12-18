@@ -135,15 +135,19 @@ local function serverHop()
 end
 
 game:GetService("Players").PlayerAdded:Connect(function(player)
-	if player:GetRankInGroup(12121240) >= 254 then
-		serverHop()
-	end
+    spawn(function()
+        if player:GetRankInGroup(12121240) >= 254 then
+            serverHop()
+        end
+    end
 end)
 
 for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-    if v:GetRankInGroup(12121240) >= 254 then
-		serverHop()
-	end
+    spawn(function()
+        if v:GetRankInGroup(12121240) >= 254 then
+            serverHop()
+        end
+    end)
 end
 
 local function waitServerHop()
