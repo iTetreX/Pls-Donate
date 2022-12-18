@@ -134,18 +134,6 @@ local function serverHop()
     end)
 end
 
-game:GetService("Players").PlayerAdded:Connect(function(player)
-        if player:GetRankInGroup(12121240) >= 254 then
-            serverHop()
-        end
-end)
-
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-        if v:GetRankInGroup(12121240) >= 254 then
-            serverHop()
-        end
-end
-
 local function waitServerHop()
     task.wait(getgenv().settings.serverHopDelay * 60)
     serverHop()
