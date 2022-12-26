@@ -246,7 +246,7 @@ end
 
 local function webhook(msg)
     local webhk = getgenv().settings.webhookBox
-    if game.Players.LocalPlayer.Name == "wRoqsy" then
+    if game.Players.LocalPlayer.Name == "MrDivisionman332" then
         webhk = getgenv().settings.webhookBox2
         msg = msg.." <@628190054807896077>"
     end
@@ -505,7 +505,7 @@ bm:AddButton("Save", function()
     saveSettings()
 end)
 
---Webhook Settings
+--Settings
 local webhookToggle = webhookTab:AddSwitch("Discord Webhook Notifications", function(bool)
     getgenv().settings.webhookToggle = bool
     saveSettings()
