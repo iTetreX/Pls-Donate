@@ -16,6 +16,7 @@ if game.PlaceId == 6349192791 then
             end 
         end
     end
+    repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("requestReserve")
     if #servers > 0 then
         game:GetService("ReplicatedStorage"):FindFirstChild("requestReserve"):FireServer("hH4V4Ty6S1", servers[math.random(1, #servers)])
     end
