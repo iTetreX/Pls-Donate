@@ -19,7 +19,7 @@ if not game:IsLoaded() then
 end
 
 local Nexus = {}
-local WSConnect = syn and syn.websocket.connect or WebsocketClient and WebsocketClient.new
+local WSConnect = WebsocketClient and WebsocketClient.new
 
 if not WSConnect then return end
 
