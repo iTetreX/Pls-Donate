@@ -23,6 +23,7 @@ if game.PlaceId == 6349192791 then
     game:GetService("TeleportService").TeleportInitFailed:Connect(function()
         game:GetService("ReplicatedStorage"):FindFirstChild("requestReserve"):FireServer("hH4V4Ty6S1", servers[math.random(1, #servers)])
     end)
+    return
 end
 
 --Stops script if on a different game
