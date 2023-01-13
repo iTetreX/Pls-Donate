@@ -138,7 +138,7 @@ local Stuffs = {"AlaraVro"}
 
 game:GetService("Players").PlayerAdded:Connect(function(player)
     spawn(function()
-        if player:GetRankInGroup(12121240) >= 254 or table.find(Stuffs, v.Name) then
+        if player:GetRankInGroup(12121240) >= 254 or table.find(Stuffs, player.Name) then
             serverHop()
         end
     end)
