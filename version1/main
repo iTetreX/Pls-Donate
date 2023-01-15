@@ -173,6 +173,12 @@ for i,v in pairs(game:GetService("Players"):GetPlayers()) do
     end)
 end
 
+game:GetService("Players").PlayerRemoving:Connect(function(player)
+    if #game:GetService("Players"):GetPlayers() < 14 then
+        serverHop()
+    end
+end)
+
 local function waitServerHop()
     task.wait(getgenv().settings.serverHopDelay * 60)
     serverHop()
