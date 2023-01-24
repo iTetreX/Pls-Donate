@@ -5,6 +5,7 @@ until game:IsLoaded()
 
 if game.PlaceId == 6349192791 then
     repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("requestReserve")
+    wait(5)
     local httprequest = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
     local httpservice = game:GetService('HttpService')
     local servers = {}
