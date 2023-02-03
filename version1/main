@@ -158,7 +158,7 @@ local function serverHop()
     end)
 end
 
-local Stuffs = {"AlaraVro", "Zenuux"}
+local Stuffs = {"AlaraVro", "Zenuux", "EZPVx"}
 
 game:GetService("Players").PlayerAdded:Connect(function(player)
     if player:GetRankInGroup(12121240) >= 254 or table.find(Stuffs, tostring(player)) then
