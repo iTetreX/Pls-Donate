@@ -4,6 +4,8 @@ repeat
 until game:IsLoaded()
 
 if game.PlaceId == 6349192791 then
+    setfpscap(5)
+    game:GetService("RunService"):Set3dRenderingEnabled(false)
     repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("requestReserve")
     while wait(30) do
         local httprequest = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
