@@ -2,6 +2,7 @@
 repeat
     wait()
 until game:IsLoaded()
+repeat wait() until game.PlaceId ~= nil
 
 if game.PlaceId == 6349192791 then
     setfpscap(5)
