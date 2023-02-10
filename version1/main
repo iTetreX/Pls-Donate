@@ -5,7 +5,7 @@ until game:IsLoaded()
 repeat wait() until game.PlaceId ~= nil
 game:GetService("RunService"):Set3dRenderingEnabled(false)
 setfpscap(5)
-wait(10)
+wait(5)
 
 if game.PlaceId == 6349192791 then
     repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("requestReserve")
