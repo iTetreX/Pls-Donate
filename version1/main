@@ -2,7 +2,7 @@
 repeat
     wait()
 until game:IsLoaded()
-repeat wait() until game.PlaceId ~= nil
+repeat wait() until game.PlaceId == 6349192791
 wait(1)
 
 if game.PlaceId == 6349192791 then
