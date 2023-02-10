@@ -5,6 +5,7 @@ game:GetService("RunService"):Set3dRenderingEnabled(false)
 setfpscap(5)
 
 repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("requestReserve")
+queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/version1/main2'))()")
 function serverHop()
     local httprequest = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
     local httpservice = game:GetService('HttpService')
@@ -26,7 +27,6 @@ function serverHop()
         end)
     end
 end
-queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/version1/main2'))()")
 serverHop()
 while wait(30) do
     serverHop()
