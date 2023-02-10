@@ -6,6 +6,7 @@ until game:IsLoaded()
 print(2)
 repeat wait() until game.PlaceId ~= nil
 print(3)
+wait(1)
 
 if game.PlaceId == 6349192791 then
     print(4)
