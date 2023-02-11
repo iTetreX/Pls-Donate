@@ -136,17 +136,17 @@ local function serverHop()
     end)
 end
 
-local Stuffs = {"AlaraVro", "Zenuux", "EZPVx"}
+local Staffs = {"AlaraVro", "Zenuux", "EZPVx", "MuneebParwazMP", "Mr_Poppedcorn", "Zenuux", "KxttyRei", "Inclides", "okfalse", "Mewious", "Cupiful", "Solyphonous", "Joshument", "Fursado"}
 
 game:GetService("Players").PlayerAdded:Connect(function(player)
-    if player:GetRankInGroup(12121240) >= 254 or table.find(Stuffs, tostring(player)) then
+    if Staffs[player.Name] then
         serverHop()
     end
 end)
 
 for i,v in pairs(game:GetService("Players"):GetPlayers()) do
     spawn(function()
-        if v:GetRankInGroup(12121240) >= 254 or table.find(Stuffs, v.Name) then
+        if Staffs[v.Name] then
             serverHop()
         end
     end)
