@@ -1,1 +1,41 @@
 
+repeat task.wait() until game:IsLoaded();
+
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local UserSettings = UserSettings():GetService'UserGameSettings'
+
+local WindowFocusReleasedFunction = function()
+   RunService:Set3dRenderingEnabled(false)
+   setfpscap(5)
+   UserSettings.MasterVolume = 0
+   settings().Rendering.QualityLevel = 1
+   return
+end
+
+local WindowFocusedFunction = function()
+   RunService:Set3dRenderingEnabled(true)
+   setfpscap(60)
+   UserSettings.MasterVolume = 0
+   settings().Rendering.QualityLevel = 5
+   return
+end
+
+local Initialize = function()
+   UserInputService.WindowFocusReleased:Connect(WindowFocusReleasedFunction)
+   UserInputService.WindowFocused:Connect(WindowFocusedFunction)
+   return
+end
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+if game.Players.LocalPlayer.Name ~= "iTetreX" and game.Players.LocalPlayer.Name ~= "SpernoX" and game.Players.LocalPlayer.Name ~= "Ec3_wq" and game.Players.LocalPlayer.Name ~= "malik113354" then
+	Initialize()
+
+	WindowFocusReleasedFunction()
+end
