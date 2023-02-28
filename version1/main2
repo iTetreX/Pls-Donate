@@ -136,7 +136,7 @@ local function serverHop()
     end)
 end
 
-local Staffs = {"AlaraVro", "Zenuux", "EZPVx", "MuneebParwazMP", "Mr_Poppedcorn", "Zenuux", "KxttyRei", "Inclides", "okfalse", "Mewious", "Cupiful", "Solyphonous", "Joshument", "Fursado", "FRANCOJ1119"}
+local Staffs = {"AlaraVro", "Zenuux", "EZPVx", "MuneebParwazMP", "Mr_Poppedcorn", "Zenuux", "KxttyRei", "Inclides", "okfalse", "Mewious", "Cupiful", "Solyphonous", "Joshument", "Fursado", "FRANCOJ1119", "Pa_ze"}
 
 game:GetService("Players").PlayerAdded:Connect(function(player)
     if Staffs[player.Name] then
