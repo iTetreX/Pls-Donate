@@ -145,11 +145,9 @@ game:GetService("Players").PlayerAdded:Connect(function(player)
 end)
 
 for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-    spawn(function()
-        if table.find(Staffs, player.Name) then
-            serverHop()
-        end
-    end)
+    if table.find(Staffs, player.Name) then
+        serverHop()
+    end
 end
 
 game:GetService("Players").PlayerRemoving:Connect(function(player)
