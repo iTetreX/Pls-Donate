@@ -145,7 +145,7 @@ game:GetService("Players").PlayerAdded:Connect(function(player)
 end)
 
 for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-    if table.find(Staffs, player.Name) then
+    if table.find(Staffs, v.Name) then
         serverHop()
     end
 end
