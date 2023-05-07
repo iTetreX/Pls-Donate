@@ -43,6 +43,10 @@ local InputService = game:GetService('UserInputService')
 local RunService = game:GetService('RunService')
 local ContentProvider = game:GetService("ContentProvider")
 
+for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
+	v:Disable()
+end
+
 local BlackList = {
 	"QuirkyyGirlll",
 	"DreamieGirlll",
