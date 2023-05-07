@@ -46,6 +46,7 @@ local ContentProvider = game:GetService("ContentProvider")
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 	v:Disable()
 end
+setfpscap(10)
 
 local BlackList = {
 	"QuirkyyGirlll",
