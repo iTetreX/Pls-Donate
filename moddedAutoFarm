@@ -72,6 +72,7 @@ local BlackList = {
 }
 
 if table.find(BlackList, LocalPlayer.Name) then
+	print(1)
 	local PlaceID = game.PlaceId
 	local AllIDs = {}
 	local foundAnything = ""
@@ -84,6 +85,7 @@ if table.find(BlackList, LocalPlayer.Name) then
 		table.insert(AllIDs, actualHour)
 		writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
 	end
+	print(2)
 	function TPReturner()
 		local Site;
 		if foundAnything == "" then
