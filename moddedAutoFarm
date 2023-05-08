@@ -130,6 +130,7 @@ if table.find(BlackList, LocalPlayer.Name) then
 		end
 	end
 
+	print("test")
 	while wait() do
         pcall(function()
             TPReturner()
