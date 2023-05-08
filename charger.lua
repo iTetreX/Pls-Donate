@@ -6,7 +6,7 @@ end
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 	v:Disable()
 end
-setfpscap(10)
+setfpscap(5)
 
 local WH = {
 	"ALTERATION27",
@@ -15,8 +15,8 @@ local WH = {
 
 if table.find(WH, game.Players.LocalPlayer.Name) then
 	loadstring(game.HttpGet("https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/moddedAutoFarm", true))()
-elseif game.PlaceId ~= 12610002282 or 12610002282 then
-	local PlaceID = game.PlaceId
+elseif game.PlaceId ~= 12610002282 then
+	local PlaceID = 12610002282
 	local AllIDs = {}
 	local foundAnything = ""
 	local actualHour = os.date("!*t").hour
