@@ -6,7 +6,7 @@ end
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 	v:Disable()
 end
-setfpscap(10)
+setfpscap(5)
 
 local WH = {
 	"ALTERATION27",
