@@ -6,8 +6,8 @@
 		"TitanicsPriority": 1,
 		"AllHuges": 20,
 		"HugesPriority": 2,
-		"AllExclusives": 0.025,
-		"AllEvents": 0,
+		"AllExclusives": 0.1,
+		"AllEvents": 0.03,
 		"Huge Hell Rock": {
 			"Priority": 2,
 			"Normal": {
