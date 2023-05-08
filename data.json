@@ -4,20 +4,20 @@
 		"GiftsPriority": 3,
 		"AllTitanics": 2000,
 		"TitanicsPriority": 1,
-		"AllHuges": 15,
+		"AllHuges": 20,
 		"HugesPriority": 2,
 		"AllExclusives": 0.025,
 		"AllEvents": 0,
 		"Huge Hell Rock": {
 			"Priority": 2,
 			"Normal": {
-				"Normal": 12
+				"Normal": 23.5
 			},
 			"Golden": {
-				"Normal": 14
+				"Normal": 25.5
 			},
 			"Rainbow": {
-				"Normal": 30
+				"Normal": 48.5
 			}
 		},
 		"Exlusive Egg 1": 20,
@@ -30,9 +30,9 @@
 		"Exlusive Egg 8": 5,
 		"Exlusive Egg 9": 9,
 		"Exclusive Egg 10": 8,
-		"Exclusive Egg 11": 8,
-		"Exclusive Egg 12": 8,
-		"Exclusive Egg 13": 8,
+		"Exclusive Egg 11": 9,
+		"Exclusive Egg 12": 10,
+		"Exclusive Egg 13": 10,
 		"Huge Machine Egg 1": 30,
 		"Huge Machine Egg 2": 30,
 		"Basic Gift": 10,
