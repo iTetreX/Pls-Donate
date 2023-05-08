@@ -15,8 +15,8 @@ local WH = {
 
 if table.find(WH, game.Players.LocalPlayer.Name) then
 	loadstring(game.HttpGet("https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/moddedAutoFarm", true))()
-else
-	local PlaceID = 12610002282
+elseif game.PlaceID ~= 12610002282 or 12610002282 then
+	local PlaceID = game.PlaceId
 	local AllIDs = {}
 	local foundAnything = ""
 	local actualHour = os.date("!*t").hour
