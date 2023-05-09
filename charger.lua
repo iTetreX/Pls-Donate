@@ -11,7 +11,8 @@ setfpscap(5)
 local WH = {
 	"ALTERATION27",
 	"DIALATORIFIER_858",
-	"TOFFEEATOR_779"
+	"TOFFEEATOR_779",
+	"Chainstayman919"
 }
 
 if table.find(WH, game.Players.LocalPlayer.Name) then
