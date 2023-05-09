@@ -34,8 +34,8 @@
 		"Exclusive Egg 11": 7,
 		"Exclusive Egg 12": 7,
 		"Exclusive Egg 13": 7,
-		"Huge Machine Egg 1": 30,
-		"Huge Machine Egg 2": 30,
+		"Huge Machine Egg 1": 40,
+		"Huge Machine Egg 2": 65,
 		"Basic Gift": 10,
 		"Rare Gift": 10,
 		"Epic Gift": 15,
@@ -47,18 +47,6 @@
 		"New Years 2023 Gift": 2,
 		"Easter 2023 Gift": 1,
 		"Anniversary Gift": 1.5,
-		"Elf Dog": {
-			"All": 0.01
-		},
-		"Elf Cat": {
-			"All": 0.01
-		},
-		"Scary Cat": {
-			"All": 0.01
-		},
-		"Scary Corgi": {
-			"All": 0.01
-		},
 		"Huge Pumpkin Cat": {
 			"Golden": {
 				"Normal": 29,
