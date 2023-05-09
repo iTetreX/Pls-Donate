@@ -449,22 +449,22 @@ WorldSection:CreateToggle({
 	Default = false,
 	Callback = function(state)
         getgenv().MurderEsp = state;
-        while getgenv().MurderEsp do
-            wait()
-            pcall(function()
-                for i, v in pairs(folder:GetChildren()) do
-                    if v:IsA("BillboardGui") and Players[tostring(v.Name)] then
-                        if Players[tostring(v.Name)].Character:FindFirstChild("Knife") or Players[tostring(v.Name)].Backpack:FindFirstChild("Knife")  then
-                            if getgenv().MurderEsp then
-                                v.Enabled = true;
-                            else
-                                v.Enabled = false;
-                            end;
-                        end
-                    end;
-                end;
-            end);
-        end;
+        --while getgenv().MurderEsp do
+        --    wait()
+        --    pcall(function()
+        --        for i, v in pairs(folder:GetChildren()) do
+        --            if v:IsA("BillboardGui") and Players[tostring(v.Name)] then
+        --                if Players[tostring(v.Name)].Character:FindFirstChild("Knife") or Players[tostring(v.Name)].Backpack:FindFirstChild("Knife")  then
+        --                    if getgenv().MurderEsp then
+        --                        v.Enabled = true;
+        --                    else
+        --                        v.Enabled = false;
+        --                    end;
+        --                end
+        --            end;
+        --        end;
+        --    end);
+        --end;
 	end
 });
 
@@ -473,22 +473,22 @@ WorldSection:CreateToggle({
 	Default = false,
 	Callback = function(state)
         getgenv().SheriffEsp = state;
-        while getgenv().SheriffEsp do
-            wait()
-            pcall(function()
-                for i, v in pairs(folder:GetChildren()) do
-                    if v:IsA("BillboardGui") and Players[tostring(v.Name)] then
-                        if Players[tostring(v.Name)].Character:FindFirstChild("Gun") or Players[tostring(v.Name)].Backpack:FindFirstChild("Gun")  then
-                            if getgenv().SheriffEsp then
-                                v.Enabled = true;
-                            else
-                                v.Enabled = false;
-                            end;
-                        end
-                    end;
-                end;
-            end);
-        end;
+        --while getgenv().SheriffEsp do
+        --    wait()
+        --    pcall(function()
+        --        for i, v in pairs(folder:GetChildren()) do
+        --            if v:IsA("BillboardGui") and Players[tostring(v.Name)] then
+        --                if Players[tostring(v.Name)].Character:FindFirstChild("Gun") or Players[tostring(v.Name)].Backpack:FindFirstChild("Gun")  then
+        --                    if getgenv().SheriffEsp then
+        --                        v.Enabled = true;
+        --                    else
+        --                        v.Enabled = false;
+        --                    end;
+        --                end
+        --            end;
+        --        end;
+        --    end);
+        --end;
 	end
 });
 --<>----<>----<>----<>----<>----<>----<>--
@@ -592,32 +592,32 @@ AutofarmSection:CreateToggle({
 	Callback = function(state)
         getgenv().Autofarm = state;
         if not getgenv().AutofarmMethod then return end;
-        if getgenv().AutofarmMethod == "Coins" then
-            while getgenv().Autofarm do
-                task.wait();
-                local CoinContainer = Workspace:FindFirstChild("CoinContainer", true);
-                if CoinContainer and Client.PlayerGui.MainGUI.Game.CashBag.Visible == true then
-                    local coin = CoinContainer:FindFirstChild("Coin_Server");
-                    if coin then
-                        repeat
-                            RootPart.CFrame = CFrame.new(coin.Position - Vector3.new(0, 2.5, 0)) * CFrame.Angles(0, 0, math.rad(180));
-                            RunService.Stepped:Wait();
-                            if not getgenv().Autofarm then break end;
-                        until not coin:IsDescendantOf(Workspace) or coin.Name ~= "Coin_Server";
-                        task.wait(1.8);
-                    end;
-                else
-                    task.wait(1.5);
-                end;
-            end;
-        else
-            while getgenv().Autofarm do
-                wait();
-                if Client.PlayerGui.MainGUI.Game.CashBag.Visible == true then
-                    RootPart.CFrame = CFrame.new(-121.12338256836, 138.27394104004, 38.946128845215);
-                end;
-            end;
-        end;
+        --if getgenv().AutofarmMethod == "Coins" then
+        --    while getgenv().Autofarm do
+        --        task.wait();
+        --        local CoinContainer = Workspace:FindFirstChild("CoinContainer", true);
+        --        if CoinContainer and Client.PlayerGui.MainGUI.Game.CashBag.Visible == true then
+        --            local coin = CoinContainer:FindFirstChild("Coin_Server");
+        --            if coin then
+        --                repeat
+        --                    RootPart.CFrame = CFrame.new(coin.Position - Vector3.new(0, 2.5, 0)) * CFrame.Angles(0, 0, math.rad(180));
+        --                    RunService.Stepped:Wait();
+        --                    if not getgenv().Autofarm then break end;
+        --                until not coin:IsDescendantOf(Workspace) or coin.Name ~= "Coin_Server";
+        --                task.wait(1.8);
+        --            end;
+        --        else
+        --            task.wait(1.5);
+        --        end;
+        --    end;
+        --else
+        --    while getgenv().Autofarm do
+        --        wait();
+        --        if Client.PlayerGui.MainGUI.Game.CashBag.Visible == true then
+        --            RootPart.CFrame = CFrame.new(-121.12338256836, 138.27394104004, 38.946128845215);
+        --        end;
+        --    end;
+        --end;
 	end
 });
 
@@ -654,13 +654,13 @@ local GunLabel = SheriffSection:CreateLabel({
     Title = "Gun Not Dropped",
 });
 coroutine.wrap(function()
-    while wait(1) do
-        if Workspace:FindFirstChild("GunDrop") then
-            SheriffSection:updateLabel(GunLabel,"Gun Dropped",Color3.fromRGB(0,170,126));
-        else
-            SheriffSection:updateLabel(GunLabel,"Gun Not Dropped",Color3.fromRGB(254, 86, 86));
-        end;
-    end;
+    --while wait(1) do
+    --    if Workspace:FindFirstChild("GunDrop") then
+    --        SheriffSection:updateLabel(GunLabel,"Gun Dropped",Color3.fromRGB(0,170,126));
+    --    else
+    --        SheriffSection:updateLabel(GunLabel,"Gun Not Dropped",Color3.fromRGB(254, 86, 86));
+    --    end;
+    --end;
 end)();
 --<>----<>----<>----<>----<>----<>----<>--
 local lastCFrame;
