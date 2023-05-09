@@ -85,4 +85,3 @@ elseif game.PlaceId ~= 12610002282 then
         end)
     end
 end
-print("---")
