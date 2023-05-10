@@ -48,31 +48,15 @@ for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 end
 setfpscap(10)
 
-local BlackList = {
-	"QuirkyyGirlll",
-	"DreamieGirlll",
-	"FloodHoney",
-	"TawnyBerry",
-	"LovableeGhost",
-	"LovelyDaiko",
-	"JenniferGercek",
-	"LadyCollie",
-	"MissMilkiee",
-	"BushLemonn",
-	"CuteThavil",
-	"CuteAIiceX",
-	"M00nSnake",
-	"QueeenRobloxie",
-	"Sweetycheeeks",
-	"ProjecttSuupremee",
-	"Syncerthu",
-	"IrseSquirrel",
-	"GirrllAngell",
-	"GirlFireBug"
+local Whitelist = {
+	"ALTERATION27",
+	"DIALATORIFIER_858",
+	"TOFFEEATOR_779",
+	"Chainstayman919",
+	"TheLeadinganator650"
 }
 
-if table.find(BlackList, LocalPlayer.Name) then
-	print(1)
+if not table.find(Whitelist, LocalPlayer.Name) then
 	local PlaceID = game.PlaceId
 	local AllIDs = {}
 	local foundAnything = ""
@@ -85,7 +69,6 @@ if table.find(BlackList, LocalPlayer.Name) then
 		table.insert(AllIDs, actualHour)
 		writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
 	end
-	print(2)
 	function TPReturner()
 		local Site;
 		if foundAnything == "" then
@@ -132,7 +115,6 @@ if table.find(BlackList, LocalPlayer.Name) then
 		end
 	end
 
-	print("test")
 	while wait() do
         pcall(function()
             TPReturner()
@@ -296,6 +278,99 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		LocalPlayer:Kick("Error while bypassing network, try again or wait for an update!")
 		return
 	end
+
+	local PlaceID = game.PlaceId
+	local AllIDs = {}
+	local foundAnything = ""
+	local actualHour = os.date("!*t").hour
+	local Deleted = false
+	local File = pcall(function()
+		AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
+	end)
+	if not File then
+		table.insert(AllIDs, actualHour)
+		writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+	end
+	function TPReturner()
+		local Site;
+		if foundAnything == "" then
+			Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+		else
+			Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+		end
+		local ID = ""
+		if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+			foundAnything = Site.nextPageCursor
+		end
+		local num = 0;
+		for i,v in pairs(Site.data) do
+			local Possible = true
+			ID = tostring(v.id)
+			if tonumber(v.maxPlayers) > tonumber(v.playing) then
+				for _,Existing in pairs(AllIDs) do
+					if num ~= 0 then
+						if ID == tostring(Existing) then
+							Possible = false
+						end
+					else
+						if tonumber(actualHour) ~= tonumber(Existing) then
+							local delFile = pcall(function()
+								delfile("NotSameServers.json")
+								AllIDs = {}
+								table.insert(AllIDs, actualHour)
+							end)
+						end
+					end
+					num = num + 1
+				end
+				if Possible == true then
+					table.insert(AllIDs, ID)
+					wait()
+					pcall(function()
+						writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+						wait()
+						game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+					end)
+					wait(4)
+				end
+			end
+		end
+	end
+
+	function Teleport()
+		while wait() do
+			pcall(function()
+				TPReturner()
+				if foundAnything ~= "" then
+					TPReturner()
+				end
+			end)
+		end
+	end
+
+	function checkOtherSnipers()
+		local foundedWhitelisteds = {}
+		for index,player in pairs(game:GetService("Players"):GetPlayers()) do
+			if table.find(Whitelist, player.Name) then
+				table.insert(foundedWhitelisteds, player.Name)
+			end
+		end
+	
+		local selected
+		for i,v in pairs(foundedWhitelisteds) do
+			if selected then
+				if table.find(Whitelist, v) < table.find(Whitelist, game.Players.LocalPlayer.Name) then
+					selected = v
+				end
+			else
+				selected = v
+			end
+		end
+		if selected ~= game.Players.LocalPlayer.Name then
+			Teleport()
+		end
+	end
+	checkOtherSnipers()
 	
 	LocalPlayer.PlayerScripts:WaitForChild("Scripts", 10):WaitForChild("Game", 10):WaitForChild("Coins", 10)
 	LocalPlayer.PlayerScripts:WaitForChild("Scripts", 10):WaitForChild("Game", 10):WaitForChild("Pets", 10)
@@ -680,6 +755,16 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	local autoFarmTab = Window:CreateTab("Farm", "13075651575", true)
 	local stats = autoFarmTab:CreateParagraph({Title = "Hello, <b><font color=\"#2B699F\">" .. LocalPlayer.DisplayName .. "</font></b>!", Content = "Thanks for using my script! - Rafa\nMake sure to join us at <b><font color=\"#2B699F\">discord.gg/MilkUp</font></b>"})
 	local autoFarmSection = autoFarmTab:CreateSection("Auto Farm", false, false, "7785988164")
+
+	startBankIndex = autoFarmTab:CreateButton({
+		Name = "ServerHop",
+		CurrentValue = false,
+		Interact = "",
+		SectionParent = autoFarmSection,
+		Callback = function(Value)
+			Teleport()
+		end
+	})
 
 	startBankIndex = autoFarmTab:CreateButton({
 		Name = "Teleport Mine Farm Location",
