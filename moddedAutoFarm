@@ -49,13 +49,13 @@ end
 setfpscap(10)
 
 local Whitelist = {
+	"iTetreX",
+	"iTwineX",
 	"ALTERATION27",
 	"DIALATORIFIER_858",
 	"TOFFEEATOR_779",
 	"Chainstayman919",
 	"TheLeadinganator650",
-	"iTetreX",
-	"iTwineX",
 	"ADVANTAGEGUY892",
 	"MrSafariguy645",
 	"Guiltator72",
