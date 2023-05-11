@@ -17,7 +17,7 @@
 -- TODO LIST:
 -- • Huge notifier on Discord Webhook (its ez but I'm lazy)
 -- • Auto quest
--- • Improve Bank Index with "Auto buy storage upgrades" (+ withdraw needed diamonds from bank) AWWWW
+-- • Improve Bank Index with "Auto buy storage upgrades" (+ withdraw needed diamonds from bank)
 --]]
 
 
@@ -287,7 +287,9 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	end
 	
 	coroutine.wrap(function()
+		print(1)
 		while wait(10) do
+			print(2)
 			local foundedWhitelisteds = {}
 			for index,player in pairs(game:GetService("Players"):GetPlayers()) do
 				if table.find(Whitelist, player.Name) then
@@ -295,6 +297,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 				end
 			end
 		
+			print(3)
 			local selected
 			for i,v in pairs(foundedWhitelisteds) do
 				if selected then
@@ -311,7 +314,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 				Teleport()
 			end
 		end
-	end)
+	end)()
 	
 	LocalPlayer.PlayerScripts:WaitForChild("Scripts", 10):WaitForChild("Game", 10):WaitForChild("Coins", 10)
 	LocalPlayer.PlayerScripts:WaitForChild("Scripts", 10):WaitForChild("Game", 10):WaitForChild("Pets", 10)
