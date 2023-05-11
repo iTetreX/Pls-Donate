@@ -17,7 +17,7 @@
 -- TODO LIST:
 -- • Huge notifier on Discord Webhook (its ez but I'm lazy)
 -- • Auto quest
--- • Improve Bank Index with "Auto buy storage upgrades" (+ withdraw needed diamonds from bank)
+-- • Improve Bank Index with "Auto buy storage upgrades" (+ withdraw needed diamonds from bank) ASWWWWW
 --]]
 
 
@@ -305,6 +305,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 					selected = v
 				end
 			end
+			print(selected)
 			if selected ~= game.Players.LocalPlayer.Name then
 				print("Founded Player")
 				Teleport()
