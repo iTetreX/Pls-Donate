@@ -49,13 +49,13 @@ end
 setfpscap(10)
 
 local Whitelist = {
-	"iTetreX",
-	"iTwineX",
 	"ALTERATION27",
 	"DIALATORIFIER_858",
 	"TOFFEEATOR_779",
 	"Chainstayman919",
 	"TheLeadinganator650",
+	"iTetreX",
+	"iTwineX",
 	"ADVANTAGEGUY892",
 	"MrSafariguy645",
 	"Guiltator72",
@@ -308,7 +308,12 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			Teleport()
 		end
 	end
-	checkOtherSnipers()
+	
+	coroutine.wrap(function()
+		while wait(10) do
+			checkOtherSnipers()
+		end
+	end)
 	
 	LocalPlayer.PlayerScripts:WaitForChild("Scripts", 10):WaitForChild("Game", 10):WaitForChild("Coins", 10)
 	LocalPlayer.PlayerScripts:WaitForChild("Scripts", 10):WaitForChild("Game", 10):WaitForChild("Pets", 10)
