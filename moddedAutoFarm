@@ -285,33 +285,30 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			end)
 		end
 	end
-
-	function checkOtherSnipers()
-		local foundedWhitelisteds = {}
-		for index,player in pairs(game:GetService("Players"):GetPlayers()) do
-			if table.find(Whitelist, player.Name) then
-				table.insert(foundedWhitelisteds, player.Name)
-			end
-		end
-	
-		local selected
-		for i,v in pairs(foundedWhitelisteds) do
-			if selected then
-				if table.find(Whitelist, v) < table.find(Whitelist, game.Players.LocalPlayer.Name) then
-					selected = v
-				end
-			else
-				selected = v
-			end
-		end
-		if selected ~= game.Players.LocalPlayer.Name then
-			Teleport()
-		end
-	end
 	
 	coroutine.wrap(function()
 		while wait(10) do
-			checkOtherSnipers()
+			local foundedWhitelisteds = {}
+			for index,player in pairs(game:GetService("Players"):GetPlayers()) do
+				if table.find(Whitelist, player.Name) then
+					table.insert(foundedWhitelisteds, player.Name)
+				end
+			end
+		
+			local selected
+			for i,v in pairs(foundedWhitelisteds) do
+				if selected then
+					if table.find(Whitelist, v) < table.find(Whitelist, game.Players.LocalPlayer.Name) then
+						selected = v
+					end
+				else
+					selected = v
+				end
+			end
+			if selected ~= game.Players.LocalPlayer.Name then
+				print("Founded Player")
+				Teleport()
+			end
 		end
 	end)
 	
@@ -2822,7 +2819,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	elseif Library.WorldCmds.HasArea("Cyber Cavern") then
 		if Library.WorldCmds.Get() ~= "Diamond Mine" then
 			Library.WorldCmds.Load("Diamond Mine")
-			AutoFarm_SendAllPets = false
 		end
 		AutoFarm_SendAllPets = false
 		HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
