@@ -43,25 +43,65 @@ local InputService = game:GetService('UserInputService')
 local RunService = game:GetService('RunService')
 local ContentProvider = game:GetService("ContentProvider")
 
-for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
-	v:Disable()
-end
-setfpscap(10)
-
-local Whitelist = {
-	"ALTERATION27",
-	"DIALATORIFIER_858",
-	"TOFFEEATOR_779",
-	"Chainstayman919",
-	"TheLeadinganator650",
-	"iTetreX",
-	"iTwineX",
-	"ADVANTAGEGUY892",
-	"MrSafariguy645",
-	"Guiltator72",
-	"THE_STABGUY585",
-	"TheLeadinganator650"
+local BlackList = {
+    "QuirkyyGirlll",
+    "DreamieGirlll",
+    "MisssKoaala",
+    "FloodHoney",
+    "TawnyBerry",
+    "LovableeGhost",
+    "LovelyDaiko",
+    "JenniferGercek",
+    "MiaRozal",
+    "LadyCollie",
+    "HamzaPetKas2",
+    "MissMilkiee",
+    "BushLemonn",
+    "CuteThavil",
+    "CuteAIiceX",
+    "M00nSnake",
+    "ElenaaBee",
+    "QueeenRobloxie",
+    "Sweetycheeeks",
+    "ProjecttSuupremee",
+    "Syncerthu",
+    "IrseSquirrel",
+    "GirlGiantBee",
+    "GirrllAngell",
+    "PatoAturtle",
+    "GirlFireBug",
+    "OceanicAnywheyd",
+    "BunnyTonlysti",
+    "RheyoutMucharh",
+    "AquaticAtrapses",
+    "OafishSishreec",
+    "GirlFireBerry",
+    "FearlesssGirlll",
+    "GirlLubberlyy",
+    "GirlSuperladyy",
+    "OceanicSollsoce",
+    "GingreDreamGirl",
+    "BillowyDualle",
+    "CahrleyGirl",
+    "IrstaboBhabi",
+    "GiftedGineemov",
+    "SuperladyGirll",
+    "Antonneyeachn",
+    "GuiltlessAstrales",
+    "GicardHerd",
+    "Senstaysea",
+    "LadyLoach",
+    "MadamUguisu",
+    "WittyLoquat",
+    "Skylimsy",
+    "PrettiBread",
+    "Crucifery15",
+    "AgentLost12",
+    "GrownMan153",
+    "Plover156"
 }
+
+if table.find(BlackList, LocalPlayer.Name) then return end
 
 --//*--------- GLOBAL VARIABLES -----------//*
 local ScriptIsCurrentlyBusy = false
@@ -85,7 +125,7 @@ LocalPlayer.CharacterAdded:Connect(function(char)
 	HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
 end)
 
-if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
+if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 7722306047 or game.PlaceId == 12610002282 then
 	
 	local banSuccess, banError = pcall(function() 
 		local Blunder = require(game:GetService("ReplicatedStorage"):WaitForChild("X", 10):WaitForChild("Blunder", 10):WaitForChild("BlunderList", 10))
@@ -216,99 +256,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		LocalPlayer:Kick("Error while bypassing network, try again or wait for an update!")
 		return
 	end
-
-	local PlaceID = game.PlaceId
-	local AllIDs = {}
-	local foundAnything = ""
-	local actualHour = os.date("!*t").hour
-	local Deleted = false
-	local File = pcall(function()
-		AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
-	end)
-	if not File then
-		table.insert(AllIDs, actualHour)
-		writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
-	end
-	function TPReturner()
-		local Site;
-		if foundAnything == "" then
-			Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
-		else
-			Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
-		end
-		local ID = ""
-		if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
-			foundAnything = Site.nextPageCursor
-		end
-		local num = 0;
-		for i,v in pairs(Site.data) do
-			local Possible = true
-			ID = tostring(v.id)
-			if tonumber(v.maxPlayers) > tonumber(v.playing) then
-				for _,Existing in pairs(AllIDs) do
-					if num ~= 0 then
-						if ID == tostring(Existing) then
-							Possible = false
-						end
-					else
-						if tonumber(actualHour) ~= tonumber(Existing) then
-							local delFile = pcall(function()
-								delfile("NotSameServers.json")
-								AllIDs = {}
-								table.insert(AllIDs, actualHour)
-							end)
-						end
-					end
-					num = num + 1
-				end
-				if Possible == true then
-					table.insert(AllIDs, ID)
-					wait()
-					pcall(function()
-						writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
-						wait()
-						game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
-					end)
-					wait(4)
-				end
-			end
-		end
-	end
-
-	function Teleport()
-		while wait() do
-			pcall(function()
-				TPReturner()
-				if foundAnything ~= "" then
-					TPReturner()
-				end
-			end)
-		end
-	end
-
-	function checkOtherSnipers()
-		local foundedWhitelisteds = {}
-		for index,player in pairs(game:GetService("Players"):GetPlayers()) do
-			if table.find(Whitelist, player.Name) then
-				table.insert(foundedWhitelisteds, player.Name)
-			end
-		end
-	
-		local selected
-		for i,v in pairs(foundedWhitelisteds) do
-			if selected then
-				if table.find(Whitelist, v) < table.find(Whitelist, game.Players.LocalPlayer.Name) then
-					selected = v
-				end
-			else
-				selected = v
-			end
-		end
-		if selected ~= game.Players.LocalPlayer.Name then
-			Teleport()
-		end
-	end
-	checkOtherSnipers()
 	
 	LocalPlayer.PlayerScripts:WaitForChild("Scripts", 10):WaitForChild("Game", 10):WaitForChild("Coins", 10)
 	LocalPlayer.PlayerScripts:WaitForChild("Scripts", 10):WaitForChild("Game", 10):WaitForChild("Pets", 10)
@@ -469,7 +416,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		
 		return cArea, nArea
 	end
-
 	
 	function CheckIfCanAffordArea(areaName)
 		local saveData = Library.Save.Get()
@@ -645,6 +591,29 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	   OldTabLayout = true
 	})
 	
+	coroutine.wrap(function() 
+		wait(0.5)
+		if not isfile("Rafa/AcceptedTerms.txt") then 
+			Window:Prompt({
+				Title = 'Disclaimer',
+				SubTitle = 'Misuse of this script may result in penalties!',
+				Content = "I am not responsible for any harm caused by this tool, use at your own risk.",
+				Actions = {
+					
+					Accept = {
+						Name = "Ok",
+						Callback = function()
+							if not isfolder("Rafa") then makefolder("Rafa") end
+							writefile("Rafa/AcceptedTerms.txt", "true")
+						end,
+						
+					}
+				}
+			})
+		end 
+	
+	end)()
+	
 	function AddCustomFlag(flagName, defaultValue, callback)
 		if Rayfield and Rayfield.Flags and not Rayfield.Flags[flagName] then
 			local newFlag = {
@@ -693,16 +662,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	local autoFarmTab = Window:CreateTab("Farm", "13075651575", true)
 	local stats = autoFarmTab:CreateParagraph({Title = "Hello, <b><font color=\"#2B699F\">" .. LocalPlayer.DisplayName .. "</font></b>!", Content = "Thanks for using my script! - Rafa\nMake sure to join us at <b><font color=\"#2B699F\">discord.gg/MilkUp</font></b>"})
 	local autoFarmSection = autoFarmTab:CreateSection("Auto Farm", false, false, "7785988164")
-
-	startBankIndex = autoFarmTab:CreateButton({
-		Name = "ServerHop",
-		CurrentValue = false,
-		Interact = "",
-		SectionParent = autoFarmSection,
-		Callback = function(Value)
-			Teleport()
-		end
-	})
 
 	startBankIndex = autoFarmTab:CreateButton({
 		Name = "Teleport Mine Farm Location",
@@ -1271,7 +1230,16 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		end	
 	end)()
 	
-	
+	coroutine.wrap(function()
+        while wait(60) do
+            for i=12,1,-1 do
+                spawn(function()
+                    Library.Network.Invoke("Redeem Free Gift", i) --GameLibrary.Network.Invoke('redeem free gift', i)
+                end)
+                wait()
+            end
+        end
+    end)()
 	
 	function IsEggUnlocked(eggId)
 		local egg = Library.Directory.Eggs[eggId]
@@ -2793,23 +2761,25 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	end)
 
 	wait(1)
-	if ScriptIsCurrentlyBusy then
-		repeat wait() until not ScriptIsCurrentlyBusy
-	end
-	ScriptIsCurrentlyBusy = true
-	if Library.WorldCmds.HasArea("Mystic Mine") then
-		if Library.WorldCmds.Get() ~= "Diamond Mine" then
-			Library.WorldCmds.Load("Diamond Mine")
+	if AutoExecuted then
+		if ScriptIsCurrentlyBusy then
+			repeat wait() until not ScriptIsCurrentlyBusy
 		end
-		AutoFarm_SendAllPets = true
-		HumanoidRootPart.CFrame = CFrame.new(9042.87890625, -14.659429550170898, 2398.00244140625)
-	elseif Library.WorldCmds.HasArea("Cyber Cavern") then
-		if Library.WorldCmds.Get() ~= "Diamond Mine" then
-			Library.WorldCmds.Load("Diamond Mine")
+		ScriptIsCurrentlyBusy = true
+		if Library.WorldCmds.HasArea("Mystic Mine") then
+			if Library.WorldCmds.Get() ~= "Diamond Mine" then
+				Library.WorldCmds.Load("Diamond Mine")
+			end
+			AutoFarm_SendAllPets = true
+			HumanoidRootPart.CFrame = CFrame.new(9042.87890625, -14.659429550170898, 2398.00244140625)
+		elseif Library.WorldCmds.HasArea("Cyber Cavern") then
+			if Library.WorldCmds.Get() ~= "Diamond Mine" then
+				Library.WorldCmds.Load("Diamond Mine")
+				AutoFarm_SendAllPets = false
+			end
 			AutoFarm_SendAllPets = false
+			HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
 		end
-		AutoFarm_SendAllPets = false
-		HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
+		ScriptIsCurrentlyBusy = false
 	end
-	ScriptIsCurrentlyBusy = false
 end
