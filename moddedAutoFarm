@@ -1,4 +1,6 @@
 --[[
+-- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL
+
 -- THIS SCRIPT HAS BEEN CODED BY RAFA (discord.gg/MilkUp)
 -- DON'T BE A STUPID SKIDDIE THAT STEAL PEOPLE CODE AND PUT ON A SHIT PAID (or "watch ad to get key") SCRIPT
 -- hi Project WD please don't steal my code again thx
@@ -285,34 +287,34 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			end)
 		end
 	end
-	
-	coroutine.wrap(function()
-		print(1)
-		while wait(10) do
-			print(2)
-			local foundedWhitelisteds = {}
-			for index,player in pairs(game:GetService("Players"):GetPlayers()) do
-				if table.find(Whitelist, player.Name) then
-					table.insert(foundedWhitelisteds, player.Name)
-				end
+
+	function checkOtherSnipers()
+		local foundedWhitelisteds = {}
+		for index,player in pairs(game:GetService("Players"):GetPlayers()) do
+			if table.find(Whitelist, player.Name) then
+				table.insert(foundedWhitelisteds, player.Name)
 			end
-		
-			print(3)
-			local selected
-			for i,v in pairs(foundedWhitelisteds) do
-				if selected then
-					if table.find(Whitelist, v) < table.find(Whitelist, game.Players.LocalPlayer.Name) then
-						selected = v
-					end
-				else
+		end
+	
+		local selected
+		for i,v in pairs(foundedWhitelisteds) do
+			if selected then
+				if table.find(Whitelist, v) < table.find(Whitelist, game.Players.LocalPlayer.Name) then
 					selected = v
 				end
+			else
+				selected = v
 			end
-			print(selected)
-			if selected ~= game.Players.LocalPlayer.Name then
-				print("Founded Player")
-				Teleport()
-			end
+		end
+		if selected ~= game.Players.LocalPlayer.Name then
+			Teleport()
+		end
+	end
+	checkOtherSnipers()
+	
+	coroutine.wrap(function()
+		while wait(10) do
+			checkOtherSnipers()
 		end
 	end)()
 	
