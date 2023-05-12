@@ -2,6 +2,9 @@ repeat
     wait()
 until game:IsLoaded()
 repeat wait() until game.PlaceId ~= nil
+if game.PlaceId == 8737602449 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/version1/main2"))()
+end
 if game.PlaceId ~= 6349192791 then return end
 game:GetService("RunService"):Set3dRenderingEnabled(false)
 setfpscap(5)
