@@ -13,7 +13,9 @@ local WH = {
 	"DIALATORIFIER_858",
 	"TOFFEEATOR_779",
 	"Chainstayman919",
-	"TheLeadinganator650"
+	"TheLeadinganator650",
+	"THE_ALPENGLOWMAN980",
+	"Creativeguy175"
 }
 
 if table.find(WH, game.Players.LocalPlayer.Name) then
