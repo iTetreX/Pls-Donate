@@ -15,7 +15,12 @@ local WH = {
 	"Chainstayman919",
 	"TheLeadinganator650",
 	"THE_ALPENGLOWMAN980",
-	"Creativeguy175"
+	"Creativeguy175",
+	"EnchantingSchast",
+	"WonderfulGion",
+	"Onadnever",
+	"AltiverHermano",
+	"Offectiouslas"
 }
 
 if table.find(WH, game.Players.LocalPlayer.Name) then
