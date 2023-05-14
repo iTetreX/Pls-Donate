@@ -53,6 +53,7 @@ setfpscap(10)
 local Whitelist = {
 	"iTetreX",
 	"iTwineX",
+	"claynight08",
 	"ALTERATION27",
 	"DIALATORIFIER_858",
 	"TOFFEEATOR_779",
@@ -105,7 +106,8 @@ local Whitelist = {
 	"TheCraneifier_295",
 	"Elif_Nur35",
 	"THE_GUYGUY76",
-	"Oatsman520"
+	"Oatsman520",
+	"MrWoodshedanator751"
 }
 
 --//*--------- GLOBAL VARIABLES -----------//*
