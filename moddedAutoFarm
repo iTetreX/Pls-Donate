@@ -102,7 +102,8 @@ local Whitelist = {
 	"THE_OLIVEIFIER327",
 	"MR_STYLEANATOR676",
 	"MrBuilderman963",
-	"TheCraneifier_295"
+	"TheCraneifier_295",
+	"Elif_Nur35",
 }
 
 --//*--------- GLOBAL VARIABLES -----------//*
@@ -753,7 +754,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	local stats = autoFarmTab:CreateParagraph({Title = "Hello, <b><font color=\"#2B699F\">" .. LocalPlayer.DisplayName .. "</font></b>!", Content = "Thanks for using my script! - Rafa\nMake sure to join us at <b><font color=\"#2B699F\">discord.gg/MilkUp</font></b>"})
 	local autoFarmSection = autoFarmTab:CreateSection("Auto Farm", false, false, "7785988164")
 
-	startBankIndex = autoFarmTab:CreateButton({
+	autoFarmTab:CreateButton({
 		Name = "ServerHop",
 		CurrentValue = false,
 		Interact = "",
@@ -763,7 +764,18 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		end
 	})
 
-	startBankIndex = autoFarmTab:CreateButton({
+	autoFarmTab:CreateButton({
+		Name = "Teleport Lucky Block Location",
+		CurrentValue = false,
+		Interact = "",
+		SectionParent = autoFarmSection,
+		Callback = function(Value)
+			-- Go to Spawn World
+			HumanoidRootPart.CFrame = CFrame.new(-199, 229, 1481)
+		end
+	})
+
+	autoFarmTab:CreateButton({
 		Name = "Teleport Mine Farm Location",
 		CurrentValue = false,
 		Interact = "",
@@ -1787,47 +1799,55 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
         end
     end)()
 
-	--local autoBoostSection = automationTab:CreateSection("Auto Boost", false, false, "7599296041")
+	local autoBoostSection = automationTab:CreateSection("Auto Boost", false, false, "7599296041")
 
-	--local AutoBoost_TripleDamage = true
-	--automationTab:CreateToggle({
-	--	Name = "Triple Damage",
-	--	Flag = "AutoBoost_TripleDamage", 
-	--	SectionParent = autoBoostSection,
-	--	CurrentValue = false,
-	--	Callback = function(Value) 
-	--		AutoBoost_TripleDamage = Value
-	--	end
-	--})
+	local AutoBoost_TripleDamage = true
+	automationTab:CreateToggle({
+		Name = "Triple Damage",
+		Flag = "AutoBoost_TripleDamage", 
+		SectionParent = autoBoostSection,
+		CurrentValue = false,
+		Callback = function(Value) 
+			AutoBoost_TripleDamage = Value
+		end
+	})
 
-	--local AutoBoost_ServerTripleDamage = true
-	--automationTab:CreateToggle({
-	--	Name = "Server Triple Damage",
-	--	Flag = "AutoBoost_ServerTripleDamage", 
-	--	SectionParent = autoBoostSection,
-	--	CurrentValue = false,
-	--	Callback = function(Value) 
-	--		AutoBoost_ServerTripleDamage = Value
-	--	end
-	--})
+	local AutoBoost_ServerTripleDamage = true
+	automationTab:CreateToggle({
+		Name = "Server Triple Damage",
+		Flag = "AutoBoost_ServerTripleDamage", 
+		SectionParent = autoBoostSection,
+		CurrentValue = false,
+		Callback = function(Value) 
+			AutoBoost_ServerTripleDamage = Value
+		end
+	})
 
-    --coroutine.wrap(function()
-	--	while wait(10) do
-	--		local Boosts = Library.Save.Get().Boosts
-	--		if AutoBoost_TripleDamage then
-	--			if not Boosts["Triple Damage"] or Boost["Triple Damage"] < 30 then
-	--				Library.Network.Fire("Activate Boost", "Triple Damage")
-	--			end
-	--		end
+    coroutine.wrap(function()
+		while wait(10) do
+			local Boosts = Library.Save.Get().Boosts
+			if AutoBoost_TripleDamage then
+				if Boosts["Triple Damage"] then
+					if Boosts["Triple Damage"] < 30 then
+						Library.Network.Fire("Activate Boost", "Triple Damage")
+					end
+				else
+					Library.Network.Fire("Activate Boost", "Triple Damage")
+				end
+			end
 
-	--		local ServerBoosts = Library.ServerBoosts.GetActiveBoosts()
-	--		if AutoBoost_ServerTripleDamage then
-	--			if not ServerBoosts["Triple Damage"] or ServerBoosts["Triple Damage"] < 30 then
-	--				Library.Network.Fire("Activate Server Boost", "Triple Damage")
-	--			end
-	--		end
-	--	end
-	--end)()
+			local ServerBoosts = Library.ServerBoosts.GetActiveBoosts()
+			if AutoBoost_ServerTripleDamage then
+				if ServerBoosts["Triple Damage"] then
+					if ServerBoosts["Triple Damage"].totalTimeLeft < 30 then
+						Library.Network.Fire("Activate Server Boost", "Triple Damage")
+					end
+				else
+					Library.Network.Fire("Activate Server Boost", "Triple Damage")
+				end
+			end
+		end
+	end)()
 
 	local bankIndexSection = automationTab:CreateSection("Bank Index", false, false, "13080063246")
 	automationTab:CreateParagraph({ Title = "What is this?", Content = "Some people <font color=\"#2B699F\">store pets in a bank to complete the pet collection</font> on alt accounts.\n<b>This feature should help on that process, it will automatically do:</b>\n- <font color=\"#2B699F\"><b>Check non-indexed pets on current account</b></font>\n- <font color=\"#2B699F\"><b>Take pets from the bank</b></font>\n- <font color=\"#2B699F\"><b>Put back on the bank after indexed</b></font>" }, bankIndexSection)
