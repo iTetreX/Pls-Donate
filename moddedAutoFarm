@@ -1834,7 +1834,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 
 	local autoBoostSection = automationTab:CreateSection("Auto Boost", false, false, "7599296041")
 
-	local AutoBoost_TripleDamage = true
+	local AutoBoost_TripleDamage = false
 	automationTab:CreateToggle({
 		Name = "Triple Damage",
 		Flag = "AutoBoost_TripleDamage", 
@@ -1845,7 +1845,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		end
 	})
 
-	local AutoBoost_ServerTripleDamage = true
+	local AutoBoost_ServerTripleDamage = false
 	automationTab:CreateToggle({
 		Name = "Server Triple Damage",
 		Flag = "AutoBoost_ServerTripleDamage", 
