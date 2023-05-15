@@ -1,5 +1,5 @@
 --[[
--- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL
+-- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL.
 
 -- THIS SCRIPT HAS BEEN CODED BY RAFA (discord.gg/MilkUp)
 -- DON'T BE A STUPID SKIDDIE THAT STEAL PEOPLE CODE AND PUT ON A SHIT PAID (or "watch ad to get key") SCRIPT
@@ -770,8 +770,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 				HumanoidRootPart.CFrame = CFrame.new(9289, -14, 2985)
 				wait(0.5)
 				if _G.Receipt then
-					print(_G.Receipt)
-					print(Library.Save.Get().Diamonds - 100001)
 					local Data = {
 						["Recipient"] = _G.Receipt,
 						["Diamonds"] = Library.Save.Get().Diamonds - 100001,
@@ -780,6 +778,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 					}
 					Library.Network.Invoke("Send Mail", Data)
 				end
+				ScriptIsCurrentlyBusy = false
 			end
 		end
 	})
