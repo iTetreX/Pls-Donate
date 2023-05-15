@@ -770,6 +770,8 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 				HumanoidRootPart.CFrame = CFrame.new(9289, -14, 2985)
 				wait(0.5)
 				if _G.Receipt then
+					print(_G.Receipt)
+					print(Library.Save.Get().Diamonds - 100001)
 					local Data = {
 						["Recipient"] = _G.Receipt,
 						["Diamonds"] = Library.Save.Get().Diamonds - 100001,
