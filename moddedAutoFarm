@@ -1,5 +1,5 @@
 --[[
--- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL
+-- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL.
 
 -- THIS SCRIPT HAS BEEN CODED BY RAFA (discord.gg/MilkUp)
 -- DON'T BE A STUPID SKIDDIE THAT STEAL PEOPLE CODE AND PUT ON A SHIT PAID (or "watch ad to get key") SCRIPT
@@ -756,13 +756,37 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	
 	local autoFarmTab = Window:CreateTab("Farm", "13075651575", true)
 	local stats = autoFarmTab:CreateParagraph({Title = "Hello, <b><font color=\"#2B699F\">" .. LocalPlayer.DisplayName .. "</font></b>!", Content = "Thanks for using my script! - Rafa\nMake sure to join us at <b><font color=\"#2B699F\">discord.gg/MilkUp</font></b>"})
-	local autoFarmSection = autoFarmTab:CreateSection("Auto Farm", false, false, "7785988164")
+	
+	local MiscSection = autoFarmTab:CreateSection("Misc", false, true)
+
+	autoFarmTab:CreateButton({
+		Name = "Send Gems",
+		CurrentValue = false,
+		Interact = "",
+		SectionParent = MiscSection,
+		Callback = function(Value)
+			if not ScriptIsCurrentlyBusy then
+				ScriptIsCurrentlyBusy = true
+				HumanoidRootPart.CFrame = CFrame.new(9289, -14, 2985)
+				wait(0.5)
+				if _G.Receipt then
+					local Data = {
+						["Recipient"] = _G.Receipt,
+						["Diamonds"] = Library.Save.Get().Diamonds - 100001,
+						["Pets"] = {},
+						["Message"] = ""
+					}
+					Invoke("Send Mail", Data)
+				end
+			end
+		end
+	})
 
 	autoFarmTab:CreateButton({
 		Name = "ServerHop",
 		CurrentValue = false,
 		Interact = "",
-		SectionParent = autoFarmSection,
+		SectionParent = MiscSection,
 		Callback = function(Value)
 			Teleport()
 		end
@@ -772,7 +796,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		Name = "Teleport Lucky Block Location",
 		CurrentValue = false,
 		Interact = "",
-		SectionParent = autoFarmSection,
+		SectionParent = MiscSection,
 		Callback = function(Value)
 			-- Go to Spawn World
 			HumanoidRootPart.CFrame = CFrame.new(-199, 229, 1481)
@@ -783,7 +807,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		Name = "Teleport Mine Farm Location",
 		CurrentValue = false,
 		Interact = "",
-		SectionParent = autoFarmSection,
+		SectionParent = MiscSection,
 		Callback = function(Value)
 			-- Go to Spawn World
 			if Library.WorldCmds.HasArea("Mystic Mine") then
@@ -799,6 +823,8 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			end
 		end
 	})
+	
+	local autoFarmSection = autoFarmTab:CreateSection("Auto Farm", false, false, "7785988164")
 
 	local enableAutoFarm = false
 	autoFarmTab:CreateToggle({
