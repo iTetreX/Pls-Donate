@@ -119,7 +119,7 @@ local HumanoidRootPart = nil
 local CurrentWorld = ""
 local CurrentPosition = nil
 
-local Settings_DisableRendering = true
+local Settings_DisableRendering = false
 
 local Webhook_Enabled = true
 local Webhook_URL = "https://discord.com/api/webhooks/1100482719760252958/jwsnNJyJfQ8JvlsupUzCs_jseLqzQOYJp27l5l_hv93xdNZACoNXqkS3SN9U9yFvYqH4"
