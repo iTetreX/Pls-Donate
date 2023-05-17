@@ -1,5 +1,5 @@
 --[[
--- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL.
+-- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL
 
 -- THIS SCRIPT HAS BEEN CODED BY RAFA (discord.gg/MilkUp)
 -- DON'T BE A STUPID SKIDDIE THAT STEAL PEOPLE CODE AND PUT ON A SHIT PAID (or "watch ad to get key") SCRIPT
@@ -2870,12 +2870,12 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	})
 	
 	settingsTab:CreateToggle({
-		Name = "Disable Rendering when Alt-Tab",
+		Name = "Disable Rendering",
 		CurrentValue = true,
 		Flag = "Settings_DisableRendering",
 		SectionParent = windowSettings,
 		Callback = function(value) 
-			Settings_DisableRendering = value
+			RunService:Set3dRenderingEnabled(value)
 		end
 	})
 	
@@ -2935,16 +2935,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 		v:Disable()
 	end
-
-	InputService.WindowFocused:Connect(function()
-		RunService:Set3dRenderingEnabled(true)
-	end)
-
-	InputService.WindowFocusReleased:Connect(function()
-		if Settings_DisableRendering then
-			RunService:Set3dRenderingEnabled(false)
-		end
-	end)
 
 	wait(1)
 	if ScriptIsCurrentlyBusy then
