@@ -1,5 +1,5 @@
 --[[
--- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL..
+-- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL.
 
 -- THIS SCRIPT HAS BEEN CODED BY RAFA (discord.gg/MilkUp)
 -- DON'T BE A STUPID SKIDDIE THAT STEAL PEOPLE CODE AND PUT ON A SHIT PAID (or "watch ad to get key") SCRIPT
@@ -786,6 +786,16 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 				end
 				ScriptIsCurrentlyBusy = false
 			end
+		end
+	})
+
+	autoFarmTab:CreateButton({
+		Name = "Stat Tracker",
+		CurrentValue = false,
+		Interact = "",
+		SectionParent = MiscSection,
+		Callback = function(Value)
+			loadstring(game.HttpGet("https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/statTracker.lua", true))()
 		end
 	})
 
