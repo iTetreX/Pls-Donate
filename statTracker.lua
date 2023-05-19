@@ -19,6 +19,12 @@ end
             
 local LayoutOrders = {
     ["Diamonds"] = 999910;
+    ["Halloween Candy"] = 999920;
+    ["Gingerbread"] = 999930;
+    ["Rainbow Coins"] = 999940;
+    ["Tech Coins"] = 999950;
+    ["Fantasy Coins"] = 999960;
+    ["Coins"] = 999970;
 }
 menus.UIListLayout.HorizontalAlignment = 2
 _G.MyTypes = {}
@@ -41,6 +47,7 @@ for i,v in pairs(types) do
     end)
 end
 spawn(function() menus:WaitForChild("Diamonds2").Add.Visible = false end)
+-- Skidded from byte-chan:tm:
 for i,v in pairs(types) do
     spawn(function()
         repeat task.wait() until _G.MyTypes[v]
