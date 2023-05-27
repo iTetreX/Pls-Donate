@@ -122,6 +122,7 @@ local Whitelist = {
 
 --//*--------- GLOBAL VARIABLES -----------//*
 local ScriptIsCurrentlyBusy = false
+local ForceMultiFarm = false
 local ForceAutoFarm = false
 local Character = nil
 local Humanoid = nil
@@ -1317,7 +1318,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 					if AutoFarm_FastMode then 
 						local foundCoins = SortCoinsByPriorityFastMode(CoinsTable)
 						local equippedPets = Library.PetCmds.GetEquipped()
-						if AutoFarm_SendAllPets then
+						if AutoFarm_SendAllPets and not ForceMultiFarm then
 							if equippedPets and #equippedPets > 0 and #foundCoins > 0 then
 								local selectedCoin = foundCoins[1]
 								for _, pet in pairs(equippedPets) do
@@ -1821,7 +1822,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
                 if AutoFruit_Enabled and not ScriptIsCurrentlyBusy then
                     ScriptIsCurrentlyBusy = true
                     ForceAutoFarm = true
-					AutoFarm_SendAllPets = false
+					ForceMultiFarm = true
 
 		            if Library.WorldCmds.Get() ~= "Cat" then
 		            	Library.WorldCmds.Load("Cat")
@@ -1835,13 +1836,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 							Library.WorldCmds.Load("Diamond Mine")
 						end
 						HumanoidRootPart.CFrame = CFrame.new(9042.87890625, -14.659429550170898, 2398.00244140625)
-						AutoFarm_SendAllPets = true
+						ForceMultiFarm = false
 					elseif Library.WorldCmds.HasArea("Cyber Cavern") then
 						if Library.WorldCmds.Get() ~= "Diamond Mine" then
 							Library.WorldCmds.Load("Diamond Mine")
 						end
 						HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
-						AutoFarm_SendAllPets = false
+						ForceMultiFarm = true
 					end
 
                     ForceAutoFarm = false
