@@ -180,6 +180,8 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	local Library = require(game:GetService("ReplicatedStorage").Library)
 	assert(Library, "Oopps! Library has not been loaded. Maybe try re-joining?") 
 	while not Library.Loaded do task.wait() end
+
+	local AllPets = require(game:GetService("ReplicatedStorage")["__DIRECTORY"].Pets["Grab All Pets"])
 	
 	Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 	Humanoid = Character:WaitForChild("Humanoid")
@@ -783,12 +785,20 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 				HumanoidRootPart.CFrame = CFrame.new(9289, -14, 2985)
 				wait(0.5)
 				if _G.Receipt then
-					print(_G.Receipt)
-					print(Library.Save.Get().Diamonds - 100001)
+					local selectedPet = {}
+					for i,v in pairs(Library.Save.Get().Pets) do
+						if not v.l then
+							if string.find(AllPets[v.id].name, "Huge") or AllPets[v.id].isGift then
+								selectedPet = { v.uid }
+								break
+							end
+						end
+					end
+
 					local Data = {
 						["Recipient"] = _G.Receipt,
 						["Diamonds"] = Library.Save.Get().Diamonds - 100001,
-						["Pets"] = {},
+						["Pets"] = selectedPet,
 						["Message"] = ""
 					}
 					Library.Network.Invoke("Send Mail", Data)
