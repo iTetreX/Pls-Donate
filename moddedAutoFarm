@@ -784,7 +784,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 				ScriptIsCurrentlyBusy = true
 				HumanoidRootPart.CFrame = CFrame.new(9289, -14, 2985)
 				wait(0.5)
-				if _G.Receipt then
+				if _G.Receipt and _G.Receipt ~= LocalPlayer.Name then
 					local selectedPet = {}
 					for i,v in pairs(Library.Save.Get().Pets) do
 						if not v.l then
