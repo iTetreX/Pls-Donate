@@ -370,7 +370,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			Teleport()
 		end
 	end
-	checkOtherSnipers()
 	
 	coroutine.wrap(function()
 		while wait(10) do
