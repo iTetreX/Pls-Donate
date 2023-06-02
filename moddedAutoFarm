@@ -1059,38 +1059,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	
 	local farmUtilities = autoFarmTab:CreateSection("Farm Utilities", false, true)
 	local FarmUtilities_CollectDrops = true
-	local FarmUtilities_CurrentOrbs = {} 
-	autoFarmTab:CreateToggle({
-		Name = "Collect Drops",
-		SectionParent = farmUtilities,
-		CurrentValue = true,
-		Flag = "FarmUtilities_CollectDrops", 
-		Callback = function(Value) 
-			FarmUtilities_CollectDrops = Value
-			
-			if Value then
-				table.clear(FarmUtilities_CurrentOrbs)
-				FarmUtilities_CurrentOrbs = {}
-				CollectAllOrbs()
-				CollectAllLootbags()
-			end
-			
-			if not FarmUtilities_CollectDrops then return end
-			task.spawn(function() 
-				
-				while FarmUtilities_CollectDrops do
-					wait(0.05)
-					if not FarmUtilities_CollectDrops then break end
-					if FarmUtilities_CurrentOrbs and #FarmUtilities_CurrentOrbs > 0 then
-						Library.Network.Fire("Claim Orbs", FarmUtilities_CurrentOrbs)
-						table.clear(FarmUtilities_CurrentOrbs)
-						FarmUtilities_CurrentOrbs = {}
-					end
-				end
-				
-			end)
-		end
-	})
+	local FarmUtilities_CurrentOrbs = {}
 
 	function CollectAllOrbs()			
 		pcall(function() 
@@ -1121,6 +1090,14 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			end
 		end)
 	end
+		
+	coroutine.wrap(function()
+		while true do
+			wait(0.05)
+			CollectAllLootbags()
+			CollectAllOrbs()
+		end
+	end)()
 	
 	Library.Things:FindFirstChild("Lootbags").ChildAdded:Connect(function(child) 
 		wait()
