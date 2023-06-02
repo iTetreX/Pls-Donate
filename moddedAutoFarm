@@ -1,5 +1,5 @@
 --[[
--- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL.
+-- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL..
 
 -- THIS SCRIPT HAS BEEN CODED BY RAFA (discord.gg/MilkUp)
 -- DON'T BE A STUPID SKIDDIE THAT STEAL PEOPLE CODE AND PUT ON A SHIT PAID (or "watch ad to get key") SCRIPT
@@ -861,24 +861,24 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	
 	local autoFarmSection = autoFarmTab:CreateSection("Auto Farm", false, false, "7785988164")
 
-	local enableAutoFarm = false
+	local enableAutoFarm = true
 	autoFarmTab:CreateToggle({
 		Name = "Enable Auto-Farm",
 		Info = 'Auto Farm will automatically destroy/farm coins for you, be aware of the risks of abusing it',
 		Flag = "AutoFarm_Enabled",
 		SectionParent = autoFarmSection,
-		CurrentValue = false,
+		CurrentValue = true,
 		Callback = function(Value) 
 			enableAutoFarm = Value
 		end
 	})
 	
-	local AutoFarm_FastMode = false
+	local AutoFarm_FastMode = true
 	autoFarmTab:CreateToggle({
 		Name = "Fast Mode (unlegit farm)",
 		Flag = "AutoFarm_FastMode", 
 		SectionParent = autoFarmSection,
-		CurrentValue = false,
+		CurrentValue = true,
 		Callback = function(Value) 
 			AutoFarm_FastMode = Value
 		end
@@ -895,7 +895,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		end
 	})
 	
-	local AutoFarm_FarmSpeed = 0.3
+	local AutoFarm_FarmSpeed = 0.12
 	autoFarmTab:CreateSlider({
 	   Name = "Farm Speed",
 	   Flag = "AutoFarm_FarmSpeed",
@@ -903,13 +903,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	   Range = {0.05, 2},
 	   Increment = 0.05,
 	   Suffix = "Second(s)",
-	   CurrentValue = 0.3,
+	   CurrentValue = 0.12,
 	   Callback = function(Value)
 			AutoFarm_FarmSpeed = Value
 	   end,
 	})
 	
-	local farmMaxDistance = 150
+	local farmMaxDistance = 300
 	autoFarmTab:CreateSlider({
 	   Name = "Farm Max Distance",
 	   Flag = "AutoFarm_MaxDistance",
@@ -917,7 +917,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	   Range = {10, tonumber(Library.Settings.CoinGrabDistance) or 300},
 	   Increment = 1,
 	   Suffix = "Studs",
-	   CurrentValue = 150,
+	   CurrentValue = 300,
 	   Callback = function(Value)
 			farmMaxDistance = Value
 	   end,
@@ -954,7 +954,11 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	end
 	
 
-	local FarmFocusList = {}
+	local FarmFocusList = {
+		"Fruits",
+		"Highest Multiplier",
+		"Highest Life"
+	}
 	local FarmFocusListButtons = {}
 	
 	
@@ -1763,18 +1767,18 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 
 	local autoFruitSection = automationTab:CreateSection("Auto Fruit Breaker", false, false, "12959517323")
 
-	local AutoFruit_Enabled = false
+	local AutoFruit_Enabled = true
 	automationTab:CreateToggle({
 		Name = "Auto Fruit Enabled",
 		Flag = "AutoFruit_Enabled", 
 		SectionParent = autoFruitSection,
-		CurrentValue = false,
+		CurrentValue = true,
 		Callback = function(Value) 
 			AutoFruit_Enabled = Value
 		end
 	})
 	
-	local AutoFruit_MinFruit = 5
+	local AutoFruit_MinFruit = 50
 	automationTab:CreateSlider({
 	    Name = "Minimum Fruit",
 	    Flag = "AutoFruit_MinFruit",
@@ -1782,13 +1786,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	    Range = {5, 250},
 	    Increment = 5,
 	    Suffix = "Fruit(s)",
-	    CurrentValue = 5,
+	    CurrentValue = 50,
 	    Callback = function(Value)
             AutoFruit_MinFruit = Value
 	    end,
 	})
 	
-	local AutoFruit_MaxFruit = 10
+	local AutoFruit_MaxFruit = 75
 	automationTab:CreateSlider({
 	    Name = "Maximum Fruit",
 	    Flag = "AutoFruit_MaxFruit",
@@ -1796,7 +1800,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	    Range = {10, 250},
 	    Increment = 5,
 	    Suffix = "Fruit(s)",
-	    CurrentValue = 10,
+	    CurrentValue = 75,
 	    Callback = function(Value)
             AutoFruit_MaxFruit = Value
 	    end,
