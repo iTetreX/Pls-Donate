@@ -1,5 +1,5 @@
 --[[
--- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL.
+-- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL..
 
 -- THIS SCRIPT HAS BEEN CODED BY RAFA (discord.gg/MilkUp)
 -- DON'T BE A STUPID SKIDDIE THAT STEAL PEOPLE CODE AND PUT ON A SHIT PAID (or "watch ad to get key") SCRIPT
@@ -885,12 +885,12 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		end
 	})
 	
-	local AutoFarm_SendAllPets = false
+	local AutoFarm_SendAllPets = true
 	autoFarmTab:CreateToggle({
 		Name = "Send All Pets",
 		Flag = "AutoFarm_SendAllPets", 
 		SectionParent = autoFarmSection,
-		CurrentValue = false,
+		CurrentValue = true,
 		Callback = function(Value) 
 			AutoFarm_SendAllPets = Value
 		end
@@ -2983,13 +2983,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		if Library.WorldCmds.Get() ~= "Diamond Mine" then
 			Library.WorldCmds.Load("Diamond Mine")
 		end
-		AutoFarm_SendAllPets = true
+		ForceMultiFarm = false
 		HumanoidRootPart.CFrame = CFrame.new(9042.87890625, -14.659429550170898, 2398.00244140625)
 	elseif Library.WorldCmds.HasArea("Cyber Cavern") then
 		if Library.WorldCmds.Get() ~= "Diamond Mine" then
 			Library.WorldCmds.Load("Diamond Mine")
 		end
-		AutoFarm_SendAllPets = false
+		ForceMultiFarm = true
 		HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
 	end
 	ScriptIsCurrentlyBusy = false
