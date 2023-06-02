@@ -1,5 +1,5 @@
 --[[
--- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL..
+-- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL.
 
 -- THIS SCRIPT HAS BEEN CODED BY RAFA (discord.gg/MilkUp)
 -- DON'T BE A STUPID SKIDDIE THAT STEAL PEOPLE CODE AND PUT ON A SHIT PAID (or "watch ad to get key") SCRIPT
@@ -1871,12 +1871,12 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 
 	local autoBoostSection = automationTab:CreateSection("Auto Boost", false, false, "7599296041")
 
-	local AutoBoost_TripleDamage = false
+	local AutoBoost_TripleDamage = true
 	automationTab:CreateToggle({
 		Name = "Triple Damage",
 		Flag = "AutoBoost_TripleDamage", 
 		SectionParent = autoBoostSection,
-		CurrentValue = false,
+		CurrentValue = true,
 		Callback = function(Value) 
 			AutoBoost_TripleDamage = Value
 		end
