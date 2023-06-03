@@ -1,5 +1,5 @@
 --[[
--- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL.
+-- THIS VERSION IS MODDED BY TETREX, NOT ORIGINAL..
 
 -- THIS SCRIPT HAS BEEN CODED BY RAFA (discord.gg/MilkUp)
 -- DON'T BE A STUPID SKIDDIE THAT STEAL PEOPLE CODE AND PUT ON A SHIT PAID (or "watch ad to get key") SCRIPT
@@ -117,14 +117,7 @@ local Whitelist = {
 	"MR_BACKDROPGUY860",
 	"TheLungguy_535",
 	"RlympJellybean",
-	"Manifestation590",
-	"Passinganator767",
-	"Heronator_909",
-	"LethoHotThing",
-	"BedmostMonCoeur",
-	"BertPuzzler",
-	"GionitTonezone",
-	"GlisteningIngessi"
+	"Manifestation590"
 }
 
 --//*--------- GLOBAL VARIABLES -----------//*
@@ -185,8 +178,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	local Library = require(game:GetService("ReplicatedStorage").Library)
 	assert(Library, "Oopps! Library has not been loaded. Maybe try re-joining?") 
 	while not Library.Loaded do task.wait() end
-
-	local AllPets = require(game:GetService("ReplicatedStorage")["__DIRECTORY"].Pets["Grab All Pets"])
 	
 	Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 	Humanoid = Character:WaitForChild("Humanoid")
@@ -789,21 +780,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 				ScriptIsCurrentlyBusy = true
 				HumanoidRootPart.CFrame = CFrame.new(9289, -14, 2985)
 				wait(0.5)
-				if _G.Receipt and _G.Receipt ~= LocalPlayer.Name then
-					local selectedPet = {}
-					for i,v in pairs(Library.Save.Get().Pets) do
-						if not v.l then
-							if string.find(AllPets[v.id].name, "Huge") or AllPets[v.id].isGift then
-								selectedPet = { v.uid }
-								break
-							end
-						end
-					end
-
+				if _G.Receipt then
+					print(_G.Receipt)
+					print(Library.Save.Get().Diamonds - 100001)
 					local Data = {
 						["Recipient"] = _G.Receipt,
 						["Diamonds"] = Library.Save.Get().Diamonds - 100001,
-						["Pets"] = selectedPet,
+						["Pets"] = {},
 						["Message"] = ""
 					}
 					Library.Network.Invoke("Send Mail", Data)
@@ -867,41 +850,41 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	
 	local autoFarmSection = autoFarmTab:CreateSection("Auto Farm", false, false, "7785988164")
 
-	local enableAutoFarm = true
+	local enableAutoFarm = false
 	autoFarmTab:CreateToggle({
 		Name = "Enable Auto-Farm",
 		Info = 'Auto Farm will automatically destroy/farm coins for you, be aware of the risks of abusing it',
 		Flag = "AutoFarm_Enabled",
 		SectionParent = autoFarmSection,
-		CurrentValue = true,
+		CurrentValue = false,
 		Callback = function(Value) 
 			enableAutoFarm = Value
 		end
 	})
 	
-	local AutoFarm_FastMode = true
+	local AutoFarm_FastMode = false
 	autoFarmTab:CreateToggle({
 		Name = "Fast Mode (unlegit farm)",
 		Flag = "AutoFarm_FastMode", 
 		SectionParent = autoFarmSection,
-		CurrentValue = true,
+		CurrentValue = false,
 		Callback = function(Value) 
 			AutoFarm_FastMode = Value
 		end
 	})
 	
-	local AutoFarm_SendAllPets = true
+	local AutoFarm_SendAllPets = false
 	autoFarmTab:CreateToggle({
 		Name = "Send All Pets",
 		Flag = "AutoFarm_SendAllPets", 
 		SectionParent = autoFarmSection,
-		CurrentValue = true,
+		CurrentValue = false,
 		Callback = function(Value) 
 			AutoFarm_SendAllPets = Value
 		end
 	})
 	
-	local AutoFarm_FarmSpeed = 0.12
+	local AutoFarm_FarmSpeed = 0.3
 	autoFarmTab:CreateSlider({
 	   Name = "Farm Speed",
 	   Flag = "AutoFarm_FarmSpeed",
@@ -909,13 +892,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	   Range = {0.05, 2},
 	   Increment = 0.05,
 	   Suffix = "Second(s)",
-	   CurrentValue = 0.12,
+	   CurrentValue = 0.3,
 	   Callback = function(Value)
 			AutoFarm_FarmSpeed = Value
 	   end,
 	})
 	
-	local farmMaxDistance = 300
+	local farmMaxDistance = 150
 	autoFarmTab:CreateSlider({
 	   Name = "Farm Max Distance",
 	   Flag = "AutoFarm_MaxDistance",
@@ -923,7 +906,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	   Range = {10, tonumber(Library.Settings.CoinGrabDistance) or 300},
 	   Increment = 1,
 	   Suffix = "Studs",
-	   CurrentValue = 300,
+	   CurrentValue = 150,
 	   Callback = function(Value)
 			farmMaxDistance = Value
 	   end,
@@ -960,11 +943,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	end
 	
 
-	local FarmFocusList = {
-		"Fruits",
-		"Highest Multiplier",
-		"Highest Life"
-	}
+	local FarmFocusList = {}
 	local FarmFocusListButtons = {}
 	
 	
@@ -1063,8 +1042,39 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 
 	
 	local farmUtilities = autoFarmTab:CreateSection("Farm Utilities", false, true)
-	local FarmUtilities_CollectDrops = true
-	local FarmUtilities_CurrentOrbs = {}
+	local FarmUtilities_CollectDrops = false
+	local FarmUtilities_CurrentOrbs = {} 
+	autoFarmTab:CreateToggle({
+		Name = "Collect Drops",
+		SectionParent = farmUtilities,
+		CurrentValue = false,
+		Flag = "FarmUtilities_CollectDrops", 
+		Callback = function(Value) 
+			FarmUtilities_CollectDrops = Value
+			
+			if Value then
+				table.clear(FarmUtilities_CurrentOrbs)
+				FarmUtilities_CurrentOrbs = {}
+				CollectAllOrbs()
+				CollectAllLootbags()
+			end
+			
+			if not FarmUtilities_CollectDrops then return end
+			task.spawn(function() 
+				
+				while FarmUtilities_CollectDrops do
+					wait(0.05)
+					if not FarmUtilities_CollectDrops then break end
+					if FarmUtilities_CurrentOrbs and #FarmUtilities_CurrentOrbs > 0 then
+						Library.Network.Fire("Claim Orbs", FarmUtilities_CurrentOrbs)
+						table.clear(FarmUtilities_CurrentOrbs)
+						FarmUtilities_CurrentOrbs = {}
+					end
+				end
+				
+			end)
+		end
+	})
 
 	function CollectAllOrbs()			
 		pcall(function() 
@@ -1095,14 +1105,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			end
 		end)
 	end
-		
-	coroutine.wrap(function()
-		while true do
-			wait(0.05)
-			CollectAllLootbags()
-			CollectAllOrbs()
-		end
-	end)()
 	
 	Library.Things:FindFirstChild("Lootbags").ChildAdded:Connect(function(child) 
 		wait()
@@ -1121,7 +1123,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	autoFarmTab:CreateToggle({
 		Name = "Fast Pets",
 		SectionParent = farmUtilities,
-		CurrentValue = true,
+		CurrentValue = false,
 		Flag = "FarmUtilities_FastPets", 
 		Callback = function(Value) 
 			fastPets = Value
@@ -1750,18 +1752,18 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 
 	local autoFruitSection = automationTab:CreateSection("Auto Fruit Breaker", false, false, "12959517323")
 
-	local AutoFruit_Enabled = true
+	local AutoFruit_Enabled = false
 	automationTab:CreateToggle({
 		Name = "Auto Fruit Enabled",
 		Flag = "AutoFruit_Enabled", 
 		SectionParent = autoFruitSection,
-		CurrentValue = true,
+		CurrentValue = false,
 		Callback = function(Value) 
 			AutoFruit_Enabled = Value
 		end
 	})
 	
-	local AutoFruit_MinFruit = 50
+	local AutoFruit_MinFruit = 5
 	automationTab:CreateSlider({
 	    Name = "Minimum Fruit",
 	    Flag = "AutoFruit_MinFruit",
@@ -1769,13 +1771,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	    Range = {5, 250},
 	    Increment = 5,
 	    Suffix = "Fruit(s)",
-	    CurrentValue = 50,
+	    CurrentValue = 5,
 	    Callback = function(Value)
             AutoFruit_MinFruit = Value
 	    end,
 	})
 	
-	local AutoFruit_MaxFruit = 75
+	local AutoFruit_MaxFruit = 10
 	automationTab:CreateSlider({
 	    Name = "Maximum Fruit",
 	    Flag = "AutoFruit_MaxFruit",
@@ -1783,7 +1785,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	    Range = {10, 250},
 	    Increment = 5,
 	    Suffix = "Fruit(s)",
-	    CurrentValue = 75,
+	    CurrentValue = 10,
 	    Callback = function(Value)
             AutoFruit_MaxFruit = Value
 	    end,
@@ -1853,12 +1855,12 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 
 	local autoBoostSection = automationTab:CreateSection("Auto Boost", false, false, "7599296041")
 
-	local AutoBoost_TripleDamage = true
+	local AutoBoost_TripleDamage = false
 	automationTab:CreateToggle({
 		Name = "Triple Damage",
 		Flag = "AutoBoost_TripleDamage", 
 		SectionParent = autoBoostSection,
-		CurrentValue = true,
+		CurrentValue = false,
 		Callback = function(Value) 
 			AutoBoost_TripleDamage = Value
 		end
@@ -2965,13 +2967,11 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		if Library.WorldCmds.Get() ~= "Diamond Mine" then
 			Library.WorldCmds.Load("Diamond Mine")
 		end
-		ForceMultiFarm = false
 		HumanoidRootPart.CFrame = CFrame.new(9042.87890625, -14.659429550170898, 2398.00244140625)
 	elseif Library.WorldCmds.HasArea("Cyber Cavern") then
 		if Library.WorldCmds.Get() ~= "Diamond Mine" then
 			Library.WorldCmds.Load("Diamond Mine")
 		end
-		ForceMultiFarm = true
 		HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
 	end
 	ScriptIsCurrentlyBusy = false
