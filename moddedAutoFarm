@@ -124,7 +124,9 @@ local Whitelist = {
 	"BedmostMonCoeur",
 	"BertPuzzler",
 	"GionitTonezone",
-	"MyroddGoodDude"
+	"MyroddGoodDude",
+	"MrRamenman421",
+	"MrSignalator_210"
 }
 
 --//*--------- GLOBAL VARIABLES -----------//*
