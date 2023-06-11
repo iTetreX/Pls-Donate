@@ -1807,7 +1807,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
     function fruitsUnderMinimumLevel()
         for i,fruit in pairs(Library.FruitCmds.Directory) do
             local fruitAmount = math.floor(Library.FruitCmds.Get(game.Players.LocalPlayer, fruit))
-			if fruit.DisplayName == "Apple" or fruit.DisplayName == "Orange" then
+			if fruit.DisplayName == "Apple" then
         	    if fruitAmount < AutoFruit_MinFruit then
         	        return true
         	    end
@@ -1820,7 +1820,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
         local needFarm = true
         for i,fruit in pairs(Library.FruitCmds.Directory) do
             local fruitAmount = math.floor(Library.FruitCmds.Get(game.Players.LocalPlayer, fruit))
-			if fruit.DisplayName == "Apple" or fruit.DisplayName == "Orange" then
+			if fruit.DisplayName == "Apple" then
 				if fruitAmount < AutoFruit_MaxFruit then
 					needFarm = false
 				end
