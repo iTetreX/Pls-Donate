@@ -343,30 +343,4 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		end
 	end
 	checkOtherSnipers()
-	
-	LocalPlayer.PlayerScripts:WaitForChild("Scripts", 10):WaitForChild("Game", 10):WaitForChild("Coins", 10)
-	LocalPlayer.PlayerScripts:WaitForChild("Scripts", 10):WaitForChild("Game", 10):WaitForChild("Pets", 10)
-	wait()
-	-- local orbsScript = getsenv(game.Players.LocalPlayer.PlayerScripts.Scripts.Game:WaitForChild("Orbs", 10))
-	-- local CollectOrb = orbsScript.Collect
-	
-	local GetRemoteFunction = debug.getupvalue(Library.Network.Invoke, 2)
-		-- OrbList = debug.getupvalue(orbsScript.Collect, 1)
-	local CoinsTable = debug.getupvalue(getsenv(LocalPlayer.PlayerScripts.Scripts.Game:WaitForChild("Coins", 10)).DestroyAllCoins, 1)
-	local RenderedPets = debug.getupvalue(getsenv(LocalPlayer.PlayerScripts.Scripts.Game:WaitForChild("Pets", 10)).NetworkUpdate, 1)
-	
-	
-	local IsHardcore = Library.Shared.IsHardcore
-
-	local AllGameWorlds = {}
-	for name, world in pairs(Library.Directory.Worlds) do 
-		if name ~= "WIP" and name ~= "Trading Plaza" and not world.disabled and world.worldOrder and world.worldOrder ~= 0 then
-			world.name = name
-			table.insert(AllGameWorlds, world)
-		end
-	end
-	
-	table.sort(AllGameWorlds, function(a, b) 
-		return a.worldOrder < b.worldOrder
-	end)
 end
