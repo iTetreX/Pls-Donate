@@ -138,7 +138,6 @@ local Humanoid = nil
 local HumanoidRootPart = nil
 local CurrentWorld = ""
 local CurrentPosition = nil
-local scriptLoaded = false
 
 local Settings_DisableRendering = false
 
@@ -272,7 +271,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 					sound.Volume = 0
 				end
 				sound:Play()
-				getfenv(originalPlay).AddToGarbageCollection(sound, isGargabe)
+				--getfenv(originalPlay).AddToGarbageCollection(sound, isGargabe)
 				return sound
 			end
 			
@@ -1831,7 +1830,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
     end
 
     coroutine.wrap(function() 
-		repeat wait() until scriptLoaded
         while true do
             if fruitsUnderMinimumLevel() then
                 if AutoFruit_Enabled and not ScriptIsCurrentlyBusy then
@@ -1841,7 +1839,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 
 		            if Library.WorldCmds.Get() ~= "Cat" then
 		            	Library.WorldCmds.Load("Cat")
-						Teleport()
 		            end
 		            HumanoidRootPart.CFrame = CFrame.new(3643.93311, -16.6020546, 3171.11816)
 
@@ -1850,14 +1847,12 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 					if Library.WorldCmds.HasArea("Mystic Mine") then
 						if Library.WorldCmds.Get() ~= "Diamond Mine" then
 							Library.WorldCmds.Load("Diamond Mine")
-							Teleport()
 						end
 						HumanoidRootPart.CFrame = CFrame.new(9042.87890625, -14.659429550170898, 2398.00244140625)
 						ForceMultiFarm = false
 					elseif Library.WorldCmds.HasArea("Cyber Cavern") then
 						if Library.WorldCmds.Get() ~= "Diamond Mine" then
 							Library.WorldCmds.Load("Diamond Mine")
-							Teleport()
 						end
 						HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
 						ForceMultiFarm = true
@@ -2998,9 +2993,5 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		end
 		HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
 	end
-	wait(1)
 	ScriptIsCurrentlyBusy = false
 end
-
-print("Script Loaded")
-scriptLoaded = true
