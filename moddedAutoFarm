@@ -138,6 +138,7 @@ local Humanoid = nil
 local HumanoidRootPart = nil
 local CurrentWorld = ""
 local CurrentPosition = nil
+local scriptLoaded = false
 
 local Settings_DisableRendering = false
 
@@ -2993,5 +2994,8 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		end
 		HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
 	end
+	wait(1)
 	ScriptIsCurrentlyBusy = false
 end
+
+scriptLoaded = true
