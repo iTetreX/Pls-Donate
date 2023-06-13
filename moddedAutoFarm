@@ -842,6 +842,17 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	})
 
 	autoFarmTab:CreateButton({
+		Name = "Teleport Mine Test Location",
+		CurrentValue = false,
+		Interact = "",
+		SectionParent = MiscSection,
+		Callback = function(Value)
+			-- Go to Spawn World
+			Library.WorldCmds.Load("Cat")
+		end
+	})
+
+	autoFarmTab:CreateButton({
 		Name = "Teleport Mine Farm Location",
 		CurrentValue = false,
 		Interact = "",
@@ -1839,10 +1850,10 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
                     ForceAutoFarm = true
 					ForceMultiFarm = true
 
-		            if Library.WorldCmds.Get() ~= "Cat" then
-						print("Load Cat World")
-		            	Library.WorldCmds.Load("Cat")
-		            end
+		            --if Library.WorldCmds.Get() ~= "Cat" then
+					--	print("Load Cat World")
+		            --	Library.WorldCmds.Load("Cat")
+		            --end
 		            HumanoidRootPart.CFrame = CFrame.new(3643.93311, -16.6020546, 3171.11816)
 
                     repeat wait(1) until fruitsOverMaximumLevel()
