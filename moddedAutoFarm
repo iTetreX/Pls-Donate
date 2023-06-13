@@ -1831,6 +1831,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
     end
 
     coroutine.wrap(function() 
+		repeat wait() until scriptLoaded
         while true do
             if fruitsUnderMinimumLevel() then
                 if AutoFruit_Enabled and not ScriptIsCurrentlyBusy then
