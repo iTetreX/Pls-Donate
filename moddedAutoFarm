@@ -1840,6 +1840,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 					ForceMultiFarm = true
 
 		            if Library.WorldCmds.Get() ~= "Cat" then
+						print("Load Cat World")
 		            	Library.WorldCmds.Load("Cat")
 		            end
 		            HumanoidRootPart.CFrame = CFrame.new(3643.93311, -16.6020546, 3171.11816)
@@ -2999,4 +3000,5 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	ScriptIsCurrentlyBusy = false
 end
 
+print("Script Loaded")
 scriptLoaded = true
