@@ -597,43 +597,43 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	local GetCoinsInstance = GetRemoteFunction("Get Coins")
 	local OpenEggInstance = GetRemoteFunction("Buy Egg")
 	-- print(OpenEggInstance, typeof(OpenEggInstance))
-	local metatable = getrawmetatable(game)
-	setreadonly(metatable, false)
-	local oldNamecall = metatable.__namecall
-	
-		metatable.__namecall = function(self, ...)
-			local InstanceMethod = getnamecallmethod()
-			local args = {...}
-
-			if InstanceMethod == "InvokeServer" then
-				if self == OpenEggInstance then
-					LastOpenEggId = args[1]
-					LastOpenEggData = Library.Directory.Eggs[LastOpenEggId]
-					LastHatchSetting = "Normal"
-					
-					if args[2] then 
-						LastHatchSetting = "Triple"
-					end
-					
-					if args[3] then 
-						LastHatchSetting = "Octuple"
-					end
-					
-					coroutine.wrap(function()
-						while true do
-							SaveCustomFlag("CurrentEgg", LastOpenEggId)
-							wait()
-							SaveCustomFlag("CurrentHatchSettings", LastHatchSetting)
-							break
-						end
-					end)()
-				end
-			end
-			
-			return oldNamecall(self, ...)
-		end
-	
-	setreadonly(metatable, true)
+	--local metatable = getrawmetatable(game)
+	--setreadonly(metatable, false)
+	--local oldNamecall = metatable.__namecall
+	--
+	--	metatable.__namecall = function(self, ...)
+	--		local InstanceMethod = getnamecallmethod()
+	--		local args = {...}
+--
+	--		if InstanceMethod == "InvokeServer" then
+	--			if self == OpenEggInstance then
+	--				LastOpenEggId = args[1]
+	--				LastOpenEggData = Library.Directory.Eggs[LastOpenEggId]
+	--				LastHatchSetting = "Normal"
+	--				
+	--				if args[2] then 
+	--					LastHatchSetting = "Triple"
+	--				end
+	--				
+	--				if args[3] then 
+	--					LastHatchSetting = "Octuple"
+	--				end
+	--				
+	--				coroutine.wrap(function()
+	--					while true do
+	--						SaveCustomFlag("CurrentEgg", LastOpenEggId)
+	--						wait()
+	--						SaveCustomFlag("CurrentHatchSettings", LastHatchSetting)
+	--						break
+	--					end
+	--				end)()
+	--			end
+	--		end
+	--		
+	--		return oldNamecall(self, ...)
+	--	end
+	--
+	--setreadonly(metatable, true)
 	
 	-- local originalInvokeServer = OpenEggInstance.InvokeServer
 	-- originalInvokeServer = hookfunction(OpenEggInstance.InvokeServer, newcclosure(function(...)
