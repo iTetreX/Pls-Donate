@@ -189,12 +189,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	while not Library.Loaded do task.wait() end
 
 	local AllPets = require(game:GetService("ReplicatedStorage")["__DIRECTORY"].Pets["Grab All Pets"])
-	
-	Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-	Humanoid = Character:WaitForChild("Humanoid")
-	HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
-	
-	
+
 	local bypassSuccess, bypassError = pcall(function()
 		if not Library.Network then 
 			LocalPlayer:Kick("Network not found, can't bypass!")
@@ -277,9 +272,9 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			
 			return originalPlay(...)
 		end
-	
+
 	end)
-	
+
 	if not bypassSuccess then
 		print(bypassError)
 		LocalPlayer:Kick("Error while bypassing network, try again or wait for an update!")
@@ -604,7 +599,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	--	metatable.__namecall = function(self, ...)
 	--		local InstanceMethod = getnamecallmethod()
 	--		local args = {...}
---
+
 	--		if InstanceMethod == "InvokeServer" then
 	--			if self == OpenEggInstance then
 	--				LastOpenEggId = args[1]
