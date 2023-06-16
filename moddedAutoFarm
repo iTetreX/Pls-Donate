@@ -596,7 +596,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		-- return originalInvokeServer(...)
 	-- end))
 	
-
+	function loadWorld(worldName)
+		repeat wait(5)
+			if Library.WorldCmds.Get() ~= worldName then
+				Library.WorldCmds.Load(worldName)
+			end
+		until Library.WorldCmds.Get() == worldName
+	end
 	
 	local fastPets = false
 	local Original_HasPower = Library.Shared.HasPower
@@ -780,12 +786,12 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			-- Go to Spawn World
 			if Library.WorldCmds.HasArea("Mystic Mine") then
 				if Library.WorldCmds.Get() ~= "Diamond Mine" then
-					Library.WorldCmds.Load("Diamond Mine")
+					LoadWorld("Diamond Mine")
 				end
 				HumanoidRootPart.CFrame = CFrame.new(9042.87890625, -14.659429550170898, 2398.00244140625)
 			elseif Library.WorldCmds.HasArea("Cyber Cavern") then
 				if Library.WorldCmds.Get() ~= "Diamond Mine" then
-					Library.WorldCmds.Load("Diamond Mine")
+					LoadWorld("Diamond Mine")
 				end
 				HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
 			end
@@ -1777,13 +1783,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	
 					if Library.WorldCmds.HasArea("Mystic Mine") then
 						if Library.WorldCmds.Get() ~= "Diamond Mine" then
-							Library.WorldCmds.Load("Diamond Mine")
+							LoadWorld("Diamond Mine")
 						end
 						HumanoidRootPart.CFrame = CFrame.new(9042.87890625, -14.659429550170898, 2398.00244140625)
 						ForceMultiFarm = false
 					elseif Library.WorldCmds.HasArea("Cyber Cavern") then
 						if Library.WorldCmds.Get() ~= "Diamond Mine" then
-							Library.WorldCmds.Load("Diamond Mine")
+							LoadWorld("Diamond Mine")
 						end
 						HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
 						ForceMultiFarm = true
@@ -2916,13 +2922,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	if Library.WorldCmds.HasArea("Mystic Mine") then
 		repeat wait() until workspace:GetServerTimeNow() - GameLibrary.Save.Get().DiamondMineData.LastDiamondMineTeleport >= GameLibrary.Settings.DiamondMineCooldown
 		if Library.WorldCmds.Get() ~= "Diamond Mine" then
-			Library.WorldCmds.Load("Diamond Mine")
+			LoadWorld("Diamond Mine")
 		end
 		HumanoidRootPart.CFrame = CFrame.new(9042.87890625, -14.659429550170898, 2398.00244140625)
 	elseif Library.WorldCmds.HasArea("Cyber Cavern") then
 		repeat wait() until workspace:GetServerTimeNow() - GameLibrary.Save.Get().DiamondMineData.LastDiamondMineTeleport >= GameLibrary.Settings.DiamondMineCooldown
 		if Library.WorldCmds.Get() ~= "Diamond Mine" then
-			Library.WorldCmds.Load("Diamond Mine")
+			LoadWorld("Diamond Mine")
 		end
 		HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
 	end
