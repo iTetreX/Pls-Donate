@@ -1766,20 +1766,16 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
         while true do
             if fruitsUnderMinimumLevel() or ForceFruitFarm then
                 if AutoFruit_Enabled and not ScriptIsCurrentlyBusy then
-					print("Starting Farm Fruit")
                     ScriptIsCurrentlyBusy = true
                     ForceAutoFarm = true
 					ForceMultiFarm = true
 	
 		            if Library.WorldCmds.Get() ~= "Cat" then
-						print("Loading Cat")
 						Library.WorldCmds.Load("Cat")
 		            end
 		            HumanoidRootPart.CFrame = CFrame.new(3643.93311, -16.6020546, 3171.11816)
 	
-					print("Fruit Farm Started")
                     repeat wait(1) until fruitsOverMaximumLevel() and not ForceFruitFarm
-					print("Farming Ended")
 	
 					if Library.WorldCmds.HasArea("Mystic Mine") then
 						if Library.WorldCmds.Get() ~= "Diamond Mine" then
@@ -1794,7 +1790,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 						HumanoidRootPart.CFrame = CFrame.new(8698.83398, -15.3602266, 3025.68335)
 						ForceMultiFarm = true
 					end
-					print("Teleported Mine")
 	
                     ForceAutoFarm = false
                     ScriptIsCurrentlyBusy = false
@@ -2917,13 +2912,10 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 
 	wait(1)
 	if not (workspace:GetServerTimeNow() - Library.Save.Get().DiamondMineData.LastDiamondMineTeleport >= Library.Settings.DiamondMineCooldown) then
-		print("Mine Collapsed")
 		ForceFruitFarm = true
-		print(workspace:GetServerTimeNow() - Library.Save.Get().DiamondMineData.LastDiamondMineTeleport >= Library.Settings.DiamondMineCooldown)
 		repeat wait() until workspace:GetServerTimeNow() - Library.Save.Get().DiamondMineData.LastDiamondMineTeleport >= Library.Settings.DiamondMineCooldown
 		ForceFruitFarm = false
 	else
-		print("Teleporting Mine")
 		if ScriptIsCurrentlyBusy then
 			repeat wait() until not ScriptIsCurrentlyBusy
 		end
