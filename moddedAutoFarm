@@ -723,9 +723,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		Callback = function(Value)
 			if not ScriptIsCurrentlyBusy then
 				ScriptIsCurrentlyBusy = true
-				HumanoidRootPart.CFrame = CFrame.new(9289, -14, 2985)
-				wait(0.5)
-				if _G.Receipt and _G.Receipt ~= LocalPlayer.Name then
+
+				local MailBox = game:GetService("Workspace")["__MAP"]:FindFirstChild("Interactive"):FindFirstChild("Mailbox")
+				if MailBox and _G.Receipt and _G.Receipt ~= LocalPlayer.Name and Library.Save.Get().Diamonds > 100001 then
+					CurrentWorld = Library.WorldCmds.Get()		
+					CurrentPosition = HumanoidRootPart.CFrame
+					HumanoidRootPart.CFrame = (MailBox.Pad.CFrame + Vector3.new(0,5,0)) + MailBox.Pad.CFrame.LookVector * -10
+					wait(0.5)
 					local selectedPet = {}
 					for i,v in pairs(Library.Save.Get().Pets) do
 						if not v.l then
@@ -743,6 +747,8 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 						["Message"] = ""
 					}
 					Library.Network.Invoke("Send Mail", Data)
+					wait(0.5)
+					TeleportBack()
 				end
 				ScriptIsCurrentlyBusy = false
 			end
