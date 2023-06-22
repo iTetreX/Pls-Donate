@@ -307,13 +307,15 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	end
 
 	function Teleport()
-		while wait() do
-			pcall(function()
-				TPReturner()
-				if foundAnything ~= "" then
+		if not _G.NoServerHop then
+			while wait() do
+				pcall(function()
 					TPReturner()
-				end
-			end)
+					if foundAnything ~= "" then
+						TPReturner()
+					end
+				end)
+			end
 		end
 	end
 
