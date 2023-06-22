@@ -104,4 +104,8 @@ function TGuiLibrary:GemMaxedWarn(toggle)
     GemMaxedWarn.Visible = toggle
 end
 
+function TGuiLibrary:Destroy()
+    TGui:Destroy()
+end
+
 return TGuiLibrary
