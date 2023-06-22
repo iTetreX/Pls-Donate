@@ -678,11 +678,15 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			TGui:UpdateGemEarn(MinedGem.." / "..MaxEarn)
 	
 			if Library.Save.Get().DiamondMineData.Earned >= Library.Settings.DiamondMineMaxEarn then
-				TGui:GemMaxedWarn(true)
-				MinedToday = true
+				if Library.Signal.Invoke("Get Diamond Mine Collpase Time") then
+					TGui:GemMaxedWarn(true)
+					MinedToday = true
+				end
 			else
-				TGui:GemMaxedWarn(false)
-				MinedToday = false
+				if not Library.Signal.Invoke("Get Diamond Mine Collpase Time") then
+					TGui:GemMaxedWarn(false)
+					MinedToday = false
+				end
 			end
 		end
 	end)()
