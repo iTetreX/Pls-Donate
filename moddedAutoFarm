@@ -680,12 +680,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 				if Library.Signal.Invoke("Get Diamond Mine Collpase Time") then
 					TGui:GemMaxedWarn(true)
 					MinedToday = true
+				else
+					MinedGem = 0
 				end
 			else
 				if not Library.Signal.Invoke("Get Diamond Mine Collpase Time") then
 					TGui:GemMaxedWarn(false)
 					MinedToday = false
-					MinedGem = 0
 				end
 			end
 
