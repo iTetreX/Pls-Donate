@@ -93,7 +93,6 @@ local ParentObject = function(Gui)
     if not success and failure then
         Gui.Parent = LocalPlayer:FindFirstChildWhichIsA("PlayerGui")
     end
-	_G.LastRayField = Rayfield
 end
 ParentObject(TGui)
 
