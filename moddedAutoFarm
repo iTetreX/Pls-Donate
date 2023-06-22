@@ -662,6 +662,27 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	-- local Rayfield = (isfile("UI/ArrayField.lua") and loadstring(readfile("UI/ArrayField.lua"))()) or loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/ArrayField/main/v2.lua"))()
 	assert(Rayfield, "Oopps! Rayfield has not been loaded. Maybe try re-joining?") 
 	
+	local TGui = nil
+	if isfile("UI/TGuiSource.lua") then
+		TGui = loadstring(readfile("UI/TGuiSource.lua"))()
+	else
+		TGui = loadstring(game:HttpGet("https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/TGui"))()
+	end
+	assert(TGui, "Oopps! TGui has not been loaded. Maybe try re-joining?") 
+	
+	coroutine.wrap(function()
+		while wait(3) do
+			local MinedGem = Library.Functions.NumberShorten(Library.Save.Get().DiamondMineData.Earned)
+			local MaxEarn = Library.Functions.NumberShorten(Library.Settings.DiamondMineMaxEarn)
+			TGui:UpdateGemEarn(MinedGem.." / "..MaxEarn)
+	
+			if Library.Save.Get().DiamondMineData.Earned >= Library.Settings.DiamondMineMaxEarn then
+				TGui:GemMaxedWarn(true)
+			else
+				TGui:GemMaxedWarn(false)
+			end
+		end
+	end)()
 
 	local Window = Rayfield:CreateWindow({
 	   Name = "Pet Simulator GUI | by Rafa ",
