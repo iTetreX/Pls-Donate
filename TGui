@@ -1,4 +1,4 @@
-local TGui = {}
+local TGuiLibrary = {}
 
 local TGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -7,9 +7,13 @@ local UICorner = Instance.new("UICorner")
 local gemIcon = Instance.new("ImageLabel")
 local EarnedGem = Instance.new("TextLabel")
 local GemMaxedWarn = Instance.new("TextLabel")
+local GemMaxedWarnUIStroke = Instance.new("UIStroke")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
 
 TGui.Name = "TGui"
-TGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TGui.Parent = game.CoreGui
 TGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainFrame.Name = "MainFrame"
@@ -34,8 +38,8 @@ gemIcon.Name = "gemIcon"
 gemIcon.Parent = GemTracker
 gemIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 gemIcon.BackgroundTransparency = 1.000
-gemIcon.Position = UDim2.new(0.0124999881, 0, 0.0834727064, 0)
-gemIcon.Size = UDim2.new(0.150777668, 0, 0.818246305, 0)
+gemIcon.Position = UDim2.new(0.0124999499, 0, 0.0834727064, 0)
+gemIcon.Size = UDim2.new(0.152087361, 0, 0.818246305, 0)
 gemIcon.Image = "rbxassetid://7786012670"
 
 EarnedGem.Name = "EarnedGem"
@@ -65,9 +69,40 @@ GemMaxedWarn.TextColor3 = Color3.fromRGB(255, 0, 0)
 GemMaxedWarn.TextScaled = true
 GemMaxedWarn.TextSize = 14.000
 GemMaxedWarn.TextWrapped = true
+GemMaxedWarn.Visible = false
 
-function TGui:UpdateGemEarn(text)
-    EarnedGem.text = text
+GemMaxedWarnUIStroke.Name = "GemMaxedWarnUIStroke"
+GemMaxedWarnUIStroke.Parent = GemMaxedWarn
+GemMaxedWarnUIStroke.Thickness = 5
+
+UIAspectRatioConstraint.Parent = MainFrame
+UIAspectRatioConstraint.AspectRatio = 0.800
+
+local ParentObject = function(Gui)
+    local success, failure = pcall(function()
+        if get_hidden_gui or gethui then
+            local hiddenUI = get_hidden_gui or gethui
+            Gui.Parent = hiddenUI()
+        elseif (not is_sirhurt_closure) and (syn and syn.protect_gui) then
+            syn.protect_gui(Gui)
+            Gui.Parent = CoreGui
+        elseif CoreGui then
+            Gui.Parent = CoreGui
+        end
+    end)
+    if not success and failure then
+        Gui.Parent = LocalPlayer:FindFirstChildWhichIsA("PlayerGui")
+    end
+	_G.LastRayField = Rayfield
+end
+ParentObject(TGui)
+
+function TGuiLibrary:UpdateGemEarn(text)
+    EarnedGem.Text = text
 end
 
-return TGui
+function TGuiLibrary:GemMaxedWarn(toggle)
+    GemMaxedWarn.Visible = toggle
+end
+
+return TGuiLibrary
