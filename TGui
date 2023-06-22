@@ -20,7 +20,7 @@ MainFrame.Name = "MainFrame"
 MainFrame.Parent = TGui
 MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 MainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-MainFrame.BackgroundTransparency = 0.800
+MainFrame.BackgroundTransparency = 1
 MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 MainFrame.Size = UDim2.new(0.5, 0, 1, 0)
 
