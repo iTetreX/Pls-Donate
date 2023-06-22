@@ -163,6 +163,7 @@ local ScriptIsCurrentlyBusy = false
 local ForceMultiFarm = false
 local ForceAutoFarm = false
 local ForceFruitFarm = false
+local MinedToday = false
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 local Humanoid = Character:WaitForChild("Humanoid")
 local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
@@ -678,8 +679,10 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	
 			if Library.Save.Get().DiamondMineData.Earned >= Library.Settings.DiamondMineMaxEarn then
 				TGui:GemMaxedWarn(true)
+				MinedToday = true
 			else
 				TGui:GemMaxedWarn(false)
+				MinedToday = false
 			end
 		end
 	end)()
@@ -1312,7 +1315,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 
 	coroutine.wrap(function()
 		while true do 
-				if (enableAutoFarm and not ScriptIsCurrentlyBusy) or ForceAutoFarm then 
+				if ((enableAutoFarm and not ScriptIsCurrentlyBusy) or ForceAutoFarm) and not MinedToday then 
 					local CoinsTable = debug.getupvalue(getsenv(LocalPlayer.PlayerScripts.Scripts.Game:WaitForChild("Coins", 10)).DestroyAllCoins, 1)
 					RenderedPets = debug.getupvalue(getsenv(LocalPlayer.PlayerScripts.Scripts.Game.Pets).NetworkUpdate, 1)
 					
