@@ -679,7 +679,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			if Library.Save.Get().DiamondMineData.Earned >= Library.Settings.DiamondMineMaxEarn then
 				TGui:GemMaxedWarn(true)
 			else
-				TGui:GemMaxedWarn(true)
+				TGui:GemMaxedWarn(false)
 			end
 		end
 	end)()
