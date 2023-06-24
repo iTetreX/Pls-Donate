@@ -203,7 +203,7 @@ end
 
 local createdMasteryTrackers = {}
 function TGuiLibrary:CreateMasterTracker(masteryName)
-    local Mastery = Library.Directory.Mastery[masteryName]
+    local Mastery = GameLibrary.Directory.Mastery[masteryName]
     if Mastery and not createdMasteryTrackers[masteryName] then
         local newTrackerGui = MasteryTemplate:Clone()
         newTrackerGui.Icon.IconImage.Image = Mastery.icon
