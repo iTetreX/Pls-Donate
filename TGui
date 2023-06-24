@@ -1,4 +1,5 @@
 local TGuiLibrary = {}
+local GameLibrary = require(game:GetService("ReplicatedStorage").Library)
 
 local TGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -9,18 +10,28 @@ local EarnedGem = Instance.new("TextLabel")
 local GemMaxedWarn = Instance.new("TextLabel")
 local GemMaxedWarnUIStroke = Instance.new("UIStroke")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local MasteryTracker = Instance.new("Frame")
+local MasteryTemplate = Instance.new("Frame")
+local Icon = Instance.new("Frame")
+local IconImage = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local Level = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Level_2 = Instance.new("TextLabel")
+local UIGridLayout = Instance.new("UIGridLayout")
 
 --Properties:
 
 TGui.Name = "TGui"
-TGui.Parent = game.CoreGui
+TGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 TGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = TGui
 MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 MainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-MainFrame.BackgroundTransparency = 1
+MainFrame.BackgroundTransparency = 1.000
 MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 MainFrame.Size = UDim2.new(0.5, 0, 1, 0)
 
@@ -51,7 +62,7 @@ EarnedGem.BackgroundTransparency = 1.000
 EarnedGem.Position = UDim2.new(0.566487312, 0, 0.495236397, 0)
 EarnedGem.Size = UDim2.new(0.75999999, 0, 0.949999988, 0)
 EarnedGem.Font = Enum.Font.SourceSansBold
-EarnedGem.Text = "100b / 100b"
+EarnedGem.Text = "loading"
 EarnedGem.TextColor3 = Color3.fromRGB(255, 255, 255)
 EarnedGem.TextScaled = true
 EarnedGem.TextSize = 14.000
@@ -63,13 +74,13 @@ GemMaxedWarn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GemMaxedWarn.BackgroundTransparency = 1.000
 GemMaxedWarn.Position = UDim2.new(0, 0, 0.0317195319, 0)
 GemMaxedWarn.Size = UDim2.new(1, 0, 0.162947461, 0)
+GemMaxedWarn.Visible = false
 GemMaxedWarn.Font = Enum.Font.SourceSansBold
 GemMaxedWarn.Text = "Gem Maxed"
 GemMaxedWarn.TextColor3 = Color3.fromRGB(255, 0, 0)
 GemMaxedWarn.TextScaled = true
 GemMaxedWarn.TextSize = 14.000
 GemMaxedWarn.TextWrapped = true
-GemMaxedWarn.Visible = false
 
 GemMaxedWarnUIStroke.Name = "GemMaxedWarnUIStroke"
 GemMaxedWarnUIStroke.Parent = GemMaxedWarn
@@ -77,6 +88,88 @@ GemMaxedWarnUIStroke.Thickness = 5
 
 UIAspectRatioConstraint.Parent = MainFrame
 UIAspectRatioConstraint.AspectRatio = 0.800
+
+MasteryTracker.Name = "MasteryTracker"
+MasteryTracker.Parent = MainFrame
+MasteryTracker.AnchorPoint = Vector2.new(0, 0.5)
+MasteryTracker.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MasteryTracker.BackgroundTransparency = 1.000
+MasteryTracker.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MasteryTracker.BorderSizePixel = 0
+MasteryTracker.Position = UDim2.new(0, 0, 0.640702844, 0)
+MasteryTracker.Size = UDim2.new(1, 0, 0.174999997, 0)
+
+MasteryTemplate.Name = "MasteryTemplate"
+MasteryTemplate.Parent = MasteryTracker
+MasteryTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MasteryTemplate.BackgroundTransparency = 1.000
+MasteryTemplate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MasteryTemplate.BorderSizePixel = 0
+MasteryTemplate.Position = UDim2.new(3.18422089e-08, 0, 3.51779079e-07, 0)
+MasteryTemplate.Size = UDim2.new(0, 68, 0, 86)
+
+Icon.Name = "Icon"
+Icon.Parent = MasteryTemplate
+Icon.AnchorPoint = Vector2.new(0.5, 0)
+Icon.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Icon.BorderSizePixel = 0
+Icon.Position = UDim2.new(0.5, 0, 0, 0)
+Icon.Size = UDim2.new(0.775733173, 0, 0.756903529, 0)
+Icon.BackgroundTransparency = 1
+
+IconImage.Name = "IconImage"
+IconImage.Parent = Icon
+IconImage.AnchorPoint = Vector2.new(0.5, 0.5)
+IconImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IconImage.BackgroundTransparency = 1.000
+IconImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IconImage.BorderSizePixel = 0
+IconImage.Position = UDim2.new(0.5, 0, 0.5, 0)
+IconImage.Size = UDim2.new(1, 0, 1, 0)
+IconImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Icon.BackgroundTransparency = 1
+Icon.ImageTransparency = 1
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = IconImage
+
+UICorner_3.CornerRadius = UDim.new(1, 0)
+UICorner_3.Parent = Icon
+
+Level.Name = "Level"
+Level.Parent = MasteryTemplate
+Level.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Level.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Level.BorderSizePixel = 0
+Level.Position = UDim2.new(0, 0, 0.597949505, 0)
+Level.Size = UDim2.new(1, 0, 0.398782521, 0)
+Level.BackgroundTransparency = 1
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = Level
+
+Level_2.Name = "Level"
+Level_2.Parent = Level
+Level_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Level_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Level_2.BackgroundTransparency = 1.000
+Level_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Level_2.BorderSizePixel = 0
+Level_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Level_2.Size = UDim2.new(0.725485206, 0, 1, 0)
+Level_2.Font = Enum.Font.SourceSansBold
+Level_2.Text = "loading"
+Level_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Level_2.TextScaled = true
+Level_2.TextSize = 14.000
+Level_2.TextWrapped = true
+Level_2.TextTransparency = 1
+
+UIGridLayout.Parent = MasteryTracker
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0.215000004, 0, 1, 0)
 
 local ParentObject = function(Gui)
     local success, failure = pcall(function()
@@ -106,6 +199,30 @@ end
 
 function TGuiLibrary:Destroy()
     TGui:Destroy()
+end
+
+local createdMasteryTrackers = {}
+function TGuiLibrary:CreateMasterTracker(masteryName)
+    local Mastery = Library.Directory.Mastery[masteryName]
+    if Mastery and not createdMasteryTrackers[masteryName] then
+        local newTrackerGui = MasteryTemplate:Clone()
+        newTrackerGui.Icon.IconImage.Image = Mastery.icon
+
+        newTrackerGui.Icon.BackgroundTransparency = 0
+        newTrackerGui.Icon.IconImage.ImageTransparency = 0
+
+        newTrackerGui.Level.BackgroundTransparency = 0
+        newTrackerGui.Level.Level.TextTransparency = 0
+
+        createdMasteryTrackers[masteryName] = newTrackerGui
+    end
+end
+
+function TGuiLibrary:UpdateMasteryTracker(masteryName, level)  
+    local TrackerGui = createdMasteryTrackers[masteryName]
+    if TrackerGui then
+        TrackerGui.Level.Level.Text = level
+    end
 end
 
 return TGuiLibrary
