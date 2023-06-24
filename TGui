@@ -11,6 +11,7 @@ local GemMaxedWarn = Instance.new("TextLabel")
 local GemMaxedWarnUIStroke = Instance.new("UIStroke")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local MasteryTracker = Instance.new("Frame")
+local MasterTemplateFolder = Instance.new("Folder")
 local MasteryTemplate = Instance.new("Frame")
 local Icon = Instance.new("Frame")
 local IconImage = Instance.new("ImageLabel")
@@ -99,8 +100,10 @@ MasteryTracker.BorderSizePixel = 0
 MasteryTracker.Position = UDim2.new(0, 0, 0.640702844, 0)
 MasteryTracker.Size = UDim2.new(1, 0, 0.174999997, 0)
 
+MasterTemplateFolder.Parent = MasteryTracker
+
 MasteryTemplate.Name = "MasteryTemplate"
-MasteryTemplate.Parent = MasteryTracker
+MasteryTemplate.Parent = MasterTemplateFolder
 MasteryTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MasteryTemplate.BackgroundTransparency = 1.000
 MasteryTemplate.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -206,6 +209,7 @@ function TGuiLibrary:CreateMasterTracker(masteryName)
     local Mastery = GameLibrary.Directory.Mastery[masteryName]
     if Mastery and not createdMasteryTrackers[masteryName] then
         local newTrackerGui = MasteryTemplate:Clone()
+        newTrackerGui.Parent = MasteryTracker
         newTrackerGui.Icon.IconImage.Image = Mastery.icon
 
         newTrackerGui.Icon.BackgroundTransparency = 0
