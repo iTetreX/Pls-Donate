@@ -158,7 +158,6 @@ local Whitelist = {
 	"GirlLegionarius",
 	"THE_THUGGUY317",
 	"MrFencingguy_873",
-	"TheLunch857",
 	"TheEnterpriseman862",
 	"MrHolidayator884",
 	"Radarguy266",
@@ -168,7 +167,7 @@ local Whitelist = {
 	"Wormanator287",
 	"TheResemblanceman785",
 	"MrFreezingguy_76",
-	"TheInhabitantman5"
+	"Diary_676"
 }
 
 --//*--------- GLOBAL VARIABLES -----------//*
