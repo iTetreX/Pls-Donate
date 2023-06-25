@@ -1,5 +1,4 @@
 local TGuiLibrary = {}
-local GameLibrary = require(game:GetService("ReplicatedStorage").Library)
 
 local TGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -129,7 +128,7 @@ IconImage.BackgroundTransparency = 1.000
 IconImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IconImage.BorderSizePixel = 0
 IconImage.Position = UDim2.new(0.5, 0, 0.5, 0)
-IconImage.Size = UDim2.new(1, 0, 1, 0)
+IconImage.Size = UDim2.new(0.9, 0, 0.9, 0)
 IconImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 IconImage.BackgroundTransparency = 1
 IconImage.ImageTransparency = 1
@@ -205,12 +204,11 @@ function TGuiLibrary:Destroy()
 end
 
 local createdMasteryTrackers = {}
-function TGuiLibrary:CreateMasterTracker(masteryName)
-    local Mastery = GameLibrary.Directory.Mastery[masteryName]
-    if Mastery and not createdMasteryTrackers[masteryName] then
+function TGuiLibrary:CreateMasterTracker(masteryName, icon)
+    if not createdMasteryTrackers[masteryName] then
         local newTrackerGui = MasteryTemplate:Clone()
         newTrackerGui.Parent = MasteryTracker
-        newTrackerGui.Icon.IconImage.Image = Mastery.icon
+        newTrackerGui.Icon.IconImage.Image = icon
 
         newTrackerGui.Icon.BackgroundTransparency = 0
         newTrackerGui.Icon.IconImage.ImageTransparency = 0
