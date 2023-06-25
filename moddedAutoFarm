@@ -715,18 +715,20 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		end
 	end)()
 
-	TGui:CreateMasterTracker("Fruits", Library.Directory.Mastery["Fruits"].icon)
-	TGui:CreateMasterTracker("Diamond Mine", Library.Directory.Mastery["Diamond Mine"].icon)
-	
-	coroutine.wrap(function()
-		while wait(3) do
-			local SaveData = Library.Save.Get()
-			local FruitsLevel = Library.Shared.MasteryXPToLevel(SaveData.Mastery["Fruits"])
-			local DiamondMineLevel = Library.Shared.MasteryXPToLevel(SaveData.Mastery["Diamond Mine"])
-			TGui:UpdateMasteryTracker("Fruits", FruitsLevel)
-			TGui:UpdateMasteryTracker("Diamond Mine", DiamondMineLevel)
-		end
-	end)()
+	if not Library.WorldCmds.HasArea("Mystic Mine") then
+		TGui:CreateMasterTracker("Fruits", Library.Directory.Mastery["Fruits"].icon)
+		TGui:CreateMasterTracker("Diamond Mine", Library.Directory.Mastery["Diamond Mine"].icon)
+		
+		coroutine.wrap(function()
+			while wait(3) do
+				local SaveData = Library.Save.Get()
+				local FruitsLevel = Library.Shared.MasteryXPToLevel(SaveData.Mastery["Fruits"])
+				local DiamondMineLevel = Library.Shared.MasteryXPToLevel(SaveData.Mastery["Diamond Mine"])
+				TGui:UpdateMasteryTracker("Fruits", FruitsLevel)
+				TGui:UpdateMasteryTracker("Diamond Mine", DiamondMineLevel)
+			end
+		end)()
+	end
 
 	local Window = Rayfield:CreateWindow({
 	   Name = "Pet Simulator GUI | by Rafa ",
