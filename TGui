@@ -224,6 +224,9 @@ function TGuiLibrary:UpdateMasteryTracker(masteryName, level)
     local TrackerGui = createdMasteryTrackers[masteryName]
     if TrackerGui then
         TrackerGui.Level.Level.Text = level
+        if tonumber(level) == 99 then
+            TrackerGui.Level.Level.TextColor3 = Color3.fromRGB(255, 0, 0)
+        end
     end
 end
 
