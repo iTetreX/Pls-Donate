@@ -866,17 +866,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	})
 
 	autoFarmTab:CreateButton({
-		Name = "Teleport Lucky Block Location",
-		CurrentValue = false,
-		Interact = "",
-		SectionParent = MiscSection,
-		Callback = function(Value)
-			-- Go to Spawn World
-			HumanoidRootPart.CFrame = CFrame.new(-199, 229, 1481)
-		end
-	})
-
-	autoFarmTab:CreateButton({
 		Name = "Teleport Mine Farm Location",
 		CurrentValue = false,
 		Interact = "",
