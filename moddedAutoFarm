@@ -811,9 +811,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		Interact = "",
 		SectionParent = MiscSection,
 		Callback = function(Value)
-			if not ScriptIsCurrentlyBusy or ForceFruitFarm then
-				ScriptIsCurrentlyBusy = true
-
 				local MailBox = game:GetService("Workspace")["__MAP"]:FindFirstChild("Interactive"):FindFirstChild("Mailbox")
 				if MailBox and _G.Receipt and _G.Receipt ~= LocalPlayer.Name and Library.Save.Get().Diamonds > 100001 then
 					CurrentWorld = Library.WorldCmds.Get()		
@@ -840,8 +837,6 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 					wait(0.5)
 					TeleportBack()
 				end
-				ScriptIsCurrentlyBusy = false
-			end
 		end
 	})
 
