@@ -158,6 +158,7 @@ local Whitelist = {
 	"GirlLegionarius",
 	"THE_THUGGUY317",
 	"MrFencingguy_873",
+	"TheLunch857",
 	"TheEnterpriseman862",
 	"MrHolidayator884",
 	"Radarguy266",
@@ -166,8 +167,7 @@ local Whitelist = {
 	"Attitude_52",
 	"Wormanator287",
 	"TheResemblanceman785",
-	"MrFreezingguy_76",
-	"Diary_676"
+	"MrFreezingguy_76"
 }
 
 --//*--------- GLOBAL VARIABLES -----------//*
@@ -700,6 +700,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			if Library.Save.Get().DiamondMineData.Earned >= Library.Settings.DiamondMineMaxEarn then
 				if Library.Signal.Invoke("Get Diamond Mine Collpase Time") then
 					TGui:GemMaxedWarn(true)
+					ForceFruitFarm = true
 					MinedToday = true
 				else
 					MinedGem = 0
@@ -707,6 +708,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 			else
 				if not Library.Signal.Invoke("Get Diamond Mine Collpase Time") then
 					TGui:GemMaxedWarn(false)
+					ForceFruitFarm = false
 					MinedToday = false
 				end
 			end
@@ -1358,7 +1360,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 
 	coroutine.wrap(function()
 		while true do 
-				if ((enableAutoFarm and not ScriptIsCurrentlyBusy) or ForceAutoFarm) and not MinedToday then 
+				if (((enableAutoFarm and not ScriptIsCurrentlyBusy) or ForceAutoFarm) and not MinedToday) or ForceFruitFarm then 
 					local CoinsTable = debug.getupvalue(getsenv(LocalPlayer.PlayerScripts.Scripts.Game:WaitForChild("Coins", 10)).DestroyAllCoins, 1)
 					RenderedPets = debug.getupvalue(getsenv(LocalPlayer.PlayerScripts.Scripts.Game.Pets).NetworkUpdate, 1)
 					
