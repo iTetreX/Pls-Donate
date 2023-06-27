@@ -741,7 +741,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 	local SaveData = Library.Save.Get()
 	local FruitsLevel = Library.Shared.MasteryXPToLevel(SaveData.Mastery["Fruits"])
 	local DiamondMineLevel = Library.Shared.MasteryXPToLevel(SaveData.Mastery["Diamond Mine"])
-	if not Library.WorldCmds.HasArea("Mystic Mine") and (FruitsLevel < 99 and DiamondMineLevel < 99) then
+	if not Library.WorldCmds.HasArea("Mystic Mine") and (FruitsLevel < 99 or DiamondMineLevel < 99) then
 		TGui:CreateMasterTracker("Fruits", Library.Directory.Mastery["Fruits"].icon)
 		TGui:CreateMasterTracker("Diamond Mine", Library.Directory.Mastery["Diamond Mine"].icon)
 		
