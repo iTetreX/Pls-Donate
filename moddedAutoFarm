@@ -3067,6 +3067,12 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		v:Disable()
 	end
 
+	game:GetService("Players").LocalPlayer.Idled:connect(
+	   function()
+	       game:GetService("VirtalUser"):ClickButton2(Vector2.new())
+	   end
+	)
+
 	wait(1)
 	if not (workspace:GetServerTimeNow() - Library.Save.Get().DiamondMineData.LastDiamondMineTeleport >= Library.Settings.DiamondMineCooldown) then
 		ForceFruitFarm = true
