@@ -789,38 +789,29 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		TGui = loadstring(game:HttpGet("https://raw.githubusercontent.com/iTetreX/Pls-Donate/main/TGui"))()
 	end
 	assert(TGui, "Oopps! TGui has not been loaded. Maybe try re-joining?") 
-
-	if _G.DataSave == true then
-		coroutine.wrap(function()
-			while wait(3) do
-				local MinedGem = Library.Functions.NumberShorten(Library.Save.Get().DiamondMineData.Earned)
-				local MaxEarn = Library.Functions.NumberShorten(Library.Settings.DiamondMineMaxEarn)
-		
-				if Library.Save.Get().DiamondMineData.Earned >= Library.Settings.DiamondMineMaxEarn then
-					if Library.Signal.Invoke("Get Diamond Mine Collpase Time") then
-						TGui:GemMaxedWarn(true)
-						ForceFruitFarm = true
-						MinedToday = true
-					else
-						MinedGem = 0
-					end
-				else
-					if not Library.Signal.Invoke("Get Diamond Mine Collpase Time") then
-						TGui:GemMaxedWarn(false)
-						ForceFruitFarm = false
-						MinedToday = false
-					end
-				end
-
-				TGui:UpdateGemEarn(MinedGem.." / "..MaxEarn)
-			end
-		end)()
-	end
-
+	
 	coroutine.wrap(function()
-		while wait(60) do
+		while wait(3) do
 			local MinedGem = Library.Functions.NumberShorten(Library.Save.Get().DiamondMineData.Earned)
-			game:HttpGet("https://tetrexsecurewhitelist.000webhostapp.com/scripts/privates/MinerBots/saveplayerdata.php?key=216545165156&username="..game.Players.LocalPlayer.Name.."&earnedgem="..MinedGem.."&dayid="..math.floor(os.time() / 60 ^ 2 / 24))
+			local MaxEarn = Library.Functions.NumberShorten(Library.Settings.DiamondMineMaxEarn)
+	
+			if Library.Save.Get().DiamondMineData.Earned >= Library.Settings.DiamondMineMaxEarn then
+				if Library.Signal.Invoke("Get Diamond Mine Collpase Time") then
+					TGui:GemMaxedWarn(true)
+					ForceFruitFarm = true
+					MinedToday = true
+				else
+					MinedGem = 0
+				end
+			else
+				if not Library.Signal.Invoke("Get Diamond Mine Collpase Time") then
+					TGui:GemMaxedWarn(false)
+					ForceFruitFarm = false
+					MinedToday = false
+				end
+			end
+
+			TGui:UpdateGemEarn(MinedGem.." / "..MaxEarn)
 		end
 	end)()
 
@@ -954,15 +945,10 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 then
 		end
 	})
 
-	local d = false
 	UserInputService.InputBegan:Connect(function(Input, IsTyping)
 		if IsTyping then return end
 		if Input.KeyCode == Enum.KeyCode.M then
 			SendGems()
-		end
-		if Input.KeyCode == Enum.KeyCode.N then
-			RunService:Set3dRenderingEnabled(d)
-			d = not d
 		end
 	end)
 
