@@ -8,7 +8,7 @@
 		"AllHuges": 30,
 		"HugesPriority": 2,
 		"AllExclusives": 0.9,
-		"AllEvents": 0.5,
+		"AllEvents": 0.1,
 		"Huge Hell Rock": {
 			"Priority": 2,
 			"Normal": {
