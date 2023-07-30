@@ -243,6 +243,8 @@ function TGuiLibrary:UpdateMineCapGemEarn(text)
 end
 
 function TGuiLibrary:TodayGemEarn(text)
+    print("UpdatedDDD: "..text)
+    print("Datarinted: "..TodayEarnedGem.Text)
     TodayEarnedGem.Text = text
 end
 
