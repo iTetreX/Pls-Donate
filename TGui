@@ -216,6 +216,7 @@ UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout.CellSize = UDim2.new(0.215000004, 0, 1, 0)
 
+local CoreGui = game:GetService("CoreGui")
 local ParentObject = function(Gui)
     local success, failure = pcall(function()
         if get_hidden_gui or gethui then
