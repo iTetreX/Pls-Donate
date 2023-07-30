@@ -229,8 +229,7 @@ end
 ParentObject(TGui)
 
 function TGuiLibrary:ToggleGemTrackers(toggle)
-    local nowSet = toggle == true and 1 or toggle == false and 0
-    print(nowSet)
+    local nowSet = toggle == true and 0 or toggle == false and 1
     DiamondMineCap.BackgroundTransparency = nowSet
     TodayEarned.BackgroundTransparency = nowSet
     gemIcon.ImageTransparency = nowSet
