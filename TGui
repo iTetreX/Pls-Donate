@@ -52,6 +52,7 @@ DiamondMineCap.AnchorPoint = Vector2.new(0.5, 0)
 DiamondMineCap.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 DiamondMineCap.Position = UDim2.new(0.50000006, 0, 0, 0)
 DiamondMineCap.Size = UDim2.new(1.00000012, 0, 0.294362754, 0)
+DiamondMineCap.BackgroundTransparency = 1
 
 UICorner.CornerRadius = UDim.new(1, 0)
 UICorner.Parent = DiamondMineCap
@@ -63,6 +64,7 @@ gemIcon.BackgroundTransparency = 1.000
 gemIcon.Position = UDim2.new(0.0124999499, 0, 0.0834727064, 0)
 gemIcon.Size = UDim2.new(0.152087361, 0, 0.818246305, 0)
 gemIcon.Image = "rbxassetid://7786012670"
+gemIcon.ImageTransparency = 1
 
 MineCapEarned.Name = "MineCapEarned"
 MineCapEarned.Parent = DiamondMineCap
@@ -78,6 +80,7 @@ MineCapEarned.TextColor3 = Color3.fromRGB(255, 255, 255)
 MineCapEarned.TextScaled = true
 MineCapEarned.TextSize = 14.000
 MineCapEarned.TextWrapped = true
+MineCapEarned.TextTransparency = 1
 
 TodayEarned.Name = "TodayEarned"
 TodayEarned.Parent = GemTracker
@@ -85,6 +88,7 @@ TodayEarned.AnchorPoint = Vector2.new(0.5, 1)
 TodayEarned.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 TodayEarned.Position = UDim2.new(0.510999978, 0, 1, 0)
 TodayEarned.Size = UDim2.new(1.00000012, 0, 0.294362754, 0)
+TodayEarned.BackgroundTransparency = 1
 
 UICorner_2.CornerRadius = UDim.new(1, 0)
 UICorner_2.Parent = TodayEarned
@@ -96,6 +100,7 @@ gemIcon_2.BackgroundTransparency = 1.000
 gemIcon_2.Position = UDim2.new(0.0124999499, 0, 0.0834727064, 0)
 gemIcon_2.Size = UDim2.new(0.152087361, 0, 0.818246305, 0)
 gemIcon_2.Image = "rbxassetid://7786012670"
+gemIcon_2.ImageTransparency = 1
 
 TodayEarnedGem.Name = "TodayEarnedGem"
 TodayEarnedGem.Parent = TodayEarned
@@ -111,6 +116,7 @@ TodayEarnedGem.TextColor3 = Color3.fromRGB(255, 255, 255)
 TodayEarnedGem.TextScaled = true
 TodayEarnedGem.TextSize = 14.000
 TodayEarnedGem.TextWrapped = true
+TodayEarnedGem.TextTransparency = 1
 
 GemMaxedWarn.Name = "GemMaxedWarn"
 GemMaxedWarn.Parent = MainFrame
