@@ -3,21 +3,24 @@ local TGuiLibrary = {}
 local TGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local GemTracker = Instance.new("Frame")
+local DiamondMineCap = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local gemIcon = Instance.new("ImageLabel")
-local EarnedGem = Instance.new("TextLabel")
+local MineCapEarned = Instance.new("TextLabel")
+local TodayEarned = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local gemIcon_2 = Instance.new("ImageLabel")
+local TodayEarnedGem = Instance.new("TextLabel")
 local GemMaxedWarn = Instance.new("TextLabel")
-local GemMaxedWarnUIStroke = Instance.new("UIStroke")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local MasteryTracker = Instance.new("Frame")
-local MasterTemplateFolder = Instance.new("Folder")
 local MasteryTemplate = Instance.new("Frame")
 local Icon = Instance.new("Frame")
 local IconImage = Instance.new("ImageLabel")
-local UICorner_2 = Instance.new("UICorner")
 local UICorner_3 = Instance.new("UICorner")
-local Level = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
+local Level = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
 local Level_2 = Instance.new("TextLabel")
 local UIGridLayout = Instance.new("UIGridLayout")
 
@@ -39,34 +42,75 @@ GemTracker.Name = "GemTracker"
 GemTracker.Parent = MainFrame
 GemTracker.AnchorPoint = Vector2.new(0.5, 0.5)
 GemTracker.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-GemTracker.Position = UDim2.new(0.498377174, 0, 0.37696901, 0)
-GemTracker.Size = UDim2.new(0.68236351, 0, 0.100000001, 0)
+GemTracker.BackgroundTransparency = 1.000
+GemTracker.Position = UDim2.new(0.5, 0, 0.5, 0)
+GemTracker.Size = UDim2.new(0.681999981, 0, 0.349999994, 0)
+
+DiamondMineCap.Name = "DiamondMineCap"
+DiamondMineCap.Parent = GemTracker
+DiamondMineCap.AnchorPoint = Vector2.new(0.5, 0)
+DiamondMineCap.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+DiamondMineCap.Position = UDim2.new(0.50000006, 0, 0, 0)
+DiamondMineCap.Size = UDim2.new(1.00000012, 0, 0.294362754, 0)
 
 UICorner.CornerRadius = UDim.new(1, 0)
-UICorner.Parent = GemTracker
+UICorner.Parent = DiamondMineCap
 
 gemIcon.Name = "gemIcon"
-gemIcon.Parent = GemTracker
+gemIcon.Parent = DiamondMineCap
 gemIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 gemIcon.BackgroundTransparency = 1.000
 gemIcon.Position = UDim2.new(0.0124999499, 0, 0.0834727064, 0)
 gemIcon.Size = UDim2.new(0.152087361, 0, 0.818246305, 0)
 gemIcon.Image = "rbxassetid://7786012670"
 
-EarnedGem.Name = "EarnedGem"
-EarnedGem.Parent = GemTracker
-EarnedGem.Active = true
-EarnedGem.AnchorPoint = Vector2.new(0.5, 0.5)
-EarnedGem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EarnedGem.BackgroundTransparency = 1.000
-EarnedGem.Position = UDim2.new(0.566487312, 0, 0.495236397, 0)
-EarnedGem.Size = UDim2.new(0.75999999, 0, 0.949999988, 0)
-EarnedGem.Font = Enum.Font.SourceSansBold
-EarnedGem.Text = "loading"
-EarnedGem.TextColor3 = Color3.fromRGB(255, 255, 255)
-EarnedGem.TextScaled = true
-EarnedGem.TextSize = 14.000
-EarnedGem.TextWrapped = true
+MineCapEarned.Name = "MineCapEarned"
+MineCapEarned.Parent = DiamondMineCap
+MineCapEarned.Active = true
+MineCapEarned.AnchorPoint = Vector2.new(0.5, 0.5)
+MineCapEarned.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MineCapEarned.BackgroundTransparency = 1.000
+MineCapEarned.Position = UDim2.new(0.566487312, 0, 0.495236397, 0)
+MineCapEarned.Size = UDim2.new(0.75999999, 0, 0.949999988, 0)
+MineCapEarned.Font = Enum.Font.SourceSansBold
+MineCapEarned.Text = "loading"
+MineCapEarned.TextColor3 = Color3.fromRGB(255, 255, 255)
+MineCapEarned.TextScaled = true
+MineCapEarned.TextSize = 14.000
+MineCapEarned.TextWrapped = true
+
+TodayEarned.Name = "TodayEarned"
+TodayEarned.Parent = GemTracker
+TodayEarned.AnchorPoint = Vector2.new(0.5, 1)
+TodayEarned.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TodayEarned.Position = UDim2.new(0.510999978, 0, 1, 0)
+TodayEarned.Size = UDim2.new(1.00000012, 0, 0.294362754, 0)
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = TodayEarned
+
+gemIcon_2.Name = "gemIcon"
+gemIcon_2.Parent = TodayEarned
+gemIcon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gemIcon_2.BackgroundTransparency = 1.000
+gemIcon_2.Position = UDim2.new(0.0124999499, 0, 0.0834727064, 0)
+gemIcon_2.Size = UDim2.new(0.152087361, 0, 0.818246305, 0)
+gemIcon_2.Image = "rbxassetid://7786012670"
+
+TodayEarnedGem.Name = "TodayEarnedGem"
+TodayEarnedGem.Parent = TodayEarned
+TodayEarnedGem.Active = true
+TodayEarnedGem.AnchorPoint = Vector2.new(0.5, 0.5)
+TodayEarnedGem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TodayEarnedGem.BackgroundTransparency = 1.000
+TodayEarnedGem.Position = UDim2.new(0.566487312, 0, 0.495236397, 0)
+TodayEarnedGem.Size = UDim2.new(0.75999999, 0, 0.949999988, 0)
+TodayEarnedGem.Font = Enum.Font.SourceSansBold
+TodayEarnedGem.Text = "loading"
+TodayEarnedGem.TextColor3 = Color3.fromRGB(255, 255, 255)
+TodayEarnedGem.TextScaled = true
+TodayEarnedGem.TextSize = 14.000
+TodayEarnedGem.TextWrapped = true
 
 GemMaxedWarn.Name = "GemMaxedWarn"
 GemMaxedWarn.Parent = MainFrame
@@ -82,10 +126,6 @@ GemMaxedWarn.TextScaled = true
 GemMaxedWarn.TextSize = 14.000
 GemMaxedWarn.TextWrapped = true
 
-GemMaxedWarnUIStroke.Name = "GemMaxedWarnUIStroke"
-GemMaxedWarnUIStroke.Parent = GemMaxedWarn
-GemMaxedWarnUIStroke.Thickness = 5
-
 UIAspectRatioConstraint.Parent = MainFrame
 UIAspectRatioConstraint.AspectRatio = 0.800
 
@@ -99,10 +139,8 @@ MasteryTracker.BorderSizePixel = 0
 MasteryTracker.Position = UDim2.new(0, 0, 0.640702844, 0)
 MasteryTracker.Size = UDim2.new(1, 0, 0.174999997, 0)
 
-MasterTemplateFolder.Parent = MasteryTracker
-
 MasteryTemplate.Name = "MasteryTemplate"
-MasteryTemplate.Parent = MasterTemplateFolder
+MasteryTemplate.Parent = MasteryTracker
 MasteryTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MasteryTemplate.BackgroundTransparency = 1.000
 MasteryTemplate.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -114,11 +152,11 @@ Icon.Name = "Icon"
 Icon.Parent = MasteryTemplate
 Icon.AnchorPoint = Vector2.new(0.5, 0)
 Icon.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Icon.BackgroundTransparency = 1.000
 Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Icon.BorderSizePixel = 0
 Icon.Position = UDim2.new(0.5, 0, 0, 0)
 Icon.Size = UDim2.new(0.775733173, 0, 0.756903529, 0)
-Icon.BackgroundTransparency = 1
 
 IconImage.Name = "IconImage"
 IconImage.Parent = Icon
@@ -128,28 +166,27 @@ IconImage.BackgroundTransparency = 1.000
 IconImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IconImage.BorderSizePixel = 0
 IconImage.Position = UDim2.new(0.5, 0, 0.5, 0)
-IconImage.Size = UDim2.new(0.9, 0, 0.9, 0)
+IconImage.Size = UDim2.new(1, 0, 1, 0)
 IconImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-IconImage.BackgroundTransparency = 1
-IconImage.ImageTransparency = 1
-
-UICorner_2.CornerRadius = UDim.new(1, 0)
-UICorner_2.Parent = IconImage
+IconImage.ImageTransparency = 1.000
 
 UICorner_3.CornerRadius = UDim.new(1, 0)
-UICorner_3.Parent = Icon
+UICorner_3.Parent = IconImage
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = Icon
 
 Level.Name = "Level"
 Level.Parent = MasteryTemplate
 Level.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Level.BackgroundTransparency = 1.000
 Level.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Level.BorderSizePixel = 0
 Level.Position = UDim2.new(0, 0, 0.597949505, 0)
 Level.Size = UDim2.new(1, 0, 0.398782521, 0)
-Level.BackgroundTransparency = 1
 
-UICorner_4.CornerRadius = UDim.new(1, 0)
-UICorner_4.Parent = Level
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = Level
 
 Level_2.Name = "Level"
 Level_2.Parent = Level
@@ -165,8 +202,8 @@ Level_2.Text = "loading"
 Level_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Level_2.TextScaled = true
 Level_2.TextSize = 14.000
+Level_2.TextTransparency = 1.000
 Level_2.TextWrapped = true
-Level_2.TextTransparency = 1
 
 UIGridLayout.Parent = MasteryTracker
 UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -186,16 +223,30 @@ local ParentObject = function(Gui)
         end
     end)
     if not success and failure then
-        Gui.Parent = LocalPlayer:FindFirstChildWhichIsA("PlayerGui")
+        Gui.Parent = game.Players.LocalPlayer:FindFirstChildWhichIsA("PlayerGui")
     end
 end
 ParentObject(TGui)
 
-function TGuiLibrary:UpdateGemEarn(text)
-    EarnedGem.Text = text
+function TGuiLibrary:ToggleGemTrackers(toggle)
+    local nowSet = toggle == true and 1 or toggle == false and 0
+    DiamondMineCap.BackgroundTransparency = nowSet
+    TodayEarned.BackgroundTransparency = nowSet
+    gemIcon.ImageTransparency = nowSet
+    gemIcon_2.ImageTransparency = nowSet
+    MineCapEarned.TextTransparency = nowSet
+    TodayEarnedGem.TextTransparency = nowSet
 end
 
-function TGuiLibrary:GemMaxedWarn(toggle)
+function TGuiLibrary:UpdateMineCapGemEarn(text)
+    MineCapEarned.Text = text
+end
+
+function TGuiLibrary:TodayGemEarn(text)
+    TodayEarnedGem.Text = text
+end
+
+function TGuiLibrary:GemMineCapMaxedWarn(toggle)
     GemMaxedWarn.Visible = toggle
 end
 
@@ -220,7 +271,7 @@ function TGuiLibrary:CreateMasterTracker(masteryName, icon)
     end
 end
 
-function TGuiLibrary:UpdateMasteryTracker(masteryName, level)  
+function TGuiLibrary:UpdateMasteryTracker(masteryName, level)
     local TrackerGui = createdMasteryTrackers[masteryName]
     if TrackerGui then
         TrackerGui.Level.Level.Text = level
