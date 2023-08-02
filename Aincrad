@@ -1,7 +1,27 @@
+if game.Players.LocalPlayer.Name ~= "iTetreX" then return end
 -- [ Services ]
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+
+-- [ Anti Cheat ]
+local mt = getrawmetatable(game)
+
+local oldindex = mt.__index
+setreadonly(mt, false)
+mt.__index = newcclosure(function(self, method)
+
+if method == 'WalkSpeed' then
+   return 16
+end
+
+if method == 'JumpPower' then
+   return 50
+end
+
+return oldindex(self, method)
+end)
+setreadonly(mt, true)
 
 -- [ UI Library ]
 local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
