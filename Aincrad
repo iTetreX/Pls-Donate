@@ -3,6 +3,11 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 
+-- [ Settings ]
+local KillAura_Enabled = false
+local KillAura_TargetPlayers = false
+local KillAura_TargetMobs = false
+
 -- [ Anti Cheat ]
 local mt = getrawmetatable(game)
 
@@ -40,8 +45,48 @@ local CombatPage = venyx:addPage("Combat", 5012544693)
 local KillAuraSection = CombatPage:addSection("Kill Aura")
 
 -- [ Functions ]
+function MergeTables(table1, table2)
+    local mergedTable = {}
+
+    -- Table 1'i birleştir
+    for _, value in ipairs(table1) do
+        table.insert(mergedTable, value)
+    end
+
+    -- Table 2'yi birleştir
+    for _, value in ipairs(table2) do
+        table.insert(mergedTable, value)
+    end
+
+    return mergedTable
+end
+
 local attackMultiplier = 1
+local function getClosePlayers()
+    if KillAura_TargetPlayers == false then return {} end
+    local dist = 50
+    local targets = {}
+    for _, player in pairs(game.Players:GetChildren()) do
+        if player ~= LocalPlayer then
+            local character = player.Character
+            if character then
+                if character:FindFirstChild('HumanoidRootPart') and character:FindFirstChildOfClass('Humanoid').Health ~= 0 then
+                    local mag = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - character:FindFirstChild('HumanoidRootPart').Position).Magnitude
+                    if mag < dist then
+                        dist = mag
+                        for i = 1, attackMultiplier do
+                            table.insert(targets, character.HumanoidRootPart)
+                        end
+                    end
+                end
+            end
+        end
+    end
+    return targets
+end
+
 local function getCloseMobs()
+    if KillAura_TargetMobs == false then return {} end
     local dist = 50
     local mobs = {}
     for _, v in pairs(workspace.Attackable:GetChildren()) do
@@ -59,12 +104,11 @@ local function getCloseMobs()
 end
 
 -- [ Scripts Main ]
-local KillAura_Enabled
 KillAuraSection:addToggle("Kill Aura Enabled", nil, function(value)
     KillAura_Enabled = value
     if KillAura_Enabled then
         while KillAura_Enabled do
-            local HitMobs = getCloseMobs()
+            local HitMobs = MergeTables(getClosePlayers(), getCloseMobs())
             local args = {
                 [1] = "Attack",
                 [2] = HitMobs
@@ -74,6 +118,14 @@ KillAuraSection:addToggle("Kill Aura Enabled", nil, function(value)
             wait()
         end
     end
+end)
+
+KillAuraSection:addToggle("Target Players", nil, function(value)
+    KillAura_TargetPlayers = value
+end)
+
+KillAuraSection:addToggle("Target Mobs", nil, function(value)
+    KillAura_TargetMobs = value
 end)
 
 KillAuraSection:addSlider("Attack Multiplier", 1, 1, 100, function(value)
