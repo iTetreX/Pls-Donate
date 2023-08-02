@@ -1,9 +1,8 @@
-print("Checkpoint 1")
 -- [ Services ]
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-print("Checkpoint 2")
+
 -- [ Anti Cheat ]
 local mt = getrawmetatable(game)
 
@@ -22,7 +21,7 @@ end
 return oldindex(self, method)
 end)
 setreadonly(mt, true)
-print("Checkpoint 3")
+
 -- [ UI Library ]
 local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
 local venyx = UILibrary.new("TetreX - Ancried Beta 0.01", 5013109572)
