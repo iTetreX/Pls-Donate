@@ -253,6 +253,10 @@ function TGuiLibrary:TodayGemEarn(text)
     TodayEarnedGem.Text = text
 end
 
+function TGuiLibrary:GemMineCapMaxedWarnSetText(text)
+    GemMaxedWarn.Text = text
+end
+
 function TGuiLibrary:GemMineCapMaxedWarn(toggle)
     GemMaxedWarn.Visible = toggle
 end
