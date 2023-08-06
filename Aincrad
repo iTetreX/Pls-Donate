@@ -2,11 +2,19 @@
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local Humanoid = Character:FindFirstChild("Humanoid")
 
 -- [ Settings ]
 local KillAura_Enabled = false
 local KillAura_TargetPlayers = false
 local KillAura_TargetMobs = false
+
+local KillAura_AutoSkill1 = ""
+local KillAura_AutoSkillLast1 = 0
+local KillAura_AutoSkill2 = ""
+local KillAura_AutoSkillLast2 = 0
+local KillAura_AutoSkill3 = ""
+local KillAura_AutoSkillLast3 = 0
 
 -- [ Anti Cheat ]
 local mt = getrawmetatable(game)
@@ -109,13 +117,27 @@ KillAuraSection:addToggle("Kill Aura Enabled", nil, function(value)
     if KillAura_Enabled then
         while KillAura_Enabled do
             local HitMobs = MergeTables(getClosePlayers(), getCloseMobs())
-            local args = {
-                [1] = "Attack",
-                [2] = HitMobs
-            }
-        
-            game:GetService("ReplicatedStorage").RemoteEvents.Hit:FireServer(unpack(args))
-            wait()
+            if #HitMobs > 0 then
+                local args = {
+                    [1] = "Attack",
+                    [2] = HitMobs
+                }
+    
+                if KillAura_AutoSkill1 ~= "" and KillAura_AutoSkillLast1 + 15 < os.time() then
+                    KillAura_AutoSkillLast1 = os.time()
+                    args[3] = KillAura_AutoSkill1
+                elseif KillAura_AutoSkill2 ~= "" and KillAura_AutoSkillLast2 + 15 < os.time() then
+                    KillAura_AutoSkillLast2 = os.time()
+                    args[3] = KillAura_AutoSkill2
+                elseif KillAura_AutoSkill3 ~= "" and KillAura_AutoSkillLast3 + 15 < os.time() then
+                    KillAura_AutoSkillLast3 = os.time()
+                    args[3] = KillAura_AutoSkill3
+                end
+            
+                game:GetService("ReplicatedStorage").RemoteEvents.Hit:FireServer(unpack(args))
+                wait(0.1)
+            end
+            wait(0.1)
         end
     end
 end)
@@ -128,17 +150,129 @@ KillAuraSection:addToggle("Target Mobs", nil, function(value)
     KillAura_TargetMobs = value
 end)
 
+local SwordSkills = {
+    "Rising Strike"
+}
+
+KillAuraSection:addDropdown("Auto Skill 1", SwordSkills, function(newValue)
+    KillAura_AutoSkill1 = newValue
+end)
+
+KillAuraSection:addDropdown("Auto Skill 2", SwordSkills, function(newValue)
+    KillAura_AutoSkill2 = newValue
+end)
+
+KillAuraSection:addDropdown("Auto Skill 3", SwordSkills, function(newValue)
+    KillAura_AutoSkill3 = newValue
+end)
+
 KillAuraSection:addSlider("Attack Multiplier", 1, 1, 100, function(value)
     attackMultiplier = value
 end)
 
+
 local PlayerPage = venyx:addPage("Player", 5012544693)
 
 local CharacterSection = PlayerPage:addSection("Character")
-
 CharacterSection:addSlider("Character Speed", 16, 0, 250, function(value)
     local Humanoid = Character:FindFirstChild("Humanoid")
     if Humanoid then
         Humanoid.WalkSpeed = value
     end
+end)
+
+local TeleportSection = PlayerPage:addSection("Teleport")
+TeleportSection:addTextbox("To Where", "Select a position below")
+
+local Locations = {
+    [95206881] = {
+        ["Spawn"] = Vector3.new(0, 10, 0),
+        ["Dungeon 1"] = Vector3.new(100, 10, 30)
+    }
+}
+
+local isTargetPlayer = false
+local targetTeleport = nil
+function getPlayersName()
+    local returnTable = {}
+    for index,player in pairs(Players:GetPlayers()) do
+        table.insert(returnTable, player.Name)
+    end
+    return returnTable
+end
+
+function getLocations()
+    local returnTable = {}
+    if Locations[game.PlaceId] == nil or Locations[game.PlaceId] == {} then return {} end
+    for locationName,locationPosition in pairs(Locations[game.PlaceId]) do
+        table.insert(returnTable, locationName)
+    end
+    return returnTable
+end
+
+TeleportSection:addDropdown("Players", getPlayersName(), function(newValue)
+    targetTeleport = newValue
+    isTargetPlayer = true
+    TeleportSection:updateTextbox("To Where", "To Where", newValue)
+end)
+Players.PlayerAdded:Connect(function(player)
+    TeleportSection:updateDropdown("Players", "Players", getPlayersName())
+end)
+Players.PlayerRemoving:Connect(function(player)
+    TeleportSection:updateDropdown("Players", "Players", getPlayersName())
+end)
+
+TeleportSection:addDropdown("Locations", getLocations(), function(newValue)
+    targetTeleport = newValue
+    isTargetPlayer = false
+    TeleportSection:updateTextbox("To Where", "To Where", newValue)
+end)
+
+TeleportSection:addButton("Teleport", function()
+    local Position
+    if isTargetPlayer then
+        local player = Players:FindFirstChild(targetTeleport)
+        if player == nil then return end
+        local character = player.Character
+        if character == nil then return end
+        local root = character:FindFirstChild("HumanoidRootPart")
+        if root == nil then return end
+
+        Position = root.Position
+    else
+        if Locations[game.PlaceId][targetTeleport] == nil then return end
+        Position = Locations[game.PlaceId][targetTeleport]
+    end
+
+    Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+    local Root = Character:FindFirstChild("HumanoidRootPart")
+    if Root == nil then return end
+    
+    local setPositionPart = Instance.new("Part", workspace)
+    setPositionPart.Size = Vector3.new(1,1,1)
+    setPositionPart.Anchored = true
+    setPositionPart.CanCollide = false
+    
+    local AlignPosition = Instance.new("AlignPosition", setPositionPart)
+    local AlignOrientation = Instance.new("AlignOrientation", setPositionPart)
+    
+    local Attachment = Instance.new("Attachment", setPositionPart)
+    
+    AlignPosition.MaxForce = math.huge
+    AlignPosition.MaxVelocity = 80
+    
+    AlignOrientation.RigidityEnabled = true
+    
+    AlignPosition.Attachment0 = Root:FindFirstChildOfClass("Attachment")
+    AlignPosition.Attachment1 = Attachment
+
+    AlignOrientation.Attachment0 = Root:FindFirstChildOfClass("Attachment")
+    AlignOrientation.Attachment1 = Attachment
+
+    setPositionPart.CFrame = CFrame.new(Position) * CFrame.Angles(math.rad(90),0, 0)
+    repeat print((Character:FindFirstChild("HumanoidRootPart").Position - Position).Magnitude) wait(1) 
+    until (Character:FindFirstChild("HumanoidRootPart").Position - Position).Magnitude < 2
+    setPositionPart:Destroy()
+    Attachment:Destroy()
+    Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll, false)
 end)
