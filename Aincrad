@@ -9,11 +9,11 @@ local KillAura_Enabled = false
 local KillAura_TargetPlayers = false
 local KillAura_TargetMobs = false
 
-local KillAura_AutoSkill1 = ""
+local KillAura_AutoSkill1 = "None"
 local KillAura_AutoSkillLast1 = 0
-local KillAura_AutoSkill2 = ""
+local KillAura_AutoSkill2 = "None"
 local KillAura_AutoSkillLast2 = 0
-local KillAura_AutoSkill3 = ""
+local KillAura_AutoSkill3 = "None"
 local KillAura_AutoSkillLast3 = 0
 
 -- [ Anti Cheat ]
@@ -123,13 +123,13 @@ KillAuraSection:addToggle("Kill Aura Enabled", nil, function(value)
                     [2] = HitMobs
                 }
     
-                if KillAura_AutoSkill1 ~= "" and KillAura_AutoSkillLast1 + 15 < os.time() then
+                if KillAura_AutoSkill1 ~= "None" and KillAura_AutoSkillLast1 + 15 < os.time() then
                     KillAura_AutoSkillLast1 = os.time()
                     args[3] = KillAura_AutoSkill1
-                elseif KillAura_AutoSkill2 ~= "" and KillAura_AutoSkillLast2 + 15 < os.time() then
+                elseif KillAura_AutoSkill2 ~= "None" and KillAura_AutoSkillLast2 + 15 < os.time() then
                     KillAura_AutoSkillLast2 = os.time()
                     args[3] = KillAura_AutoSkill2
-                elseif KillAura_AutoSkill3 ~= "" and KillAura_AutoSkillLast3 + 15 < os.time() then
+                elseif KillAura_AutoSkill3 ~= "None" and KillAura_AutoSkillLast3 + 15 < os.time() then
                     KillAura_AutoSkillLast3 = os.time()
                     args[3] = KillAura_AutoSkill3
                 end
@@ -151,7 +151,13 @@ KillAuraSection:addToggle("Target Mobs", nil, function(value)
 end)
 
 local SwordSkills = {
-    "Rising Strike"
+    "None",
+    "Rising Strike",
+    "Pierce",
+    "Catastrophic Slam",
+    "Rapid Fire",
+    "Diagonal Strike",
+    "Charging Blade"
 }
 
 KillAuraSection:addDropdown("Auto Skill 1", SwordSkills, function(newValue)
@@ -275,4 +281,17 @@ TeleportSection:addButton("Teleport", function()
     setPositionPart:Destroy()
     Attachment:Destroy()
     Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll, false)
+end)
+
+local VirtualUser=game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton2(Vector2.new())
+end)
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)
