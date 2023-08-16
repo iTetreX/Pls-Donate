@@ -11,13 +11,13 @@
     "Huge Hell Rock": {
         "Priority": 2,
         "Normal": {
-            "Normal": 90
+            "Normal": 95
         },
         "Golden": {
-            "Normal": 90
+            "Normal": 95
         },
         "Rainbow": {
-            "Normal": 310
+            "Normal": 325
         }
     },
     "Exlusive Egg 1": 400,
