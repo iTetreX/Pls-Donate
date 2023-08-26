@@ -36,7 +36,7 @@ end)
 setreadonly(mt, true)
 
 -- [ UI Library ]
-local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/zxciaz/VenyxUI/main/Reuploaded"))()
 local venyx = UILibrary.new("TetreX - Ancried Beta 0.01", 5013109572)
 
 local themes = {
