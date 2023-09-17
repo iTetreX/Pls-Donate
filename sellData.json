@@ -20,18 +20,72 @@
         "Priority": 100,
         "Normal": {
             "Normal": 300
+        },
+        "Golden": {
+            "Normal": 600
         }
     },
     "Party Axolotl": {
         "Priority": 100,
         "Normal": {
             "Normal": 300
+        },
+        "Golden": {
+            "Normal": 600
         }
     },
     "Party Cat": {
         "Priority": 100,
         "Normal": {
             "Normal": 300
+        },
+        "Golden": {
+            "Normal": 600
+        }
+    },
+    "Party Dog": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 300
+        },
+        "Golden": {
+            "Normal": 600
+        }
+    },
+    "Marshmallow Agony": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 300
+        },
+        "Golden": {
+            "Normal": 600
+        }
+    },
+    "M-10 PROTOTYPE": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 300
+        },
+        "Golden": {
+            "Normal": 600
+        }
+    },
+    "Party Penguin": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 300
+        },
+        "Golden": {
+            "Normal": 600
+        }
+    },
+    "Scary Corgi": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 300
+        },
+        "Golden": {
+            "Normal": 600
         }
     }
 }
