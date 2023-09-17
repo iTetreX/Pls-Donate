@@ -23,13 +23,13 @@
     "Huge Happy Rock": {
         "Priority": 2,
         "Normal": {
-            "Normal": 67
+            "Normal": 65
         },
         "Golden": {
-            "Normal": 67
+            "Normal": 65
         },
         "Rainbow": {
-            "Normal": 250
+            "Normal": 240
         }
     },
     "Exlusive Egg 1": 400,
