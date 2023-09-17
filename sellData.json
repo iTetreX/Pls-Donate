@@ -2,7 +2,13 @@
     "Hype Gift 2": {
         "Price": 6.5,
         "Priority": 20
-    },    
+    },
+    "Diamond Cat": {
+        "Priority": 30,
+        "Normal": {
+            "Normal": 10
+        }
+    },
     "Huge Happy Rock": {
         "Priority": 10,
         "Normal": {
