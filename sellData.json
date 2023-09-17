@@ -1,12 +1,3 @@
 {
-    "Hype Gift 1": 0.9,
-    "Huge Happy Rock": {
-        "Priority": 10,
-        "Normal": {
-            "Normal": 77.5
-        },
-        "Golden": {
-            "Normal": 77.5
-        }
-    }
+    "Hype Gift 1": 5
 }
