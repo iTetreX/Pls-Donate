@@ -1,3 +1,6 @@
 {
-    "Hype Gift 1": 5
+    "Hype Gift 1": {
+        "Price": 5,
+        "Priority": 20
+    }
 }
