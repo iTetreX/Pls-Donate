@@ -7,6 +7,45 @@
         "Priority": 15,
         "Normal": {
             "Normal": 9
+        },
+        "Golden": {
+            "Normal": 13
+        }
+    },
+    "Hologram Axolotl": {
+        "Priority": 15,
+        "Normal": {
+            "Normal": 5.25
+        }
+    },
+    "Emerald Monkey": {
+        "Priority": 15,
+        "Normal": {
+            "Normal": 4
+        }
+    },
+    "Hologram Tiger": {
+        "Priority": 15,
+        "Normal": {
+            "Normal": 3.75
+        }
+    },
+    "Super Caypbara": {
+        "Priority": 15,
+        "Normal": {
+            "Normal": 6.75
+        }
+    },
+    "Redstone Cat": {
+        "Priority": 15,
+        "Normal": {
+            "Normal": 2.8
+        }
+    },
+    "Hologram Shark": {
+        "Priority": 15,
+        "Normal": {
+            "Normal": 3.2
         }
     },
     "Huge Happy Rock": {
@@ -80,6 +119,15 @@
         }
     },
     "Scary Corgi": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 300
+        },
+        "Golden": {
+            "Normal": 600
+        }
+    },
+    "Scary Cat": {
         "Priority": 100,
         "Normal": {
             "Normal": 300
