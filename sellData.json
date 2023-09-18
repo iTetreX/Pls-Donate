@@ -2,12 +2,12 @@
     "Eggs": {},
     "Hype Gift 2": {
         "Price": 6,
-        "Priority": 999
+        "Priority": 999999
     },
 
     "Exclusive Pets": {},
     "Diamond Cat": {
-        "Priority": 15,
+        "Priority": 100,
         "Normal": {
             "Normal": 9
         },
@@ -16,39 +16,67 @@
         }
     },
     "Hologram Axolotl": {
-        "Priority": 15,
+        "Priority": 110,
         "Normal": {
             "Normal": 5.25
         }
     },
     "Emerald Monkey": {
-        "Priority": 15,
+        "Priority": 110,
         "Normal": {
             "Normal": 4
         }
     },
     "Hologram Tiger": {
-        "Priority": 15,
+        "Priority": 110,
         "Normal": {
             "Normal": 3.75
         }
     },
     "Super Caypbara": {
-        "Priority": 15,
+        "Priority": 110,
         "Normal": {
             "Normal": 6.75
         }
     },
     "Redstone Cat": {
-        "Priority": 15,
+        "Priority": 110,
         "Normal": {
             "Normal": 2.8
         }
     },
     "Hologram Shark": {
-        "Priority": 15,
+        "Priority": 110,
         "Normal": {
             "Normal": 3.2
+        }
+    },
+    "Cosmic Axolotl": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 2.75
+        }
+    },
+
+    "2 Point Exclusive Pets": {},
+    "Cosmic Dragon": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Keyboard Cat": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+
+    "3 Point Exclusive Pets": {},
+    "Cosmic Agony": {
+        "Priority": 25,
+        "Normal": {
+            "Normal": 6
         }
     },
 
@@ -69,7 +97,7 @@
         }
     },
 
-    "Event Pets": {},
+    "1 Points Event Pets": {},
     "Safari Cat": {
         "Priority": 1000,
         "Normal": {
