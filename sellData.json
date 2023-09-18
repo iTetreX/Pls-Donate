@@ -1,8 +1,11 @@
 {
+    "Eggs": {},
     "Hype Gift 2": {
-        "Price": 5.5,
+        "Price": 6,
         "Priority": 999
     },
+
+    "Exclusive Pets": {},
     "Diamond Cat": {
         "Priority": 15,
         "Normal": {
@@ -48,17 +51,29 @@
             "Normal": 3.2
         }
     },
+
+    "Huge Pets": {},
     "Huge Happy Rock": {
         "Priority": 10,
         "Normal": {
             "Normal": 72.5
         }
     },
+    "Huge Hell Rock": {
+        "Priority": 10,
+        "Normal": {
+            "Normal": 75
+        },
+        "Golden": {
+            "Normal": 80    
+        }
+    },
 
+    "Event Pets": {},
     "Safari Cat": {
         "Priority": 100,
         "Normal": {
-            "Normal": 0.3
+            "Normal": 0.35
         },
         "Golden": {
             "Normal": 0.7
@@ -67,7 +82,7 @@
     "Party Axolotl": {
         "Priority": 100,
         "Normal": {
-            "Normal": 0.3
+            "Normal": 0.35
         },
         "Golden": {
             "Normal": 0.7
