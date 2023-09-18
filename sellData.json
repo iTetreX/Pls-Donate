@@ -61,7 +61,7 @@
             "Normal": 0.3
         },
         "Golden": {
-            "Normal": 0.3
+            "Normal": 0.7
         }
     },
     "Party Axolotl": {
@@ -70,70 +70,70 @@
             "Normal": 0.3
         },
         "Golden": {
-            "Normal": 0.3
+            "Normal": 0.7
         }
     },
     "Party Cat": {
         "Priority": 100,
         "Normal": {
-            "Normal": 0.3
+            "Normal": 0.35
         },
         "Golden": {
-            "Normal": 0.3
+            "Normal": 0.7
         }
     },
     "Party Dog": {
         "Priority": 100,
         "Normal": {
-            "Normal": 0.3
+            "Normal": 0.35
         },
         "Golden": {
-            "Normal": 0.3
+            "Normal": 0.7
         }
     },
     "Marshmallow Agony": {
         "Priority": 100,
         "Normal": {
-            "Normal": 0.3
+            "Normal": 0.35
         },
         "Golden": {
-            "Normal": 0.3
+            "Normal": 0.7
         }
     },
     "M-10 PROTOTYPE": {
         "Priority": 100,
         "Normal": {
-            "Normal": 0.3
+            "Normal": 0.35
         },
         "Golden": {
-            "Normal": 0.3
+            "Normal": 0.7
         }
     },
     "Party Penguin": {
         "Priority": 100,
         "Normal": {
-            "Normal": 0.3
+            "Normal": 0.35
         },
         "Golden": {
-            "Normal": 0.3
+            "Normal": 0.7
         }
     },
     "Scary Corgi": {
         "Priority": 100,
         "Normal": {
-            "Normal": 0.3
+            "Normal": 0.35
         },
         "Golden": {
-            "Normal": 0.3
+            "Normal": 0.7
         }
     },
     "Scary Cat": {
         "Priority": 100,
         "Normal": {
-            "Normal": 0.3
+            "Normal": 0.35
         },
         "Golden": {
-            "Normal": 0.3
+            "Normal": 0.7
         }
     }
 }
