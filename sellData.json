@@ -2,10 +2,10 @@
     "Eggs": {},
     "Hype Gift 2": {
         "Price": 6,
-        "Priority": 999999
+        "Priority": 50
     },
 
-    "Exclusive Pets": {},
+    "1 Point Exclusive Pets": {},
     "Diamond Cat": {
         "Priority": 100,
         "Normal": {
@@ -54,7 +54,8 @@
     "Cosmic Axolotl": {
         "Priority": 110,
         "Normal": {
-            "Normal": 2.75
+            "Normal": 2.8,
+            "Shiny": 9
         }
     },
 
@@ -74,9 +75,15 @@
 
     "3 Point Exclusive Pets": {},
     "Cosmic Agony": {
-        "Priority": 25,
+        "Priority": 130,
         "Normal": {
             "Normal": 6
+        }
+    },
+    "Present Chest Mimic": {
+        "Priority": 130,
+        "Normal": {
+            "Normal": 8
         }
     },
 
@@ -370,6 +377,21 @@
             "Shiny": 2.45
         }
     },
+    "Party Crown Corgi": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Golden": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Rainbow": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        }
+    },
     "Elf Dog": {
         "Priority": 1010,
         "Normal": {
@@ -401,6 +423,21 @@
         }
     },
     "Arcade Dragon": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Golden": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Rainbow": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        }
+    },
+    "Pirate Panda": {
         "Priority": 1010,
         "Normal": {
             "Normal": 0.7,
