@@ -71,84 +71,320 @@
 
     "Event Pets": {},
     "Safari Cat": {
-        "Priority": 100,
+        "Priority": 1000,
         "Normal": {
-            "Normal": 0.35
+            "Normal": 0.35,
+            "Shiny": 1.4
         },
         "Golden": {
-            "Normal": 0.7
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
         }
     },
     "Party Axolotl": {
-        "Priority": 100,
+        "Priority": 1000,
         "Normal": {
-            "Normal": 0.35
+            "Normal": 0.35,
+            "Shiny": 1.4
         },
         "Golden": {
-            "Normal": 0.7
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
         }
     },
     "Party Cat": {
-        "Priority": 100,
+        "Priority": 1000,
         "Normal": {
-            "Normal": 0.35
+            "Normal": 0.35,
+            "Shiny": 1.4
         },
         "Golden": {
-            "Normal": 0.7
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
         }
     },
     "Party Dog": {
-        "Priority": 100,
+        "Priority": 1000,
         "Normal": {
-            "Normal": 0.35
+            "Normal": 0.35,
+            "Shiny": 1.4
         },
         "Golden": {
-            "Normal": 0.7
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        }
+    },
+    "Party Crown Ducky": {
+        "Priority": 1000,
+        "Normal": {
+            "Normal": 0.35,
+            "Shiny": 1.4
+        },
+        "Golden": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        }
+    },
+    "Party Monkey": {
+        "Priority": 1000,
+        "Normal": {
+            "Normal": 0.35,
+            "Shiny": 1.4
+        },
+        "Golden": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        }
+    },
+    "Safari Dog": {
+        "Priority": 1000,
+        "Normal": {
+            "Normal": 0.35,
+            "Shiny": 1.4
+        },
+        "Golden": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        }
+    },
+    "Sailor Shark": {
+        "Priority": 1000,
+        "Normal": {
+            "Normal": 0.35,
+            "Shiny": 1.4
+        },
+        "Golden": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
         }
     },
     "Marshmallow Agony": {
-        "Priority": 100,
+        "Priority": 1000,
         "Normal": {
-            "Normal": 0.35
+            "Normal": 0.35,
+            "Shiny": 1.4
         },
         "Golden": {
-            "Normal": 0.7
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
         }
     },
     "M-10 PROTOTYPE": {
-        "Priority": 100,
+        "Priority": 1000,
         "Normal": {
-            "Normal": 0.35
+            "Normal": 0.35,
+            "Shiny": 1.4
         },
         "Golden": {
-            "Normal": 0.7
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
         }
     },
     "Party Penguin": {
-        "Priority": 100,
+        "Priority": 1000,
         "Normal": {
-            "Normal": 0.35
+            "Normal": 0.35,
+            "Shiny": 1.4
         },
         "Golden": {
-            "Normal": 0.7
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
         }
     },
     "Scary Corgi": {
-        "Priority": 100,
+        "Priority": 1000,
         "Normal": {
-            "Normal": 0.35
+            "Normal": 0.35,
+            "Shiny": 1.4
         },
         "Golden": {
-            "Normal": 0.7
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
         }
     },
     "Scary Cat": {
-        "Priority": 100,
+        "Priority": 1000,
         "Normal": {
-            "Normal": 0.35
+            "Normal": 0.35,
+            "Shiny": 1.4
         },
         "Golden": {
-            "Normal": 0.7
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        }
+    },
+    "Comet Agony": {
+        "Priority": 1000,
+        "Normal": {
+            "Normal": 0.35,
+            "Shiny": 1.4
+        },
+        "Golden": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        }
+    },
+    "Easter Dominus": {
+        "Priority": 1000,
+        "Normal": {
+            "Normal": 0.35,
+            "Shiny": 1.4
+        },
+        "Golden": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Rainbow": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        }
+    },
+
+    "2 Points Event Pets": {},
+    "Party Piggy": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Golden": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Rainbow": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        }
+    },
+    "Party Tiger": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Golden": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Rainbow": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        }
+    },
+    "Party Squirrel": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Golden": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Rainbow": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        }
+    },
+    "Elf Dog": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Golden": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Rainbow": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        }
+    },
+    "Elf Cat": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Golden": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Rainbow": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        }
+    },
+    "Arcade Dragon": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Golden": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Rainbow": {
+            "Normal": 1.4,
+            "Shiny": 2.45
         }
     }
 }
