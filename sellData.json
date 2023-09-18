@@ -92,6 +92,9 @@
         "Priority": 10,
         "Normal": {
             "Normal": 71.5
+        },
+        "Rainbow": {
+            "Normal": 245
         }
     },
     "Huge Hell Rock": {
