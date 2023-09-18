@@ -58,82 +58,82 @@
     "Safari Cat": {
         "Priority": 100,
         "Normal": {
-            "Normal": 300
+            "Normal": 0.3
         },
         "Golden": {
-            "Normal": 600
+            "Normal": 0.3
         }
     },
     "Party Axolotl": {
         "Priority": 100,
         "Normal": {
-            "Normal": 300
+            "Normal": 0.3
         },
         "Golden": {
-            "Normal": 600
+            "Normal": 0.3
         }
     },
     "Party Cat": {
         "Priority": 100,
         "Normal": {
-            "Normal": 300
+            "Normal": 0.3
         },
         "Golden": {
-            "Normal": 600
+            "Normal": 0.3
         }
     },
     "Party Dog": {
         "Priority": 100,
         "Normal": {
-            "Normal": 300
+            "Normal": 0.3
         },
         "Golden": {
-            "Normal": 600
+            "Normal": 0.3
         }
     },
     "Marshmallow Agony": {
         "Priority": 100,
         "Normal": {
-            "Normal": 300
+            "Normal": 0.3
         },
         "Golden": {
-            "Normal": 600
+            "Normal": 0.3
         }
     },
     "M-10 PROTOTYPE": {
         "Priority": 100,
         "Normal": {
-            "Normal": 300
+            "Normal": 0.3
         },
         "Golden": {
-            "Normal": 600
+            "Normal": 0.3
         }
     },
     "Party Penguin": {
         "Priority": 100,
         "Normal": {
-            "Normal": 300
+            "Normal": 0.3
         },
         "Golden": {
-            "Normal": 600
+            "Normal": 0.3
         }
     },
     "Scary Corgi": {
         "Priority": 100,
         "Normal": {
-            "Normal": 300
+            "Normal": 0.3
         },
         "Golden": {
-            "Normal": 600
+            "Normal": 0.3
         }
     },
     "Scary Cat": {
         "Priority": 100,
         "Normal": {
-            "Normal": 300
+            "Normal": 0.3
         },
         "Golden": {
-            "Normal": 600
+            "Normal": 0.3
         }
     }
 }
