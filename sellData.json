@@ -91,10 +91,10 @@
     "Huge Happy Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 71.5
+            "Normal": 70
         },
         "Rainbow": {
-            "Normal": 240
+            "Normal": 200
         }
     },
     "Huge Hell Rock": {
