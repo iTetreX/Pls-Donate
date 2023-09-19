@@ -42,13 +42,13 @@
     "Redstone Cat": {
         "Priority": 110,
         "Normal": {
-            "Normal": 3.2
+            "Normal": 3
         }
     },
     "Hologram Shark": {
         "Priority": 110,
         "Normal": {
-            "Normal": 3.2
+            "Normal": 3
         }
     },
     "Cosmic Axolotl": {
