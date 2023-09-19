@@ -336,6 +336,12 @@
             "Normal": 300
         }
     },
+    "Huge Peacock": {
+        "Priority": 10,
+        "Golden": {
+            "Normal": 200
+        }
+    },
 
     "1 Points Event Pets": {},
     "Safari Cat": {
