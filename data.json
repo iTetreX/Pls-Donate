@@ -76,68 +76,68 @@
     "Season 2 Mythical Gift": 225,
     "Huge Pumpkin Cat": {
         "Golden": {
-            "Normal": 149,
-            "Shiny": 160
+            "Normal": 144,
+            "Shiny": 176
         },
         "Rainbow": {
-            "Normal": 149,
-            "Shiny": 321
+            "Normal": 144,
+            "Shiny": 353
         },
         "Normal": {
-            "Normal": 80,
-            "Shiny": 80
+            "Normal": 88,
+            "Shiny": 88
         }
     },
     "Huge Samurai Dragon": {
         "Golden": {
-            "Normal": 214,
-            "Shiny": 549
+            "Normal": 207,
+            "Shiny": 532
         },
         "Rainbow": {
-            "Normal": 549,
-            "Shiny": 1099
+            "Normal": 532,
+            "Shiny": 1064
         },
         "Normal": {
-            "Normal": 137,
-            "Shiny": 274
+            "Normal": 133,
+            "Shiny": 266
         }
     },
     "Huge Mosaic Griffin": {
         "Golden": {
-            "Normal": 84,
-            "Shiny": 141
+            "Normal": 82,
+            "Shiny": 136
         },
         "Rainbow": {
-            "Normal": 150,
-            "Shiny": 165
+            "Normal": 145,
+            "Shiny": 166
         },
         "Normal": {
-            "Normal": 103,
-            "Shiny": 85
+            "Normal": 104,
+            "Shiny": 82
         }
     },
     "Huge Cupid Corgi": {
         "Golden": {
-            "Normal": 112,
-            "Shiny": 140
+            "Normal": 100,
+            "Shiny": 125
         },
         "Rainbow": {
-            "Normal": 140,
-            "Shiny": 74
+            "Normal": 125,
+            "Shiny": 66
         },
         "Normal": {
-            "Normal": 94,
-            "Shiny": 89
+            "Normal": 90,
+            "Shiny": 86
         }
     },
     "Huge Cyborg Cat": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -146,26 +146,26 @@
     },
     "Huge Goblin": {
         "Golden": {
-            "Normal": 117,
-            "Shiny": 94
+            "Normal": 110,
+            "Shiny": 91
         },
         "Rainbow": {
-            "Normal": 146,
-            "Shiny": 128
+            "Normal": 137,
+            "Shiny": 117
         },
         "Normal": {
-            "Normal": 80,
-            "Shiny": 80
+            "Normal": 73,
+            "Shiny": 183
         }
     },
     "Huge Balloon Monkey": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -174,40 +174,40 @@
     },
     "Huge Easter Yeti": {
         "Golden": {
-            "Normal": 110,
-            "Shiny": 138
+            "Normal": 104,
+            "Shiny": 130
         },
         "Rainbow": {
-            "Normal": 138,
-            "Shiny": 177
+            "Normal": 130,
+            "Shiny": 166
         },
         "Normal": {
-            "Normal": 158,
-            "Shiny": 105
+            "Normal": 153,
+            "Shiny": 102
         }
     },
     "Huge Anime Unicorn": {
         "Golden": {
-            "Normal": 97,
-            "Shiny": 195
+            "Normal": 93,
+            "Shiny": 187
         },
         "Rainbow": {
-            "Normal": 196,
-            "Shiny": 390
+            "Normal": 190,
+            "Shiny": 375
         },
         "Normal": {
-            "Normal": 97,
-            "Shiny": 89
+            "Normal": 93,
+            "Shiny": 86
         }
     },
     "Huge White Tiger": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -216,54 +216,54 @@
     },
     "Huge Scary Cat": {
         "Golden": {
-            "Normal": 132,
-            "Shiny": 179
+            "Normal": 125,
+            "Shiny": 168
         },
         "Rainbow": {
-            "Normal": 165,
-            "Shiny": 143
+            "Normal": 157,
+            "Shiny": 134
         },
         "Normal": {
-            "Normal": 89,
-            "Shiny": 179
+            "Normal": 84,
+            "Shiny": 168
         }
     },
     "Huge Pufferfish": {
         "Golden": {
-            "Normal": 97,
-            "Shiny": 368
+            "Normal": 94,
+            "Shiny": 356
         },
         "Rainbow": {
-            "Normal": 368,
-            "Shiny": 736
+            "Normal": 356,
+            "Shiny": 713
         },
         "Normal": {
-            "Normal": 92,
-            "Shiny": 179
+            "Normal": 89,
+            "Shiny": 173
         }
     },
     "Huge King Cobra": {
         "Golden": {
-            "Normal": 175,
-            "Shiny": 116
+            "Normal": 169,
+            "Shiny": 112
         },
         "Rainbow": {
-            "Normal": 87,
-            "Shiny": 140
+            "Normal": 84,
+            "Shiny": 132
         },
         "Normal": {
-            "Normal": 87,
-            "Shiny": 87
+            "Normal": 82,
+            "Shiny": 82
         }
     },
     "Huge Chroma Balloon Dragon": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -272,26 +272,26 @@
     },
     "Huge Cat": {
         "Golden": {
-            "Normal": 2443,
-            "Shiny": 4887
+            "Normal": 2272,
+            "Shiny": 4544
         },
         "Rainbow": {
-            "Normal": 1629,
-            "Shiny": 9774
+            "Normal": 1514,
+            "Shiny": 9089
         },
         "Normal": {
-            "Normal": 1221,
-            "Shiny": 2443
+            "Normal": 1136,
+            "Shiny": 2272
         }
     },
     "Huge Pink Balloon Cat": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -301,11 +301,11 @@
     "Huge Cow": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -314,124 +314,124 @@
     },
     "Huge Forest Wyvern": {
         "Golden": {
-            "Normal": 188,
-            "Shiny": 602
+            "Normal": 182,
+            "Shiny": 573
         },
         "Rainbow": {
-            "Normal": 327,
-            "Shiny": 1205
+            "Normal": 317,
+            "Shiny": 1147
         },
         "Normal": {
-            "Normal": 150,
-            "Shiny": 301
+            "Normal": 143,
+            "Shiny": 286
         }
     },
     "Huge Storm Agony": {
         "Golden": {
-            "Normal": 1106,
-            "Shiny": 1770
+            "Normal": 1071,
+            "Shiny": 1713
         },
         "Rainbow": {
-            "Normal": 1162,
-            "Shiny": 3541
+            "Normal": 1125,
+            "Shiny": 3427
         },
         "Normal": {
-            "Normal": 442,
-            "Shiny": 885
+            "Normal": 428,
+            "Shiny": 856
         }
     },
     "Huge Mrs. Claws": {
         "Golden": {
-            "Normal": 175,
-            "Shiny": 121
+            "Normal": 166,
+            "Shiny": 117
         },
         "Rainbow": {
-            "Normal": 85,
-            "Shiny": 177
+            "Normal": 82,
+            "Shiny": 175
         },
         "Normal": {
-            "Normal": 110,
-            "Shiny": 138
+            "Normal": 109,
+            "Shiny": 137
         }
     },
     "Huge Ninja Axolotl": {
         "Golden": {
-            "Normal": 163,
-            "Shiny": 86
+            "Normal": 159,
+            "Shiny": 84
         },
         "Rainbow": {
-            "Normal": 163,
-            "Shiny": 435
+            "Normal": 159,
+            "Shiny": 372
         },
         "Normal": {
-            "Normal": 136,
-            "Shiny": 130
+            "Normal": 93,
+            "Shiny": 116
         }
     },
     "Huge Sombrero Chihuahua": {
         "Golden": {
-            "Normal": 171,
-            "Shiny": 686
+            "Normal": 166,
+            "Shiny": 664
         },
         "Rainbow": {
-            "Normal": 429,
-            "Shiny": 1373
+            "Normal": 415,
+            "Shiny": 1329
         },
         "Normal": {
-            "Normal": 179,
-            "Shiny": 359
+            "Normal": 174,
+            "Shiny": 348
         }
     },
     "Huge Safari Dog": {
         "Golden": {
-            "Normal": 953,
-            "Shiny": 1906
+            "Normal": 902,
+            "Shiny": 1804
         },
         "Rainbow": {
-            "Normal": 1906,
-            "Shiny": 3813
+            "Normal": 1804,
+            "Shiny": 3609
         },
         "Normal": {
-            "Normal": 476,
-            "Shiny": 317
+            "Normal": 451,
+            "Shiny": 300
         }
     },
     "Huge Marshmallow Agony": {
         "Golden": {
-            "Normal": 140,
-            "Shiny": 82
+            "Normal": 136,
+            "Shiny": 198
         },
         "Rainbow": {
-            "Normal": 175,
-            "Shiny": 93
+            "Normal": 170,
+            "Shiny": 91
         },
         "Normal": {
-            "Normal": 101,
-            "Shiny": 127
+            "Normal": 94,
+            "Shiny": 94
         }
     },
     "Huge Balloon Dragon": {
         "Golden": {
-            "Normal": 195,
-            "Shiny": 156
+            "Normal": 186,
+            "Shiny": 148
         },
         "Rainbow": {
-            "Normal": 195,
-            "Shiny": 312
+            "Normal": 186,
+            "Shiny": 297
         },
         "Normal": {
-            "Normal": 195,
-            "Shiny": 130
+            "Normal": 186,
+            "Shiny": 124
         }
     },
     "Huge Lovemelon": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -440,26 +440,26 @@
     },
     "Huge Chest Mimic": {
         "Golden": {
-            "Normal": 115,
-            "Shiny": 460
+            "Normal": 111,
+            "Shiny": 445
         },
         "Rainbow": {
-            "Normal": 229,
-            "Shiny": 921
+            "Normal": 222,
+            "Shiny": 891
         },
         "Normal": {
-            "Normal": 146,
-            "Shiny": 97
+            "Normal": 135,
+            "Shiny": 90
         }
     },
     "Huge Angel Cat": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -468,152 +468,152 @@
     },
     "Huge Stealth Dragon": {
         "Golden": {
-            "Normal": 117,
-            "Shiny": 297
+            "Normal": 108,
+            "Shiny": 289
         },
         "Rainbow": {
-            "Normal": 186,
-            "Shiny": 594
+            "Normal": 180,
+            "Shiny": 579
         },
         "Normal": {
-            "Normal": 185,
-            "Shiny": 185
+            "Normal": 181,
+            "Shiny": 181
         }
     },
     "Huge Comet Agony": {
         "Golden": {
-            "Normal": 249,
-            "Shiny": 399
+            "Normal": 241,
+            "Shiny": 386
         },
         "Rainbow": {
-            "Normal": 1169,
-            "Shiny": 798
+            "Normal": 1086,
+            "Shiny": 772
         },
         "Normal": {
-            "Normal": 99,
-            "Shiny": 199
+            "Normal": 96,
+            "Shiny": 193
         }
     },
     "Huge Pterodactyl": {
         "Golden": {
-            "Normal": 177,
-            "Shiny": 118
+            "Normal": 174,
+            "Shiny": 116
         },
         "Rainbow": {
-            "Normal": 88,
-            "Shiny": 153
+            "Normal": 87,
+            "Shiny": 148
         },
         "Normal": {
-            "Normal": 90,
-            "Shiny": 90
+            "Normal": 85,
+            "Shiny": 85
         }
     },
     "Huge Nightmare Kraken": {
         "Golden": {
-            "Normal": 121,
-            "Shiny": 242
+            "Normal": 117,
+            "Shiny": 234
         },
         "Rainbow": {
-            "Normal": 302,
-            "Shiny": 484
+            "Normal": 292,
+            "Shiny": 468
         },
         "Normal": {
-            "Normal": 151,
-            "Shiny": 141
+            "Normal": 146,
+            "Shiny": 137
         }
     },
     "Huge Dragon": {
         "Golden": {
-            "Normal": 106,
-            "Shiny": 204
+            "Normal": 103,
+            "Shiny": 195
         },
         "Rainbow": {
-            "Normal": 178,
-            "Shiny": 408
+            "Normal": 172,
+            "Shiny": 391
         },
         "Normal": {
-            "Normal": 127,
-            "Shiny": 172
+            "Normal": 97,
+            "Shiny": 167
         }
     },
     "Huge Sailor Shark": {
         "Golden": {
-            "Normal": 115,
-            "Shiny": 185
+            "Normal": 110,
+            "Shiny": 178
         },
         "Rainbow": {
-            "Normal": 244,
-            "Shiny": 370
+            "Normal": 236,
+            "Shiny": 357
         },
         "Normal": {
-            "Normal": 92,
-            "Shiny": 115
+            "Normal": 89,
+            "Shiny": 111
         }
     },
     "Huge Meebo in a Spaceship": {
         "Golden": {
-            "Normal": 152,
-            "Shiny": 611
+            "Normal": 147,
+            "Shiny": 591
         },
         "Rainbow": {
-            "Normal": 379,
-            "Shiny": 1222
+            "Normal": 367,
+            "Shiny": 1183
         },
         "Normal": {
-            "Normal": 188,
-            "Shiny": 125
+            "Normal": 182,
+            "Shiny": 121
         }
     },
     "Huge Storm Dominus": {
         "Golden": {
-            "Normal": 180,
-            "Shiny": 144
+            "Normal": 170,
+            "Shiny": 136
         },
         "Rainbow": {
-            "Normal": 180,
-            "Shiny": 288
+            "Normal": 170,
+            "Shiny": 273
         },
         "Normal": {
-            "Normal": 180,
-            "Shiny": 146
+            "Normal": 170,
+            "Shiny": 139
         }
     },
     "Huge Evolved Hacked Cat": {
         "Golden": {
-            "Normal": 184,
-            "Shiny": 369
+            "Normal": 179,
+            "Shiny": 358
         },
         "Rainbow": {
-            "Normal": 123,
-            "Shiny": 739
+            "Normal": 119,
+            "Shiny": 717
         },
         "Normal": {
-            "Normal": 92,
-            "Shiny": 184
+            "Normal": 89,
+            "Shiny": 179
         }
     },
     "Huge Party Monkey": {
         "Golden": {
-            "Normal": 227,
-            "Shiny": 522
+            "Normal": 220,
+            "Shiny": 506
         },
         "Rainbow": {
-            "Normal": 522,
-            "Shiny": 151
+            "Normal": 506,
+            "Shiny": 147
         },
         "Normal": {
-            "Normal": 130,
-            "Shiny": 87
+            "Normal": 126,
+            "Shiny": 84
         }
     },
     "Huge Tech Chest Mimic": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -622,54 +622,54 @@
     },
     "Huge Cupcake": {
         "Golden": {
-            "Normal": 148,
-            "Shiny": 99
+            "Normal": 142,
+            "Shiny": 94
         },
         "Rainbow": {
-            "Normal": 186,
-            "Shiny": 148
+            "Normal": 177,
+            "Shiny": 130
         },
         "Normal": {
-            "Normal": 92,
-            "Shiny": 92
+            "Normal": 81,
+            "Shiny": 81
         }
     },
     "Huge Luau Cat": {
         "Golden": {
-            "Normal": 196,
-            "Shiny": 125
+            "Normal": 181,
+            "Shiny": 115
         },
         "Rainbow": {
-            "Normal": 86,
-            "Shiny": 251
+            "Normal": 84,
+            "Shiny": 231
         },
         "Normal": {
-            "Normal": 157,
-            "Shiny": 174
+            "Normal": 144,
+            "Shiny": 168
         }
     },
     "Huge Cyborg Capybara": {
         "Golden": {
-            "Normal": 451,
-            "Shiny": 1227
+            "Normal": 436,
+            "Shiny": 1187
         },
         "Rainbow": {
-            "Normal": 1227,
-            "Shiny": 1444
+            "Normal": 1187,
+            "Shiny": 1397
         },
         "Normal": {
-            "Normal": 180,
-            "Shiny": 361
+            "Normal": 174,
+            "Shiny": 349
         }
     },
     "Huge Doodle Snow Owl": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -678,236 +678,236 @@
     },
     "Huge Bear": {
         "Golden": {
-            "Normal": 190,
-            "Shiny": 268
+            "Normal": 184,
+            "Shiny": 259
         },
         "Rainbow": {
-            "Normal": 268,
-            "Shiny": 536
+            "Normal": 259,
+            "Shiny": 519
         },
         "Normal": {
-            "Normal": 114,
-            "Shiny": 190
+            "Normal": 110,
+            "Shiny": 184
         }
     },
     "Huge Grinch Cat": {
         "Golden": {
-            "Normal": 190,
-            "Shiny": 152
+            "Normal": 185,
+            "Shiny": 148
         },
         "Rainbow": {
-            "Normal": 107,
-            "Shiny": 304
+            "Normal": 104,
+            "Shiny": 296
         },
         "Normal": {
-            "Normal": 190,
-            "Shiny": 170
+            "Normal": 185,
+            "Shiny": 165
         }
     },
     "Huge Anime Agony": {
         "Golden": {
-            "Normal": 647,
-            "Shiny": 1229
+            "Normal": 622,
+            "Shiny": 1189
         },
         "Rainbow": {
-            "Normal": 1755,
-            "Shiny": 2072
+            "Normal": 1698,
+            "Shiny": 1992
         },
         "Normal": {
-            "Normal": 259,
-            "Shiny": 276
+            "Normal": 249,
+            "Shiny": 267
         }
     },
     "Huge Pink Marshmallow Chick": {
         "Golden": {
-            "Normal": 104,
-            "Shiny": 167
+            "Normal": 95,
+            "Shiny": 161
         },
         "Rainbow": {
-            "Normal": 167,
-            "Shiny": 334
+            "Normal": 161,
+            "Shiny": 323
         },
         "Normal": {
-            "Normal": 156,
-            "Shiny": 104
+            "Normal": 142,
+            "Shiny": 285
         }
     },
     "Huge Arcade Cat": {
         "Golden": {
-            "Normal": 114,
-            "Shiny": 214
+            "Normal": 110,
+            "Shiny": 203
         },
         "Rainbow": {
-            "Normal": 286,
-            "Shiny": 191
+            "Normal": 277,
+            "Shiny": 184
         },
         "Normal": {
-            "Normal": 133,
-            "Shiny": 180
+            "Normal": 127,
+            "Shiny": 174
         }
     },
     "Huge Firefighter Dalmation": {
         "Golden": {
-            "Normal": 151,
-            "Shiny": 99
+            "Normal": 147,
+            "Shiny": 96
         },
         "Rainbow": {
-            "Normal": 144,
-            "Shiny": 375
+            "Normal": 140,
+            "Shiny": 359
         },
         "Normal": {
-            "Normal": 93,
-            "Shiny": 156
+            "Normal": 89,
+            "Shiny": 149
         }
     },
     "Huge Lucki": {
         "Golden": {
-            "Normal": 120,
-            "Shiny": 290
+            "Normal": 116,
+            "Shiny": 281
         },
         "Rainbow": {
-            "Normal": 146,
-            "Shiny": 580
+            "Normal": 141,
+            "Shiny": 562
         },
         "Normal": {
-            "Normal": 181,
-            "Shiny": 145
+            "Normal": 175,
+            "Shiny": 140
         }
     },
     "Huge Doodle Cat": {
         "Golden": {
-            "Normal": 185,
-            "Shiny": 146
+            "Normal": 178,
+            "Shiny": 141
         },
         "Rainbow": {
-            "Normal": 167,
-            "Shiny": 165
+            "Normal": 162,
+            "Shiny": 163
         },
         "Normal": {
-            "Normal": 103,
-            "Shiny": 96
+            "Normal": 102,
+            "Shiny": 93
         }
     },
     "Huge Tiedye Corgi": {
         "Golden": {
-            "Normal": 191,
-            "Shiny": 115
+            "Normal": 185,
+            "Shiny": 112
         },
         "Rainbow": {
-            "Normal": 95,
-            "Shiny": 230
+            "Normal": 92,
+            "Shiny": 224
         },
         "Normal": {
-            "Normal": 144,
-            "Shiny": 180
+            "Normal": 140,
+            "Shiny": 175
         }
     },
     "Huge Atlantean Dolphin": {
         "Golden": {
-            "Normal": 118,
-            "Shiny": 236
+            "Normal": 106,
+            "Shiny": 213
         },
         "Rainbow": {
-            "Normal": 128,
-            "Shiny": 472
+            "Normal": 123,
+            "Shiny": 426
         },
         "Normal": {
-            "Normal": 147,
-            "Shiny": 82
+            "Normal": 133,
+            "Shiny": 84
         }
     },
     "Huge Sun Angelus": {
         "Golden": {
-            "Normal": 124,
-            "Shiny": 321
+            "Normal": 120,
+            "Shiny": 313
         },
         "Rainbow": {
-            "Normal": 312,
-            "Shiny": 642
+            "Normal": 301,
+            "Shiny": 626
         },
         "Normal": {
-            "Normal": 80,
-            "Shiny": 118
+            "Normal": 195,
+            "Shiny": 114
         }
     },
     "Huge Wild Fire Agony": {
         "Golden": {
-            "Normal": 92,
-            "Shiny": 154
+            "Normal": 89,
+            "Shiny": 149
         },
         "Rainbow": {
-            "Normal": 232,
-            "Shiny": 537
+            "Normal": 224,
+            "Shiny": 518
         },
         "Normal": {
-            "Normal": 167,
-            "Shiny": 137
+            "Normal": 162,
+            "Shiny": 133
         }
     },
     "Huge Piñata Cat": {
         "Golden": {
-            "Normal": 126,
-            "Shiny": 84
+            "Normal": 122,
+            "Shiny": 81
         },
         "Rainbow": {
-            "Normal": 365,
-            "Shiny": 731
+            "Normal": 353,
+            "Shiny": 707
         },
         "Normal": {
-            "Normal": 91,
-            "Shiny": 152
+            "Normal": 88,
+            "Shiny": 147
         }
     },
     "Huge Neon Cat": {
         "Golden": {
-            "Normal": 91,
-            "Shiny": 182
+            "Normal": 83,
+            "Shiny": 166
         },
         "Rainbow": {
-            "Normal": 228,
-            "Shiny": 365
+            "Normal": 207,
+            "Shiny": 332
         },
         "Normal": {
-            "Normal": 91,
-            "Shiny": 155
+            "Normal": 83,
+            "Shiny": 150
         }
     },
     "Huge Neon Griffin": {
         "Golden": {
-            "Normal": 142,
-            "Shiny": 285
+            "Normal": 126,
+            "Shiny": 253
         },
         "Rainbow": {
-            "Normal": 95,
-            "Shiny": 571
+            "Normal": 84,
+            "Shiny": 506
         },
         "Normal": {
-            "Normal": 178,
-            "Shiny": 95
+            "Normal": 158,
+            "Shiny": 84
         }
     },
     "Huge Elf Cat": {
         "Golden": {
-            "Normal": 91,
-            "Shiny": 184
+            "Normal": 88,
+            "Shiny": 178
         },
         "Rainbow": {
-            "Normal": 144,
-            "Shiny": 114
+            "Normal": 139,
+            "Shiny": 110
         },
         "Normal": {
-            "Normal": 102,
-            "Shiny": 128
+            "Normal": 97,
+            "Shiny": 97
         }
     },
     "Huge Dove": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -916,26 +916,26 @@
     },
     "Huge Dog": {
         "Golden": {
-            "Normal": 85,
-            "Shiny": 213
+            "Normal": 82,
+            "Shiny": 206
         },
         "Rainbow": {
-            "Normal": 190,
-            "Shiny": 380
+            "Normal": 184,
+            "Shiny": 371
         },
         "Normal": {
-            "Normal": 95,
-            "Shiny": 118
+            "Normal": 92,
+            "Shiny": 115
         }
     },
     "Huge Crowned Corgi": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -944,26 +944,26 @@
     },
     "Huge Scary Corgi": {
         "Golden": {
-            "Normal": 138,
-            "Shiny": 171
+            "Normal": 129,
+            "Shiny": 170
         },
         "Rainbow": {
-            "Normal": 150,
-            "Shiny": 137
+            "Normal": 146,
+            "Shiny": 136
         },
         "Normal": {
             "Normal": 85,
-            "Shiny": 57
+            "Shiny": 56
         }
     },
     "Huge Stunt Unicorn": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -972,943 +972,47 @@
     },
     "Huge Scarecrow Cat": {
         "Golden": {
-            "Normal": 166,
-            "Shiny": 114
+            "Normal": 160,
+            "Shiny": 103
         },
         "Rainbow": {
-            "Normal": 197,
-            "Shiny": 228
+            "Normal": 191,
+            "Shiny": 207
         },
         "Normal": {
-            "Normal": 142,
-            "Shiny": 142
+            "Normal": 129,
+            "Shiny": 129
         }
     },
     "Huge Santa Dragon": {
         "Golden": {
-            "Normal": 203,
-            "Shiny": 325
+            "Normal": 197,
+            "Shiny": 315
         },
         "Rainbow": {
-            "Normal": 148,
-            "Shiny": 651
+            "Normal": 143,
+            "Shiny": 630
         },
         "Normal": {
-            "Normal": 81,
-            "Shiny": 126
+            "Normal": 197,
+            "Shiny": 122
         }
     },
     "Huge Party Crown Ducky": {
         "Golden": {
-            "Normal": 157,
-            "Shiny": 84
-        },
-        "Rainbow": {
-            "Normal": 91,
-            "Shiny": 360
-        },
-        "Normal": {
-            "Normal": 90,
-            "Shiny": 150
-        }
-    },
-    "Huge Cosmic Agony": {
-        "Golden": {
-            "Normal": 119,
-            "Shiny": 239
-        },
-        "Rainbow": {
-            "Normal": 299,
-            "Shiny": 478
-        },
-        "Normal": {
-            "Normal": 149,
-            "Shiny": 149
-        }
-    },
-    "Huge Samurai Bull": {
-        "Golden": {
-            "Normal": 27,
-            "Shiny": 55
-        },
-        "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
-        },
-        "Normal": {
-            "Normal": 15,
-            "Shiny": 27
-        }
-    },
-    "Huge Stealth Bobcat": {
-        "Golden": {
-            "Normal": 119,
-            "Shiny": 361
-        },
-        "Rainbow": {
-            "Normal": 361,
-            "Shiny": 722
-        },
-        "Normal": {
-            "Normal": 178,
-            "Shiny": 119
-        }
-    },
-    "Huge Reindeer Dog": {
-        "Golden": {
-            "Normal": 80,
-            "Shiny": 279
-        },
-        "Rainbow": {
-            "Normal": 107,
-            "Shiny": 559
-        },
-        "Normal": {
-            "Normal": 174,
-            "Shiny": 93
-        }
-    },
-    "Huge Neon Twilight Dragon": {
-        "Golden": {
-            "Normal": 220,
-            "Shiny": 224
-        },
-        "Rainbow": {
-            "Normal": 224,
-            "Shiny": 448
-        },
-        "Normal": {
-            "Normal": 330,
-            "Shiny": 660
-        }
-    },
-    "Huge Nightfall Pegasus": {
-        "Golden": {
-            "Normal": 139,
-            "Shiny": 166
-        },
-        "Rainbow": {
-            "Normal": 139,
-            "Shiny": 333
-        },
-        "Normal": {
-            "Normal": 83,
-            "Shiny": 104
-        }
-    },
-    "Huge Capybara": {
-        "Golden": {
-            "Normal": 112,
-            "Shiny": 125
-        },
-        "Rainbow": {
-            "Normal": 130,
-            "Shiny": 251
-        },
-        "Normal": {
-            "Normal": 168,
-            "Shiny": 336
-        }
-    },
-    "Huge Ducky": {
-        "Golden": {
-            "Normal": 109,
-            "Shiny": 249
-        },
-        "Rainbow": {
-            "Normal": 181,
-            "Shiny": 499
-        },
-        "Normal": {
-            "Normal": 156,
-            "Shiny": 83
-        }
-    },
-    "Huge Party Cat": {
-        "Golden": {
-            "Normal": 185,
-            "Shiny": 275
-        },
-        "Rainbow": {
-            "Normal": 185,
-            "Shiny": 551
-        },
-        "Normal": {
-            "Normal": 172,
-            "Shiny": 137
-        }
-    },
-    "Huge Safari Cat": {
-        "Golden": {
-            "Normal": 156,
-            "Shiny": 272
-        },
-        "Rainbow": {
-            "Normal": 104,
-            "Shiny": 822
-        },
-        "Normal": {
-            "Normal": 102,
-            "Shiny": 173
-        }
-    },
-    "Huge Turtle": {
-        "Golden": {
-            "Normal": 27,
-            "Shiny": 55
-        },
-        "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
-        },
-        "Normal": {
-            "Normal": 15,
-            "Shiny": 27
-        }
-    },
-    "Huge Lucky Cat": {
-        "Golden": {
-            "Normal": 253,
-            "Shiny": 459
-        },
-        "Rainbow": {
-            "Normal": 168,
-            "Shiny": 919
-        },
-        "Normal": {
-            "Normal": 114,
-            "Shiny": 229
-        }
-    },
-    "Huge Dominus Lucki": {
-        "Golden": {
-            "Normal": 127,
-            "Shiny": 271
-        },
-        "Rainbow": {
-            "Normal": 271,
-            "Shiny": 542
-        },
-        "Normal": {
-            "Normal": 169,
-            "Shiny": 169
-        }
-    },
-    "Huge Green Balloon Cat": {
-        "Golden": {
-            "Normal": 100,
-            "Shiny": 200
-        },
-        "Rainbow": {
-            "Normal": 223,
-            "Shiny": 401
-        },
-        "Normal": {
-            "Normal": 125,
-            "Shiny": 167
-        }
-    },
-    "Huge Exquisite Cat": {
-        "Golden": {
-            "Normal": 576,
-            "Shiny": 1496
-        },
-        "Rainbow": {
-            "Normal": 1496,
-            "Shiny": 2993
-        },
-        "Normal": {
-            "Normal": 374,
-            "Shiny": 748
-        }
-    },
-    "Huge Evolved Cupcake": {
-        "Golden": {
-            "Normal": 136,
-            "Shiny": 272
-        },
-        "Rainbow": {
-            "Normal": 341,
-            "Shiny": 545
-        },
-        "Normal": {
-            "Normal": 170,
-            "Shiny": 136
-        }
-    },
-    "Huge Error Cat": {
-        "Golden": {
-            "Normal": 103,
-            "Shiny": 93
-        },
-        "Rainbow": {
-            "Normal": 129,
-            "Shiny": 137
-        },
-        "Normal": {
-            "Normal": 86,
-            "Shiny": 86
-        }
-    },
-    "Huge Easter Bunny": {
-        "Golden": {
-            "Normal": 135,
-            "Shiny": 90
-        },
-        "Rainbow": {
-            "Normal": 169,
-            "Shiny": 151
-        },
-        "Normal": {
-            "Normal": 94,
-            "Shiny": 94
-        }
-    },
-    "Huge Atlantean Orca": {
-        "Golden": {
-            "Normal": 83,
-            "Shiny": 166
-        },
-        "Rainbow": {
-            "Normal": 170,
-            "Shiny": 333
-        },
-        "Normal": {
-            "Normal": 83,
-            "Shiny": 195
-        }
-    },
-    "Huge Rainbow Unicorn": {
-        "Golden": {
-            "Normal": 278,
-            "Shiny": 726
-        },
-        "Rainbow": {
-            "Normal": 726,
-            "Shiny": 890
-        },
-        "Normal": {
-            "Normal": 111,
-            "Shiny": 222
-        }
-    },
-    "Huge Tiedye Bunny": {
-        "Golden": {
-            "Normal": 554,
-            "Shiny": 1108
-        },
-        "Rainbow": {
-            "Normal": 1108,
-            "Shiny": 2217
-        },
-        "Normal": {
-            "Normal": 277,
-            "Shiny": 554
-        }
-    },
-    "Huge Clover Unicorn": {
-        "Golden": {
-            "Normal": 186,
-            "Shiny": 124
-        },
-        "Rainbow": {
-            "Normal": 153,
-            "Shiny": 124
-        },
-        "Normal": {
-            "Normal": 126,
-            "Shiny": 84
-        }
-    },
-    "Huge Empyrean Agony": {
-        "Golden": {
-            "Normal": 164,
-            "Shiny": 329
-        },
-        "Rainbow": {
-            "Normal": 329,
-            "Shiny": 659
-        },
-        "Normal": {
-            "Normal": 82,
-            "Shiny": 119
-        }
-    },
-    "Huge Axolotl": {
-        "Golden": {
-            "Normal": 122,
-            "Shiny": 405
-        },
-        "Rainbow": {
-            "Normal": 405,
-            "Shiny": 811
-        },
-        "Normal": {
-            "Normal": 101,
-            "Shiny": 202
-        }
-    },
-    "Huge Clover Dragon": {
-        "Golden": {
-            "Normal": 191,
-            "Shiny": 306
-        },
-        "Rainbow": {
-            "Normal": 191,
-            "Shiny": 613
-        },
-        "Normal": {
-            "Normal": 91,
-            "Shiny": 153
-        }
-    },
-    "Huge Mosaic Lamb": {
-        "Golden": {
-            "Normal": 101,
-            "Shiny": 214
-        },
-        "Rainbow": {
-            "Normal": 254,
-            "Shiny": 429
-        },
-        "Normal": {
-            "Normal": 134,
-            "Shiny": 122
-        }
-    },
-    "Huge Rainbow Slime": {
-        "Golden": {
-            "Normal": 146,
-            "Shiny": 97
-        },
-        "Rainbow": {
-            "Normal": 183,
-            "Shiny": 97
-        },
-        "Normal": {
-            "Normal": 77,
-            "Shiny": 192
-        }
-    },
-    "Huge Knife Cat": {
-        "Golden": {
-            "Normal": 164,
-            "Shiny": 131
-        },
-        "Rainbow": {
-            "Normal": 164,
-            "Shiny": 87
-        },
-        "Normal": {
-            "Normal": 164,
-            "Shiny": 82
-        }
-    },
-    "Huge Kraken": {
-        "Golden": {
-            "Normal": 380,
-            "Shiny": 760
-        },
-        "Rainbow": {
-            "Normal": 760,
-            "Shiny": 1520
-        },
-        "Normal": {
-            "Normal": 190,
-            "Shiny": 126
-        }
-    },
-    "Huge Peacock": {
-        "Golden": {
-            "Normal": 164,
-            "Shiny": 82
-        },
-        "Rainbow": {
-            "Normal": 174,
-            "Shiny": 130
-        },
-        "Normal": {
-            "Normal": 87,
-            "Shiny": 87
-        }
-    },
-    "Huge Enchanted Deer": {
-        "Golden": {
-            "Normal": 139,
-            "Shiny": 173
-        },
-        "Rainbow": {
-            "Normal": 173,
-            "Shiny": 92
-        },
-        "Normal": {
-            "Normal": 89,
-            "Shiny": 89
-        }
-    },
-    "Huge Angelus": {
-        "Golden": {
-            "Normal": 484,
-            "Shiny": 382
-        },
-        "Rainbow": {
-            "Normal": 382,
-            "Shiny": 765
-        },
-        "Normal": {
-            "Normal": 726,
-            "Shiny": 1453
-        }
-    },
-    "Huge Prickly Panda": {
-        "Golden": {
-            "Normal": 502,
-            "Shiny": 1360
-        },
-        "Rainbow": {
-            "Normal": 334,
-            "Shiny": 2720
-        },
-        "Normal": {
-            "Normal": 340,
-            "Shiny": 680
-        }
-    },
-    "Huge Pony": {
-        "Golden": {
-            "Normal": 409,
-            "Shiny": 1178
-        },
-        "Rainbow": {
-            "Normal": 1178,
-            "Shiny": 1311
-        },
-        "Normal": {
-            "Normal": 163,
-            "Shiny": 327
-        }
-    },
-    "Huge Tiedye Axolotl": {
-        "Golden": {
-            "Normal": 1460,
-            "Shiny": 2921
-        },
-        "Rainbow": {
-            "Normal": 2921,
-            "Shiny": 5842
-        },
-        "Normal": {
-            "Normal": 730,
-            "Shiny": 1460
-        }
-    },
-    "Huge Butterfly": {
-        "Golden": {
-            "Normal": 1078,
-            "Shiny": 2156
-        },
-        "Rainbow": {
-            "Normal": 2156,
-            "Shiny": 4312
-        },
-        "Normal": {
-            "Normal": 539,
-            "Shiny": 1078
-        }
-    },
-    "Huge Hologram Axolotl": {
-        "Golden": {
-            "Normal": 96,
-            "Shiny": 193
-        },
-        "Rainbow": {
-            "Normal": 241,
-            "Shiny": 386
-        },
-        "Normal": {
-            "Normal": 96,
-            "Shiny": 161
-        }
-    },
-    "Huge Tiki Dominus": {
-        "Golden": {
-            "Normal": 117,
-            "Shiny": 469
-        },
-        "Rainbow": {
-            "Normal": 469,
-            "Shiny": 939
-        },
-        "Normal": {
-            "Normal": 127,
-            "Shiny": 85
-        }
-    },
-    "Huge Cheerful Yeti": {
-        "Golden": {
-            "Normal": 178,
-            "Shiny": 151
-        },
-        "Rainbow": {
-            "Normal": 100,
-            "Shiny": 303
-        },
-        "Normal": {
-            "Normal": 189,
-            "Shiny": 185
-        }
-    },
-    "Huge Corgi": {
-        "Golden": {
-            "Normal": 86,
-            "Shiny": 173
-        },
-        "Rainbow": {
-            "Normal": 82,
-            "Shiny": 347
-        },
-        "Normal": {
-            "Normal": 95,
-            "Shiny": 95
-        }
-    },
-    "Huge Jolly Penguin": {
-        "Golden": {
-            "Normal": 110,
+            "Normal": 152,
             "Shiny": 81
         },
         "Rainbow": {
-            "Normal": 137,
-            "Shiny": 144
-        },
-        "Normal": {
-            "Normal": 90,
-            "Shiny": 90
-        }
-    },
-    "Huge Doodle Fairy": {
-        "Golden": {
-            "Normal": 127,
-            "Shiny": 162
-        },
-        "Rainbow": {
-            "Normal": 159,
-            "Shiny": 159
-        },
-        "Normal": {
-            "Normal": 91,
-            "Shiny": 91
-        }
-    },
-    "Huge Blue Balloon Cat": {
-        "Golden": {
-            "Normal": 2853,
-            "Shiny": 5706
-        },
-        "Rainbow": {
-            "Normal": 5706,
-            "Shiny": 11412
-        },
-        "Normal": {
-            "Normal": 1426,
-            "Shiny": 2853
-        }
-    },
-    "Huge Black Balloon Cat": {
-        "Golden": {
-            "Normal": 27,
-            "Shiny": 55
-        },
-        "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
-        },
-        "Normal": {
-            "Normal": 15,
-            "Shiny": 27
-        }
-    },
-    "Huge Chroma Balloon Axolotl": {
-        "Golden": {
-            "Normal": 27,
-            "Shiny": 55
-        },
-        "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
-        },
-        "Normal": {
-            "Normal": 15,
-            "Shiny": 27
-        }
-    },
-    "Huge Pop Cat": {
-        "Golden": {
-            "Normal": 256,
-            "Shiny": 512
-        },
-        "Rainbow": {
-            "Normal": 640,
-            "Shiny": 1024
-        },
-        "Normal": {
-            "Normal": 128,
-            "Shiny": 85
-        }
-    },
-    "Huge Exquisite Parrot": {
-        "Golden": {
-            "Normal": 258,
-            "Shiny": 517
-        },
-        "Rainbow": {
-            "Normal": 517,
-            "Shiny": 1034
-        },
-        "Normal": {
-            "Normal": 129,
-            "Shiny": 86
-        }
-    },
-    "Huge Evolved King Cobra": {
-        "Golden": {
-            "Normal": 178,
-            "Shiny": 356
-        },
-        "Rainbow": {
-            "Normal": 118,
-            "Shiny": 713
-        },
-        "Normal": {
-            "Normal": 89,
-            "Shiny": 148
-        }
-    },
-    "Huge Purple Balloon Cat": {
-        "Golden": {
-            "Normal": 27,
-            "Shiny": 55
-        },
-        "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
-        },
-        "Normal": {
-            "Normal": 15,
-            "Shiny": 27
-        }
-    },
-    "Huge Pixel Cat": {
-        "Golden": {
-            "Normal": 168,
-            "Shiny": 80
-        },
-        "Rainbow": {
-            "Normal": 84,
-            "Shiny": 160
-        },
-        "Normal": {
-            "Normal": 100,
-            "Shiny": 80
-        }
-    },
-    "Huge Pixel Dragon": {
-        "Golden": {
-            "Normal": 27,
-            "Shiny": 55
-        },
-        "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
-        },
-        "Normal": {
-            "Normal": 15,
-            "Shiny": 27
-        }
-    },
-    "Huge Painted Cat": {
-        "Golden": {
-            "Normal": 98,
-            "Shiny": 98
-        },
-        "Rainbow": {
-            "Normal": 98,
-            "Shiny": 84
-        },
-        "Normal": {
-            "Normal": 106,
-            "Shiny": 70
-        }
-    },
-    "Huge Beans Balloon Cat": {
-        "Golden": {
-            "Normal": 27,
-            "Shiny": 55
-        },
-        "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
-        },
-        "Normal": {
-            "Normal": 15,
-            "Shiny": 27
-        }
-    },
-    "Huge Party Axolotl": {
-        "Golden": {
-            "Normal": 92,
-            "Shiny": 153
-        },
-        "Rainbow": {
-            "Normal": 115,
-            "Shiny": 310
-        },
-        "Normal": {
-            "Normal": 193,
-            "Shiny": 136
-        }
-    },
-    "Huge Santa Monkey": {
-        "Golden": {
-            "Normal": 196,
-            "Shiny": 171
-        },
-        "Rainbow": {
-            "Normal": 190,
+            "Normal": 88,
             "Shiny": 343
         },
         "Normal": {
-            "Normal": 117,
-            "Shiny": 235
+            "Normal": 85,
+            "Shiny": 143
         }
     },
-    "Huge Mosaic Corgi": {
-        "Golden": {
-            "Normal": 90,
-            "Shiny": 158
-        },
-        "Rainbow": {
-            "Normal": 178,
-            "Shiny": 158
-        },
-        "Normal": {
-            "Normal": 98,
-            "Shiny": 98
-        }
-    },
-    "Huge Cool Cat": {
-        "Golden": {
-            "Normal": 134,
-            "Shiny": 89
-        },
-        "Rainbow": {
-            "Normal": 250,
-            "Shiny": 501
-        },
-        "Normal": {
-            "Normal": 156,
-            "Shiny": 83
-        }
-    },
-    "Huge Bread Shiba": {
-        "Golden": {
-            "Normal": 236,
-            "Shiny": 597
-        },
-        "Rainbow": {
-            "Normal": 597,
-            "Shiny": 1194
-        },
-        "Normal": {
-            "Normal": 354,
-            "Shiny": 708
-        }
-    },
-    "Huge Pink Lucky Block": {
-        "Golden": {
-            "Normal": 27,
-            "Shiny": 55
-        },
-        "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
-        },
-        "Normal": {
-            "Normal": 15,
-            "Shiny": 27
-        }
-    },
-    "Huge Chameleon": {
-        "Golden": {
-            "Normal": 111,
-            "Shiny": 179
-        },
-        "Rainbow": {
-            "Normal": 84,
-            "Shiny": 358
-        },
-        "Normal": {
-            "Normal": 89,
-            "Shiny": 149
-        }
-    },
-    "Huge Sapphire Phoenix": {
-        "Golden": {
-            "Normal": 130,
-            "Shiny": 163
-        },
-        "Rainbow": {
-            "Normal": 130,
-            "Shiny": 326
-        },
-        "Normal": {
-            "Normal": 81,
-            "Shiny": 83
-        }
-    },
-    "Huge White Balloon Cat": {
-        "Golden": {
-            "Normal": 1479,
-            "Shiny": 2958
-        },
-        "Rainbow": {
-            "Normal": 2958,
-            "Shiny": 5916
-        },
-        "Normal": {
-            "Normal": 739,
-            "Shiny": 1479
-        }
-    },
-    "Huge Inferno Cat": {
-        "Golden": {
-            "Normal": 653,
-            "Shiny": 562
-        },
-        "Rainbow": {
-            "Normal": 562,
-            "Shiny": 1125
-        },
-        "Normal": {
-            "Normal": 980,
-            "Shiny": 1960
-        }
-    },
-    "Huge Sleipnir": {
-        "Golden": {
-            "Normal": 236,
-            "Shiny": 561
-        },
-        "Rainbow": {
-            "Normal": 561,
-            "Shiny": 755
-        },
-        "Normal": {
-            "Normal": 94,
-            "Shiny": 188
-        }
-    },
-    "Huge M-10 PROTOTYPE": {
+    "Huge Cosmic Agony": {
         "Golden": {
             "Normal": 114,
             "Shiny": 228
@@ -1922,56 +1026,952 @@
             "Shiny": 142
         }
     },
-    "Huge Husky": {
+    "Huge Samurai Bull": {
         "Golden": {
-            "Normal": 125,
-            "Shiny": 337
+            "Normal": 27,
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 337,
-            "Shiny": 674
+            "Normal": 54,
+            "Shiny": 108
+        },
+        "Normal": {
+            "Normal": 15,
+            "Shiny": 27
+        }
+    },
+    "Huge Stealth Bobcat": {
+        "Golden": {
+            "Normal": 115,
+            "Shiny": 349
+        },
+        "Rainbow": {
+            "Normal": 349,
+            "Shiny": 699
+        },
+        "Normal": {
+            "Normal": 173,
+            "Shiny": 115
+        }
+    },
+    "Huge Reindeer Dog": {
+        "Golden": {
+            "Normal": 194,
+            "Shiny": 270
+        },
+        "Rainbow": {
+            "Normal": 103,
+            "Shiny": 541
+        },
+        "Normal": {
+            "Normal": 169,
+            "Shiny": 90
+        }
+    },
+    "Huge Neon Twilight Dragon": {
+        "Golden": {
+            "Normal": 213,
+            "Shiny": 216
+        },
+        "Rainbow": {
+            "Normal": 216,
+            "Shiny": 433
+        },
+        "Normal": {
+            "Normal": 319,
+            "Shiny": 639
+        }
+    },
+    "Huge Nightfall Pegasus": {
+        "Golden": {
+            "Normal": 132,
+            "Shiny": 158
+        },
+        "Rainbow": {
+            "Normal": 132,
+            "Shiny": 317
+        },
+        "Normal": {
+            "Normal": 198,
+            "Shiny": 99
+        }
+    },
+    "Huge Capybara": {
+        "Golden": {
+            "Normal": 107,
+            "Shiny": 121
+        },
+        "Rainbow": {
+            "Normal": 126,
+            "Shiny": 243
+        },
+        "Normal": {
+            "Normal": 160,
+            "Shiny": 321
+        }
+    },
+    "Huge Ducky": {
+        "Golden": {
+            "Normal": 105,
+            "Shiny": 222
+        },
+        "Rainbow": {
+            "Normal": 176,
+            "Shiny": 444
+        },
+        "Normal": {
+            "Normal": 138,
+            "Shiny": 185
+        }
+    },
+    "Huge Party Cat": {
+        "Golden": {
+            "Normal": 179,
+            "Shiny": 266
+        },
+        "Rainbow": {
+            "Normal": 179,
+            "Shiny": 533
+        },
+        "Normal": {
+            "Normal": 166,
+            "Shiny": 133
+        }
+    },
+    "Huge Safari Cat": {
+        "Golden": {
+            "Normal": 151,
+            "Shiny": 263
+        },
+        "Rainbow": {
+            "Normal": 101,
+            "Shiny": 792
+        },
+        "Normal": {
+            "Normal": 99,
+            "Shiny": 168
+        }
+    },
+    "Huge Turtle": {
+        "Golden": {
+            "Normal": 27,
+            "Shiny": 54
+        },
+        "Rainbow": {
+            "Normal": 54,
+            "Shiny": 108
+        },
+        "Normal": {
+            "Normal": 15,
+            "Shiny": 27
+        }
+    },
+    "Huge Lucky Cat": {
+        "Golden": {
+            "Normal": 245,
+            "Shiny": 444
+        },
+        "Rainbow": {
+            "Normal": 163,
+            "Shiny": 888
+        },
+        "Normal": {
+            "Normal": 111,
+            "Shiny": 222
+        }
+    },
+    "Huge Dominus Lucki": {
+        "Golden": {
+            "Normal": 123,
+            "Shiny": 259
+        },
+        "Rainbow": {
+            "Normal": 259,
+            "Shiny": 519
+        },
+        "Normal": {
+            "Normal": 162,
+            "Shiny": 162
+        }
+    },
+    "Huge Green Balloon Cat": {
+        "Golden": {
+            "Normal": 97,
+            "Shiny": 194
+        },
+        "Rainbow": {
+            "Normal": 216,
+            "Shiny": 388
+        },
+        "Normal": {
+            "Normal": 97,
+            "Shiny": 161
+        }
+    },
+    "Huge Exquisite Cat": {
+        "Golden": {
+            "Normal": 558,
+            "Shiny": 1448
+        },
+        "Rainbow": {
+            "Normal": 1448,
+            "Shiny": 2896
+        },
+        "Normal": {
+            "Normal": 362,
+            "Shiny": 724
+        }
+    },
+    "Huge Evolved Cupcake": {
+        "Golden": {
+            "Normal": 131,
+            "Shiny": 263
+        },
+        "Rainbow": {
+            "Normal": 329,
+            "Shiny": 526
+        },
+        "Normal": {
+            "Normal": 164,
+            "Shiny": 131
+        }
+    },
+    "Huge Error Cat": {
+        "Golden": {
+            "Normal": 100,
+            "Shiny": 90
+        },
+        "Rainbow": {
+            "Normal": 125,
+            "Shiny": 145
+        },
+        "Normal": {
+            "Normal": 90,
+            "Shiny": 90
+        }
+    },
+    "Huge Easter Bunny": {
+        "Golden": {
+            "Normal": 131,
+            "Shiny": 87
+        },
+        "Rainbow": {
+            "Normal": 163,
+            "Shiny": 149
+        },
+        "Normal": {
+            "Normal": 93,
+            "Shiny": 93
+        }
+    },
+    "Huge Atlantean Orca": {
+        "Golden": {
+            "Normal": 81,
+            "Shiny": 162
+        },
+        "Rainbow": {
+            "Normal": 165,
+            "Shiny": 325
+        },
+        "Normal": {
+            "Normal": 81,
+            "Shiny": 189
+        }
+    },
+    "Huge Rainbow Unicorn": {
+        "Golden": {
+            "Normal": 264,
+            "Shiny": 703
+        },
+        "Rainbow": {
+            "Normal": 703,
+            "Shiny": 845
+        },
+        "Normal": {
+            "Normal": 105,
+            "Shiny": 211
+        }
+    },
+    "Huge Tiedye Bunny": {
+        "Golden": {
+            "Normal": 536,
+            "Shiny": 1072
+        },
+        "Rainbow": {
+            "Normal": 1072,
+            "Shiny": 2145
+        },
+        "Normal": {
+            "Normal": 268,
+            "Shiny": 536
+        }
+    },
+    "Huge Clover Unicorn": {
+        "Golden": {
+            "Normal": 176,
+            "Shiny": 117
+        },
+        "Rainbow": {
+            "Normal": 142,
+            "Shiny": 117
+        },
+        "Normal": {
+            "Normal": 121,
+            "Shiny": 80
+        }
+    },
+    "Huge Empyrean Agony": {
+        "Golden": {
+            "Normal": 162,
+            "Shiny": 324
+        },
+        "Rainbow": {
+            "Normal": 324,
+            "Shiny": 649
+        },
+        "Normal": {
+            "Normal": 81,
+            "Shiny": 115
+        }
+    },
+    "Huge Axolotl": {
+        "Golden": {
+            "Normal": 118,
+            "Shiny": 392
+        },
+        "Rainbow": {
+            "Normal": 392,
+            "Shiny": 785
+        },
+        "Normal": {
+            "Normal": 98,
+            "Shiny": 196
+        }
+    },
+    "Huge Clover Dragon": {
+        "Golden": {
+            "Normal": 185,
+            "Shiny": 297
+        },
+        "Rainbow": {
+            "Normal": 185,
+            "Shiny": 594
+        },
+        "Normal": {
+            "Normal": 87,
+            "Shiny": 146
+        }
+    },
+    "Huge Mosaic Lamb": {
+        "Golden": {
+            "Normal": 98,
+            "Shiny": 351
+        },
+        "Rainbow": {
+            "Normal": 246,
+            "Shiny": 703
+        },
+        "Normal": {
+            "Normal": 87,
+            "Shiny": 118
+        }
+    },
+    "Huge Rainbow Slime": {
+        "Golden": {
+            "Normal": 137,
+            "Shiny": 91
+        },
+        "Rainbow": {
+            "Normal": 171,
+            "Shiny": 91
+        },
+        "Normal": {
+            "Normal": 76,
+            "Shiny": 191
+        }
+    },
+    "Huge Knife Cat": {
+        "Golden": {
+            "Normal": 160,
+            "Shiny": 128
+        },
+        "Rainbow": {
+            "Normal": 160,
+            "Shiny": 85
+        },
+        "Normal": {
+            "Normal": 160,
+            "Shiny": 80
+        }
+    },
+    "Huge Kraken": {
+        "Golden": {
+            "Normal": 375,
+            "Shiny": 751
+        },
+        "Rainbow": {
+            "Normal": 751,
+            "Shiny": 1503
+        },
+        "Normal": {
+            "Normal": 187,
+            "Shiny": 125
+        }
+    },
+    "Huge Peacock": {
+        "Golden": {
+            "Normal": 185,
+            "Shiny": 92
+        },
+        "Rainbow": {
+            "Normal": 168,
+            "Shiny": 126
+        },
+        "Normal": {
+            "Normal": 82,
+            "Shiny": 82
+        }
+    },
+    "Huge Enchanted Deer": {
+        "Golden": {
+            "Normal": 132,
+            "Shiny": 165
+        },
+        "Rainbow": {
+            "Normal": 165,
+            "Shiny": 88
+        },
+        "Normal": {
+            "Normal": 89,
+            "Shiny": 89
+        }
+    },
+    "Huge Angelus": {
+        "Golden": {
+            "Normal": 484,
+            "Shiny": 370
+        },
+        "Rainbow": {
+            "Normal": 370,
+            "Shiny": 740
+        },
+        "Normal": {
+            "Normal": 726,
+            "Shiny": 1453
+        }
+    },
+    "Huge Prickly Panda": {
+        "Golden": {
+            "Normal": 485,
+            "Shiny": 1316
+        },
+        "Rainbow": {
+            "Normal": 323,
+            "Shiny": 2632
+        },
+        "Normal": {
+            "Normal": 329,
+            "Shiny": 658
+        }
+    },
+    "Huge Pony": {
+        "Golden": {
+            "Normal": 347,
+            "Shiny": 1140
+        },
+        "Rainbow": {
+            "Normal": 1140,
+            "Shiny": 1140
+        },
+        "Normal": {
+            "Normal": 138,
+            "Shiny": 277
+        }
+    },
+    "Huge Tiedye Axolotl": {
+        "Golden": {
+            "Normal": 1413,
+            "Shiny": 2826
+        },
+        "Rainbow": {
+            "Normal": 2826,
+            "Shiny": 5653
+        },
+        "Normal": {
+            "Normal": 706,
+            "Shiny": 1413
+        }
+    },
+    "Huge Butterfly": {
+        "Golden": {
+            "Normal": 1043,
+            "Shiny": 2086
+        },
+        "Rainbow": {
+            "Normal": 2086,
+            "Shiny": 4173
+        },
+        "Normal": {
+            "Normal": 521,
+            "Shiny": 1043
+        }
+    },
+    "Huge Hologram Axolotl": {
+        "Golden": {
+            "Normal": 92,
+            "Shiny": 185
+        },
+        "Rainbow": {
+            "Normal": 232,
+            "Shiny": 371
+        },
+        "Normal": {
+            "Normal": 92,
+            "Shiny": 154
+        }
+    },
+    "Huge Tiki Dominus": {
+        "Golden": {
+            "Normal": 113,
+            "Shiny": 454
+        },
+        "Rainbow": {
+            "Normal": 454,
+            "Shiny": 909
+        },
+        "Normal": {
+            "Normal": 117,
+            "Shiny": 195
+        }
+    },
+    "Huge Cheerful Yeti": {
+        "Golden": {
+            "Normal": 172,
+            "Shiny": 143
+        },
+        "Rainbow": {
+            "Normal": 97,
+            "Shiny": 286
+        },
+        "Normal": {
+            "Normal": 178,
+            "Shiny": 179
+        }
+    },
+    "Huge Corgi": {
+        "Golden": {
+            "Normal": 84,
+            "Shiny": 168
+        },
+        "Rainbow": {
+            "Normal": 198,
+            "Shiny": 336
+        },
+        "Normal": {
+            "Normal": 89,
+            "Shiny": 89
+        }
+    },
+    "Huge Jolly Penguin": {
+        "Golden": {
+            "Normal": 102,
+            "Shiny": 78
+        },
+        "Rainbow": {
+            "Normal": 127,
+            "Shiny": 128
+        },
+        "Normal": {
+            "Normal": 80,
+            "Shiny": 80
+        }
+    },
+    "Huge Doodle Fairy": {
+        "Golden": {
+            "Normal": 123,
+            "Shiny": 156
+        },
+        "Rainbow": {
+            "Normal": 154,
+            "Shiny": 154
+        },
+        "Normal": {
+            "Normal": 93,
+            "Shiny": 93
+        }
+    },
+    "Huge Blue Balloon Cat": {
+        "Golden": {
+            "Normal": 2761,
+            "Shiny": 5522
+        },
+        "Rainbow": {
+            "Normal": 5522,
+            "Shiny": 11044
+        },
+        "Normal": {
+            "Normal": 1380,
+            "Shiny": 2761
+        }
+    },
+    "Huge Black Balloon Cat": {
+        "Golden": {
+            "Normal": 27,
+            "Shiny": 54
+        },
+        "Rainbow": {
+            "Normal": 54,
+            "Shiny": 108
+        },
+        "Normal": {
+            "Normal": 15,
+            "Shiny": 27
+        }
+    },
+    "Huge Chroma Balloon Axolotl": {
+        "Golden": {
+            "Normal": 27,
+            "Shiny": 54
+        },
+        "Rainbow": {
+            "Normal": 54,
+            "Shiny": 108
+        },
+        "Normal": {
+            "Normal": 15,
+            "Shiny": 27
+        }
+    },
+    "Huge Pop Cat": {
+        "Golden": {
+            "Normal": 247,
+            "Shiny": 495
+        },
+        "Rainbow": {
+            "Normal": 619,
+            "Shiny": 991
+        },
+        "Normal": {
+            "Normal": 123,
+            "Shiny": 82
+        }
+    },
+    "Huge Exquisite Parrot": {
+        "Golden": {
+            "Normal": 250,
+            "Shiny": 500
+        },
+        "Rainbow": {
+            "Normal": 500,
+            "Shiny": 1001
+        },
+        "Normal": {
+            "Normal": 125,
+            "Shiny": 83
+        }
+    },
+    "Huge Evolved King Cobra": {
+        "Golden": {
+            "Normal": 172,
+            "Shiny": 344
+        },
+        "Rainbow": {
+            "Normal": 114,
+            "Shiny": 689
+        },
+        "Normal": {
+            "Normal": 86,
+            "Shiny": 143
+        }
+    },
+    "Huge Purple Balloon Cat": {
+        "Golden": {
+            "Normal": 27,
+            "Shiny": 54
+        },
+        "Rainbow": {
+            "Normal": 54,
+            "Shiny": 108
+        },
+        "Normal": {
+            "Normal": 15,
+            "Shiny": 27
+        }
+    },
+    "Huge Pixel Cat": {
+        "Golden": {
+            "Normal": 161,
+            "Shiny": 188
+        },
+        "Rainbow": {
+            "Normal": 80,
+            "Shiny": 151
+        },
+        "Normal": {
+            "Normal": 94,
+            "Shiny": 188
+        }
+    },
+    "Huge Pixel Dragon": {
+        "Golden": {
+            "Normal": 27,
+            "Shiny": 54
+        },
+        "Rainbow": {
+            "Normal": 54,
+            "Shiny": 108
+        },
+        "Normal": {
+            "Normal": 15,
+            "Shiny": 27
+        }
+    },
+    "Huge Painted Cat": {
+        "Golden": {
+            "Normal": 92,
+            "Shiny": 92
+        },
+        "Rainbow": {
+            "Normal": 92,
+            "Shiny": 81
+        },
+        "Normal": {
+            "Normal": 99,
+            "Shiny": 66
+        }
+    },
+    "Huge Beans Balloon Cat": {
+        "Golden": {
+            "Normal": 27,
+            "Shiny": 54
+        },
+        "Rainbow": {
+            "Normal": 54,
+            "Shiny": 108
+        },
+        "Normal": {
+            "Normal": 15,
+            "Shiny": 27
+        }
+    },
+    "Huge Party Axolotl": {
+        "Golden": {
+            "Normal": 90,
+            "Shiny": 150
+        },
+        "Rainbow": {
+            "Normal": 112,
+            "Shiny": 293
+        },
+        "Normal": {
+            "Normal": 183,
+            "Shiny": 132
+        }
+    },
+    "Huge Santa Monkey": {
+        "Golden": {
+            "Normal": 189,
+            "Shiny": 166
+        },
+        "Rainbow": {
+            "Normal": 184,
+            "Shiny": 332
+        },
+        "Normal": {
+            "Normal": 113,
+            "Shiny": 227
+        }
+    },
+    "Huge Mosaic Corgi": {
+        "Golden": {
+            "Normal": 85,
+            "Shiny": 153
+        },
+        "Rainbow": {
+            "Normal": 172,
+            "Shiny": 164
+        },
+        "Normal": {
+            "Normal": 102,
+            "Shiny": 128
+        }
+    },
+    "Huge Cool Cat": {
+        "Golden": {
+            "Normal": 130,
+            "Shiny": 86
+        },
+        "Rainbow": {
+            "Normal": 234,
+            "Shiny": 468
+        },
+        "Normal": {
+            "Normal": 146,
+            "Shiny": 195
+        }
+    },
+    "Huge Bread Shiba": {
+        "Golden": {
+            "Normal": 230,
+            "Shiny": 578
+        },
+        "Rainbow": {
+            "Normal": 578,
+            "Shiny": 1156
+        },
+        "Normal": {
+            "Normal": 346,
+            "Shiny": 692
+        }
+    },
+    "Huge Pink Lucky Block": {
+        "Golden": {
+            "Normal": 27,
+            "Shiny": 54
+        },
+        "Rainbow": {
+            "Normal": 54,
+            "Shiny": 108
+        },
+        "Normal": {
+            "Normal": 15,
+            "Shiny": 27
+        }
+    },
+    "Huge Chameleon": {
+        "Golden": {
+            "Normal": 106,
+            "Shiny": 169
+        },
+        "Rainbow": {
+            "Normal": 82,
+            "Shiny": 339
         },
         "Normal": {
             "Normal": 84,
-            "Shiny": 140
+            "Shiny": 141
+        }
+    },
+    "Huge Sapphire Phoenix": {
+        "Golden": {
+            "Normal": 126,
+            "Shiny": 157
+        },
+        "Rainbow": {
+            "Normal": 126,
+            "Shiny": 314
+        },
+        "Normal": {
+            "Normal": 196,
+            "Shiny": 80
+        }
+    },
+    "Huge White Balloon Cat": {
+        "Golden": {
+            "Normal": 1431,
+            "Shiny": 2862
+        },
+        "Rainbow": {
+            "Normal": 2862,
+            "Shiny": 5725
+        },
+        "Normal": {
+            "Normal": 715,
+            "Shiny": 1431
+        }
+    },
+    "Huge Inferno Cat": {
+        "Golden": {
+            "Normal": 632,
+            "Shiny": 544
+        },
+        "Rainbow": {
+            "Normal": 544,
+            "Shiny": 1088
+        },
+        "Normal": {
+            "Normal": 948,
+            "Shiny": 1896
+        }
+    },
+    "Huge Sleipnir": {
+        "Golden": {
+            "Normal": 231,
+            "Shiny": 543
+        },
+        "Rainbow": {
+            "Normal": 543,
+            "Shiny": 739
+        },
+        "Normal": {
+            "Normal": 92,
+            "Shiny": 184
+        }
+    },
+    "Huge M-10 PROTOTYPE": {
+        "Golden": {
+            "Normal": 100,
+            "Shiny": 200
+        },
+        "Rainbow": {
+            "Normal": 250,
+            "Shiny": 400
+        },
+        "Normal": {
+            "Normal": 125,
+            "Shiny": 125
+        }
+    },
+    "Huge Husky": {
+        "Golden": {
+            "Normal": 121,
+            "Shiny": 326
+        },
+        "Rainbow": {
+            "Normal": 326,
+            "Shiny": 652
+        },
+        "Normal": {
+            "Normal": 81,
+            "Shiny": 135
         }
     },
     "Huge Unicorn": {
         "Golden": {
-            "Normal": 106,
-            "Shiny": 420
+            "Normal": 102,
+            "Shiny": 406
         },
         "Rainbow": {
-            "Normal": 420,
-            "Shiny": 840
+            "Normal": 406,
+            "Shiny": 813
         },
         "Normal": {
-            "Normal": 105,
-            "Shiny": 175
+            "Normal": 101,
+            "Shiny": 169
         }
     },
     "Huge Love Lamb": {
         "Golden": {
-            "Normal": 156,
-            "Shiny": 249
+            "Normal": 151,
+            "Shiny": 241
         },
         "Rainbow": {
-            "Normal": 156,
-            "Shiny": 499
+            "Normal": 151,
+            "Shiny": 483
         },
         "Normal": {
-            "Normal": 177,
-            "Shiny": 177
+            "Normal": 164,
+            "Shiny": 164
         }
     },
     "Huge Pixel Wolf": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -1980,86 +1980,86 @@
     },
     "Huge Balloon Axolotl": {
         "Golden": {
-            "Normal": 88,
-            "Shiny": 177
+            "Normal": 84,
+            "Shiny": 168
         },
         "Rainbow": {
-            "Normal": 147,
-            "Shiny": 355
+            "Normal": 140,
+            "Shiny": 337
         },
         "Normal": {
-            "Normal": 88,
-            "Shiny": 147
+            "Normal": 84,
+            "Shiny": 140
         }
     },
     "Huge Diamond Cat": {
         "Golden": {
-            "Normal": 153,
-            "Shiny": 258
+            "Normal": 148,
+            "Shiny": 250
         },
         "Rainbow": {
-            "Normal": 161,
-            "Shiny": 517
+            "Normal": 156,
+            "Shiny": 500
         },
         "Normal": {
-            "Normal": 229,
-            "Shiny": 153
+            "Normal": 222,
+            "Shiny": 148
         }
     },
     "Huge Apple Capybara": {
         "Golden": {
-            "Normal": 371,
-            "Shiny": 742
+            "Normal": 349,
+            "Shiny": 699
         },
         "Rainbow": {
-            "Normal": 742,
-            "Shiny": 1484
+            "Normal": 699,
+            "Shiny": 1398
         },
         "Normal": {
-            "Normal": 185,
-            "Shiny": 123
+            "Normal": 174,
+            "Shiny": 116
         }
     },
     "Huge Evolved Peacock": {
         "Golden": {
-            "Normal": 156,
-            "Shiny": 312
+            "Normal": 151,
+            "Shiny": 302
         },
         "Rainbow": {
-            "Normal": 312,
-            "Shiny": 104
+            "Normal": 302,
+            "Shiny": 100
         },
         "Normal": {
-            "Normal": 195,
-            "Shiny": 130
+            "Normal": 188,
+            "Shiny": 125
         }
     },
     "Huge Hologram Shark": {
         "Golden": {
-            "Normal": 154,
-            "Shiny": 123
+            "Normal": 147,
+            "Shiny": 117
         },
         "Rainbow": {
-            "Normal": 91,
-            "Shiny": 246
+            "Normal": 88,
+            "Shiny": 235
         },
         "Normal": {
-            "Normal": 154,
-            "Shiny": 148
+            "Normal": 147,
+            "Shiny": 143
         }
     },
     "Huge Reindeer Axolotl": {
         "Golden": {
-            "Normal": 86,
-            "Shiny": 172
+            "Normal": 83,
+            "Shiny": 167
         },
         "Rainbow": {
-            "Normal": 108,
-            "Shiny": 345
+            "Normal": 104,
+            "Shiny": 334
         },
         "Normal": {
-            "Normal": 153,
-            "Shiny": 82
+            "Normal": 148,
+            "Shiny": 119
         }
     },
     "Huge Chroma Lucki": {
@@ -2068,7 +2068,7 @@
             "Shiny": 106
         },
         "Rainbow": {
-            "Normal": 93,
+            "Normal": 90,
             "Shiny": 213
         },
         "Normal": {
@@ -2078,40 +2078,40 @@
     },
     "Huge Evolved Pterodactyl": {
         "Golden": {
-            "Normal": 165,
-            "Shiny": 331
+            "Normal": 160,
+            "Shiny": 321
         },
         "Rainbow": {
-            "Normal": 110,
-            "Shiny": 663
+            "Normal": 107,
+            "Shiny": 642
         },
         "Normal": {
-            "Normal": 82,
-            "Shiny": 165
+            "Normal": 80,
+            "Shiny": 160
         }
     },
     "Huge Balloon Cat": {
         "Golden": {
-            "Normal": 145,
-            "Shiny": 193
+            "Normal": 140,
+            "Shiny": 186
         },
         "Rainbow": {
-            "Normal": 101,
-            "Shiny": 381
+            "Normal": 97,
+            "Shiny": 369
         },
         "Normal": {
-            "Normal": 95,
-            "Shiny": 159
+            "Normal": 92,
+            "Shiny": 153
         }
     },
     "Huge Coin": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2120,68 +2120,68 @@
     },
     "Huge Fairy": {
         "Golden": {
-            "Normal": 154,
-            "Shiny": 616
+            "Normal": 149,
+            "Shiny": 596
         },
         "Rainbow": {
-            "Normal": 616,
-            "Shiny": 1232
+            "Normal": 596,
+            "Shiny": 1193
         },
         "Normal": {
-            "Normal": 174,
-            "Shiny": 348
+            "Normal": 161,
+            "Shiny": 323
         }
     },
     "Huge Evolved Pixel Cat": {
         "Golden": {
-            "Normal": 181,
-            "Shiny": 363
+            "Normal": 177,
+            "Shiny": 354
         },
         "Rainbow": {
-            "Normal": 121,
-            "Shiny": 726
+            "Normal": 118,
+            "Shiny": 709
         },
         "Normal": {
-            "Normal": 90,
-            "Shiny": 151
+            "Normal": 88,
+            "Shiny": 147
         }
     },
     "Huge Gecko": {
         "Golden": {
-            "Normal": 193,
-            "Shiny": 128
+            "Normal": 187,
+            "Shiny": 124
         },
         "Rainbow": {
-            "Normal": 170,
-            "Shiny": 199
+            "Normal": 164,
+            "Shiny": 183
         },
         "Normal": {
-            "Normal": 124,
-            "Shiny": 88
+            "Normal": 114,
+            "Shiny": 85
         }
     },
     "Huge Evolved Hell Rock": {
         "Golden": {
-            "Normal": 120,
-            "Shiny": 240
+            "Normal": 1854,
+            "Shiny": 3708
         },
         "Rainbow": {
-            "Normal": 143,
-            "Shiny": 480
+            "Normal": 1236,
+            "Shiny": 7417
         },
         "Normal": {
-            "Normal": 150,
-            "Shiny": 80
+            "Normal": 927,
+            "Shiny": 618
         }
     },
     "Huge Jelly Piggy": {
         "Golden": {
             "Normal": 123,
-            "Shiny": 247
+            "Shiny": 246
         },
         "Rainbow": {
-            "Normal": 309,
-            "Shiny": 495
+            "Normal": 308,
+            "Shiny": 493
         },
         "Normal": {
             "Normal": 154,
@@ -2190,82 +2190,82 @@
     },
     "Huge Skeleton": {
         "Golden": {
-            "Normal": 86,
-            "Shiny": 108
+            "Normal": 83,
+            "Shiny": 104
         },
         "Rainbow": {
-            "Normal": 108,
-            "Shiny": 251
+            "Normal": 104,
+            "Shiny": 233
         },
         "Normal": {
-            "Normal": 157,
-            "Shiny": 139
+            "Normal": 146,
+            "Shiny": 134
         }
     },
     "Huge Shark": {
         "Golden": {
-            "Normal": 98,
-            "Shiny": 394
+            "Normal": 95,
+            "Shiny": 381
         },
         "Rainbow": {
-            "Normal": 394,
-            "Shiny": 789
+            "Normal": 381,
+            "Shiny": 763
         },
         "Normal": {
-            "Normal": 109,
-            "Shiny": 182
+            "Normal": 106,
+            "Shiny": 177
         }
     },
     "Huge Jelly Corgi": {
         "Golden": {
-            "Normal": 81,
-            "Shiny": 162
+            "Normal": 191,
+            "Shiny": 152
         },
         "Rainbow": {
-            "Normal": 202,
-            "Shiny": 324
+            "Normal": 191,
+            "Shiny": 305
         },
         "Normal": {
-            "Normal": 81,
-            "Shiny": 101
+            "Normal": 191,
+            "Shiny": 89
         }
     },
     "Huge Monkey": {
         "Golden": {
-            "Normal": 195,
-            "Shiny": 255
+            "Normal": 189,
+            "Shiny": 247
         },
         "Rainbow": {
-            "Normal": 255,
-            "Shiny": 511
+            "Normal": 247,
+            "Shiny": 495
         },
         "Normal": {
-            "Normal": 117,
-            "Shiny": 234
+            "Normal": 113,
+            "Shiny": 227
         }
     },
     "Huge Party Dog": {
         "Golden": {
-            "Normal": 85,
-            "Shiny": 141
+            "Normal": 82,
+            "Shiny": 137
         },
         "Rainbow": {
-            "Normal": 212,
-            "Shiny": 141
+            "Normal": 205,
+            "Shiny": 137
         },
         "Normal": {
-            "Normal": 154,
-            "Shiny": 154
+            "Normal": 147,
+            "Shiny": 147
         }
     },
     "Huge Hippomelon": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2274,26 +2274,26 @@
     },
     "Huge Inferno Dominus": {
         "Golden": {
-            "Normal": 83,
-            "Shiny": 166
+            "Normal": 990,
+            "Shiny": 1981
         },
         "Rainbow": {
-            "Normal": 157,
-            "Shiny": 332
+            "Normal": 660,
+            "Shiny": 3962
         },
         "Normal": {
-            "Normal": 83,
-            "Shiny": 199
+            "Normal": 495,
+            "Shiny": 330
         }
     },
     "Huge Fox": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2302,68 +2302,68 @@
     },
     "Huge Gargoyle Dragon": {
         "Golden": {
-            "Normal": 85,
-            "Shiny": 150
+            "Normal": 82,
+            "Shiny": 145
         },
         "Rainbow": {
-            "Normal": 93,
-            "Shiny": 300
+            "Normal": 90,
+            "Shiny": 290
         },
         "Normal": {
-            "Normal": 127,
-            "Shiny": 255
+            "Normal": 124,
+            "Shiny": 248
         }
     },
     "Huge Basketball Retriever": {
         "Golden": {
-            "Normal": 465,
-            "Shiny": 1860
+            "Normal": 450,
+            "Shiny": 1800
         },
         "Rainbow": {
-            "Normal": 748,
-            "Shiny": 3720
+            "Normal": 724,
+            "Shiny": 3600
         },
         "Normal": {
-            "Normal": 484,
+            "Normal": 485,
             "Shiny": 323
         }
     },
     "Huge Leprechaun Cat": {
         "Golden": {
-            "Normal": 107,
-            "Shiny": 134
+            "Normal": 102,
+            "Shiny": 127
         },
         "Rainbow": {
-            "Normal": 134,
-            "Shiny": 71
+            "Normal": 127,
+            "Shiny": 140
         },
         "Normal": {
-            "Normal": 93,
-            "Shiny": 87
+            "Normal": 87,
+            "Shiny": 84
         }
     },
     "Huge Elf Dog": {
         "Golden": {
-            "Normal": 187,
-            "Shiny": 80
+            "Normal": 181,
+            "Shiny": 194
         },
         "Rainbow": {
-            "Normal": 148,
-            "Shiny": 124
+            "Normal": 144,
+            "Shiny": 120
         },
         "Normal": {
-            "Normal": 106,
-            "Shiny": 133
+            "Normal": 103,
+            "Shiny": 128
         }
     },
     "Huge Otter": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2372,68 +2372,68 @@
     },
     "Huge Comet Cyclops": {
         "Golden": {
-            "Normal": 105,
-            "Shiny": 222
+            "Normal": 101,
+            "Shiny": 216
         },
         "Rainbow": {
-            "Normal": 199,
-            "Shiny": 445
+            "Normal": 192,
+            "Shiny": 433
         },
         "Normal": {
-            "Normal": 139,
-            "Shiny": 191
+            "Normal": 135,
+            "Shiny": 185
         }
     },
     "Huge Floppa": {
         "Golden": {
-            "Normal": 129,
-            "Shiny": 206
+            "Normal": 125,
+            "Shiny": 200
         },
         "Rainbow": {
-            "Normal": 167,
-            "Shiny": 413
+            "Normal": 159,
+            "Shiny": 400
         },
         "Normal": {
-            "Normal": 129,
-            "Shiny": 103
+            "Normal": 125,
+            "Shiny": 100
         }
     },
     "Huge Pirate Parrot": {
         "Golden": {
-            "Normal": 105,
-            "Shiny": 168
+            "Normal": 104,
+            "Shiny": 167
         },
         "Rainbow": {
-            "Normal": 275,
-            "Shiny": 337
+            "Normal": 267,
+            "Shiny": 334
         },
         "Normal": {
-            "Normal": 84,
-            "Shiny": 105
+            "Normal": 83,
+            "Shiny": 104
         }
     },
     "Huge Redstone Cat": {
         "Golden": {
-            "Normal": 195,
-            "Shiny": 156
+            "Normal": 189,
+            "Shiny": 151
         },
         "Rainbow": {
-            "Normal": 195,
-            "Shiny": 312
+            "Normal": 189,
+            "Shiny": 302
         },
         "Normal": {
-            "Normal": 195,
-            "Shiny": 130
+            "Normal": 189,
+            "Shiny": 126
         }
     },
     "Huge Crowned Cat": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2442,40 +2442,40 @@
     },
     "Huge Neon Twilight Wolf": {
         "Golden": {
-            "Normal": 192,
-            "Shiny": 384
+            "Normal": 185,
+            "Shiny": 370
         },
         "Rainbow": {
-            "Normal": 128,
-            "Shiny": 769
+            "Normal": 123,
+            "Shiny": 740
         },
         "Normal": {
-            "Normal": 96,
-            "Shiny": 192
+            "Normal": 92,
+            "Shiny": 185
         }
     },
     "Huge Pineapple Cat": {
         "Golden": {
-            "Normal": 135,
-            "Shiny": 169
+            "Normal": 134,
+            "Shiny": 168
         },
         "Rainbow": {
-            "Normal": 169,
-            "Shiny": 162
+            "Normal": 168,
+            "Shiny": 151
         },
         "Normal": {
-            "Normal": 101,
-            "Shiny": 182
+            "Normal": 94,
+            "Shiny": 176
         }
     },
     "Huge Cyborg Dragon": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2484,26 +2484,26 @@
     },
     "Huge Kawaii Cat": {
         "Golden": {
-            "Normal": 177,
-            "Shiny": 284
+            "Normal": 170,
+            "Shiny": 273
         },
         "Rainbow": {
-            "Normal": 136,
-            "Shiny": 568
+            "Normal": 132,
+            "Shiny": 546
         },
         "Normal": {
-            "Normal": 177,
-            "Shiny": 94
+            "Normal": 170,
+            "Shiny": 91
         }
     },
     "Huge RGB Balloon Cat": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2513,11 +2513,11 @@
     "Huge Ghost": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2527,11 +2527,11 @@
     "Huge Masked Owl": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2540,96 +2540,96 @@
     },
     "Huge Hacked Cat": {
         "Golden": {
-            "Normal": 159,
-            "Shiny": 106
+            "Normal": 147,
+            "Shiny": 100
         },
         "Rainbow": {
-            "Normal": 199,
-            "Shiny": 212
+            "Normal": 184,
+            "Shiny": 201
         },
         "Normal": {
-            "Normal": 132,
-            "Shiny": 132
+            "Normal": 126,
+            "Shiny": 126
         }
     },
     "Huge Pixel Corgi": {
         "Golden": {
-            "Normal": 152,
-            "Shiny": 121
+            "Normal": 151,
+            "Shiny": 120
         },
         "Rainbow": {
-            "Normal": 152,
-            "Shiny": 81
+            "Normal": 151,
+            "Shiny": 80
         },
         "Normal": {
-            "Normal": 152,
-            "Shiny": 190
+            "Normal": 151,
+            "Shiny": 189
         }
     },
     "Huge Party Penguin": {
         "Golden": {
-            "Normal": 111,
-            "Shiny": 275
+            "Normal": 107,
+            "Shiny": 260
         },
         "Rainbow": {
-            "Normal": 278,
-            "Shiny": 551
+            "Normal": 269,
+            "Shiny": 520
         },
         "Normal": {
-            "Normal": 172,
-            "Shiny": 91
+            "Normal": 162,
+            "Shiny": 86
         }
     },
     "Huge Crystal Dog": {
         "Golden": {
-            "Normal": 163,
-            "Shiny": 109
+            "Normal": 158,
+            "Shiny": 105
         },
         "Rainbow": {
-            "Normal": 175,
-            "Shiny": 175
+            "Normal": 169,
+            "Shiny": 168
         },
         "Normal": {
-            "Normal": 109,
-            "Shiny": 137
+            "Normal": 105,
+            "Shiny": 131
         }
     },
     "Huge Gleebo The Alien": {
         "Golden": {
-            "Normal": 129,
-            "Shiny": 299
+            "Normal": 125,
+            "Shiny": 290
         },
         "Rainbow": {
-            "Normal": 86,
-            "Shiny": 599
+            "Normal": 83,
+            "Shiny": 580
         },
         "Normal": {
-            "Normal": 187,
-            "Shiny": 99
+            "Normal": 181,
+            "Shiny": 96
         }
     },
     "Huge Tiedye Cat": {
         "Golden": {
-            "Normal": 176,
-            "Shiny": 105
+            "Normal": 171,
+            "Shiny": 136
         },
         "Rainbow": {
-            "Normal": 88,
-            "Shiny": 211
+            "Normal": 85,
+            "Shiny": 272
         },
         "Normal": {
-            "Normal": 132,
-            "Shiny": 93
+            "Normal": 103,
+            "Shiny": 171
         }
     },
     "Huge Rainbow Lucky Block": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2638,54 +2638,54 @@
     },
     "Huge Techno Cat": {
         "Golden": {
-            "Normal": 83,
-            "Shiny": 111
+            "Normal": 199,
+            "Shiny": 106
         },
         "Rainbow": {
-            "Normal": 163,
-            "Shiny": 223
+            "Normal": 158,
+            "Shiny": 212
         },
         "Normal": {
-            "Normal": 139,
-            "Shiny": 174
+            "Normal": 133,
+            "Shiny": 166
         }
     },
     "Huge Easter Cat": {
         "Golden": {
-            "Normal": 1628,
-            "Shiny": 2605
+            "Normal": 1575,
+            "Shiny": 2521
         },
         "Rainbow": {
-            "Normal": 1089,
-            "Shiny": 5210
+            "Normal": 1054,
+            "Shiny": 5042
         },
         "Normal": {
-            "Normal": 651,
-            "Shiny": 1302
+            "Normal": 630,
+            "Shiny": 1260
         }
     },
     "Huge Super Corgi": {
         "Golden": {
-            "Normal": 116,
-            "Shiny": 298
+            "Normal": 111,
+            "Shiny": 288
         },
         "Rainbow": {
-            "Normal": 298,
-            "Shiny": 373
+            "Normal": 288,
+            "Shiny": 356
         },
         "Normal": {
-            "Normal": 93,
-            "Shiny": 93
+            "Normal": 89,
+            "Shiny": 89
         }
     },
     "Huge Pegasus": {
         "Golden": {
-            "Normal": 34,
-            "Shiny": 1239
+            "Normal": 33,
+            "Shiny": 1199
         },
         "Rainbow": {
-            "Normal": 1239,
-            "Shiny": 1239
+            "Normal": 1199,
+            "Shiny": 1199
         },
         "Normal": {
             "Normal": 15,
@@ -2694,194 +2694,194 @@
     },
     "Huge Santa Paws": {
         "Golden": {
-            "Normal": 688,
-            "Shiny": 1102
+            "Normal": 648,
+            "Shiny": 1045
         },
         "Rainbow": {
-            "Normal": 486,
-            "Shiny": 2204
+            "Normal": 432,
+            "Shiny": 2091
         },
         "Normal": {
-            "Normal": 275,
-            "Shiny": 551
+            "Normal": 261,
+            "Shiny": 522
         }
     },
     "Huge Easter Dominus": {
         "Golden": {
-            "Normal": 146,
-            "Shiny": 99
+            "Normal": 140,
+            "Shiny": 96
         },
         "Rainbow": {
-            "Normal": 183,
-            "Shiny": 150
+            "Normal": 175,
+            "Shiny": 144
         },
         "Normal": {
-            "Normal": 94,
-            "Shiny": 94
+            "Normal": 90,
+            "Shiny": 90
         }
     },
     "Huge Nightmare Spirit": {
         "Golden": {
-            "Normal": 167,
-            "Shiny": 134
+            "Normal": 158,
+            "Shiny": 127
         },
         "Rainbow": {
-            "Normal": 88,
-            "Shiny": 268
+            "Normal": 85,
+            "Shiny": 254
         },
         "Normal": {
-            "Normal": 167,
-            "Shiny": 125
+            "Normal": 158,
+            "Shiny": 97
         }
     },
     "Huge Pastel Sock Dragon": {
         "Golden": {
-            "Normal": 140,
-            "Shiny": 260
+            "Normal": 136,
+            "Shiny": 251
         },
         "Rainbow": {
-            "Normal": 260,
-            "Shiny": 520
+            "Normal": 251,
+            "Shiny": 503
         },
         "Normal": {
-            "Normal": 162,
-            "Shiny": 130
+            "Normal": 157,
+            "Shiny": 125
         }
     },
     "Huge Amethyst Dragon": {
         "Golden": {
-            "Normal": 86,
-            "Shiny": 172
+            "Normal": 85,
+            "Shiny": 170
         },
         "Rainbow": {
-            "Normal": 216,
-            "Shiny": 345
+            "Normal": 213,
+            "Shiny": 340
         },
         "Normal": {
-            "Normal": 86,
-            "Shiny": 108
+            "Normal": 85,
+            "Shiny": 106
         }
     },
     "Huge Festive Cat": {
         "Golden": {
-            "Normal": 151,
-            "Shiny": 131
+            "Normal": 132,
+            "Shiny": 126
         },
         "Rainbow": {
-            "Normal": 151,
-            "Shiny": 262
+            "Normal": 132,
+            "Shiny": 253
         },
         "Normal": {
-            "Normal": 164,
-            "Shiny": 164
+            "Normal": 158,
+            "Shiny": 158
         }
     },
     "Huge Sandcastle Cat": {
         "Golden": {
-            "Normal": 278,
-            "Shiny": 445
+            "Normal": 267,
+            "Shiny": 427
         },
         "Rainbow": {
-            "Normal": 445,
-            "Shiny": 891
+            "Normal": 427,
+            "Shiny": 854
         },
         "Normal": {
-            "Normal": 111,
-            "Shiny": 169
+            "Normal": 106,
+            "Shiny": 163
         }
     },
     "Huge Nightfall Wolf": {
         "Golden": {
-            "Normal": 96,
-            "Shiny": 160
+            "Normal": 94,
+            "Shiny": 156
         },
         "Rainbow": {
-            "Normal": 90,
-            "Shiny": 274
+            "Normal": 87,
+            "Shiny": 266
         },
         "Normal": {
-            "Normal": 171,
-            "Shiny": 85
+            "Normal": 166,
+            "Shiny": 83
         }
     },
     "Huge Gamer Shiba": {
         "Golden": {
-            "Normal": 458,
-            "Shiny": 1007
+            "Normal": 444,
+            "Shiny": 974
         },
         "Rainbow": {
-            "Normal": 1007,
-            "Shiny": 2014
+            "Normal": 974,
+            "Shiny": 1949
         },
         "Normal": {
-            "Normal": 251,
-            "Shiny": 503
+            "Normal": 243,
+            "Shiny": 487
         }
     },
     "Huge Grim Reaper": {
         "Golden": {
-            "Normal": 158,
-            "Shiny": 452
+            "Normal": 153,
+            "Shiny": 418
         },
         "Rainbow": {
-            "Normal": 397,
-            "Shiny": 904
+            "Normal": 384,
+            "Shiny": 837
         },
         "Normal": {
-            "Normal": 113,
-            "Shiny": 226
+            "Normal": 104,
+            "Shiny": 209
         }
     },
     "Huge Chroma Lucky Block Mimic": {
         "Golden": {
-            "Normal": 115,
-            "Shiny": 230
+            "Normal": 111,
+            "Shiny": 223
         },
         "Rainbow": {
-            "Normal": 288,
-            "Shiny": 461
+            "Normal": 278,
+            "Shiny": 446
         },
         "Normal": {
-            "Normal": 144,
-            "Shiny": 192
+            "Normal": 139,
+            "Shiny": 185
         }
     },
     "Huge Present Chest Mimic": {
         "Golden": {
-            "Normal": 131,
-            "Shiny": 262
+            "Normal": 126,
+            "Shiny": 252
         },
         "Rainbow": {
-            "Normal": 87,
-            "Shiny": 525
+            "Normal": 84,
+            "Shiny": 504
         },
         "Normal": {
-            "Normal": 164,
-            "Shiny": 94
+            "Normal": 157,
+            "Shiny": 91
         }
     },
     "Huge Cosmic Axolotl": {
         "Golden": {
-            "Normal": 80,
-            "Shiny": 160
+            "Normal": 191,
+            "Shiny": 153
         },
         "Rainbow": {
-            "Normal": 201,
-            "Shiny": 321
+            "Normal": 191,
+            "Shiny": 306
         },
         "Normal": {
-            "Normal": 80,
-            "Shiny": 100
+            "Normal": 191,
+            "Shiny": 95
         }
     },
     "Huge Bluebird": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -2890,110 +2890,110 @@
     },
     "Huge BIG Maskot": {
         "Golden": {
-            "Normal": 87,
-            "Shiny": 87
+            "Normal": 85,
+            "Shiny": 85
         },
         "Rainbow": {
-            "Normal": 108,
-            "Shiny": 174
+            "Normal": 106,
+            "Shiny": 170
         },
         "Normal": {
-            "Normal": 108,
-            "Shiny": 87
+            "Normal": 106,
+            "Shiny": 85
         }
     },
     "Huge Kawaii Dragon": {
         "Golden": {
-            "Normal": 173,
-            "Shiny": 115
+            "Normal": 156,
+            "Shiny": 104
         },
         "Rainbow": {
-            "Normal": 86,
-            "Shiny": 115
+            "Normal": 195,
+            "Shiny": 104
         },
         "Normal": {
-            "Normal": 142,
-            "Shiny": 177
+            "Normal": 138,
+            "Shiny": 172
         }
     },
     "Huge Chef Cat": {
         "Golden": {
-            "Normal": 166,
-            "Shiny": 166
+            "Normal": 158,
+            "Shiny": 158
         },
         "Rainbow": {
-            "Normal": 166,
-            "Shiny": 133
+            "Normal": 158,
+            "Shiny": 127
         },
         "Normal": {
-            "Normal": 83,
-            "Shiny": 166
+            "Normal": 79,
+            "Shiny": 158
         }
     },
     "Huge Lucki Agony": {
         "Golden": {
-            "Normal": 94,
-            "Shiny": 190
+            "Normal": 90,
+            "Shiny": 186
         },
         "Rainbow": {
-            "Normal": 190,
-            "Shiny": 381
+            "Normal": 186,
+            "Shiny": 373
         },
         "Normal": {
-            "Normal": 95,
-            "Shiny": 119
+            "Normal": 93,
+            "Shiny": 116
         }
     },
     "Huge Orca": {
         "Golden": {
-            "Normal": 164,
-            "Shiny": 109
+            "Normal": 158,
+            "Shiny": 105
         },
         "Rainbow": {
-            "Normal": 82,
-            "Shiny": 173
+            "Normal": 198,
+            "Shiny": 168
         },
         "Normal": {
-            "Normal": 108,
-            "Shiny": 135
+            "Normal": 105,
+            "Shiny": 131
         }
     },
     "Huge Snowman": {
         "Golden": {
-            "Normal": 102,
-            "Shiny": 170
+            "Normal": 99,
+            "Shiny": 165
         },
         "Rainbow": {
-            "Normal": 256,
-            "Shiny": 546
+            "Normal": 248,
+            "Shiny": 531
         },
         "Normal": {
-            "Normal": 170,
-            "Shiny": 170
+            "Normal": 166,
+            "Shiny": 166
         }
     },
     "Huge Shadow Griffin": {
         "Golden": {
-            "Normal": 285,
-            "Shiny": 804
+            "Normal": 275,
+            "Shiny": 779
         },
         "Rainbow": {
-            "Normal": 804,
-            "Shiny": 1609
+            "Normal": 779,
+            "Shiny": 1558
         },
         "Normal": {
-            "Normal": 201,
-            "Shiny": 402
+            "Normal": 194,
+            "Shiny": 389
         }
     },
     "Huge Crowned Pegasus": {
         "Golden": {
             "Normal": 27,
-            "Shiny": 55
+            "Shiny": 54
         },
         "Rainbow": {
-            "Normal": 55,
-            "Shiny": 111
+            "Normal": 54,
+            "Shiny": 108
         },
         "Normal": {
             "Normal": 15,
@@ -3002,30 +3002,30 @@
     },
     "Huge Squirrel": {
         "Golden": {
-            "Normal": 90,
-            "Shiny": 150
+            "Normal": 84,
+            "Shiny": 140
         },
         "Rainbow": {
-            "Normal": 163,
-            "Shiny": 150
+            "Normal": 153,
+            "Shiny": 140
         },
         "Normal": {
-            "Normal": 111,
-            "Shiny": 91
+            "Normal": 107,
+            "Shiny": 88
         }
     },
     "Huge Orange Balloon Cat": {
         "Golden": {
-            "Normal": 263,
-            "Shiny": 526
+            "Normal": 254,
+            "Shiny": 509
         },
         "Rainbow": {
-            "Normal": 625,
-            "Shiny": 1052
+            "Normal": 605,
+            "Shiny": 1018
         },
         "Normal": {
-            "Normal": 131,
-            "Shiny": 263
+            "Normal": 127,
+            "Shiny": 254
         }
     }
 }
