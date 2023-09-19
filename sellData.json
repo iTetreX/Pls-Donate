@@ -324,6 +324,18 @@
             "Normal": 80    
         }
     },
+    "Huge Marshmallow Agony": {
+        "Priority": 10,
+        "Normal": {
+            "Normal": 105
+        }
+    },
+    "Huge Inferno Dominus": {
+        "Priority": 10,
+        "Normal": {
+            "Normal": 300
+        }
+    },
 
     "1 Points Event Pets": {},
     "Safari Cat": {
