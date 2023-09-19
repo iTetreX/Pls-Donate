@@ -42,7 +42,7 @@
     "Redstone Cat": {
         "Priority": 110,
         "Normal": {
-            "Normal": 2.8
+            "Normal": 3.2
         }
     },
     "Hologram Shark": {
@@ -54,8 +54,8 @@
     "Cosmic Axolotl": {
         "Priority": 110,
         "Normal": {
-            "Normal": 3,
-            "Shiny": 9
+            "Normal": 3.2,
+            "Shiny": 10
         }
     },
 
