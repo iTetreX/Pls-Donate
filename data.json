@@ -1784,16 +1784,16 @@
     },
     "Huge Inferno Cat": {
         "Golden": {
-            "Normal": 632,
-            "Shiny": 544
+            "Normal": 300,
+            "Shiny": 400
         },
         "Rainbow": {
-            "Normal": 544,
-            "Shiny": 1088
+            "Normal": 400,
+            "Shiny": 500
         },
         "Normal": {
-            "Normal": 948,
-            "Shiny": 1896
+            "Normal": 200,
+            "Shiny": 300
         }
     },
     "Huge Painted Cat": {
