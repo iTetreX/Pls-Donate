@@ -23,10 +23,10 @@
     "Huge Happy Rock": {
         "Priority": 2,
         "Normal": {
-            "Normal": 64
+            "Normal": 65
         },
         "Golden": {
-            "Normal": 64
+            "Normal": 65
         },
         "Rainbow": {
             "Normal": 200
