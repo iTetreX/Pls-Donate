@@ -329,19 +329,7 @@
         "Normal": {
             "Normal": 105
         }
-    },
-    "Huge Inferno Dominus": {
-        "Priority": 10,
-        "Normal": {
-            "Normal": 300
-        }
-    },
-    "Huge Peacock": {
-        "Priority": 10,
-        "Golden": {
-            "Normal": 200
-        }
-    },
+    }
 
     "1 Points Event Pets": {},
     "Safari Cat": {
