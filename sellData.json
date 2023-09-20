@@ -4,6 +4,10 @@
         "Price": 6,
         "Priority": 50
     },
+    "Exclusive Egg 16": {
+        "Price": 60,
+        "Priority": 50
+    },
 
     "1 Point Exclusive Pets": {},
     "Diamond Cat": {
@@ -318,10 +322,10 @@
     "Huge Hell Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 72
+            "Normal": 75
         },
         "Golden": {
-            "Normal": 77    
+            "Normal": 80    
         }
     },
     "Huge Marshmallow Agony": {
