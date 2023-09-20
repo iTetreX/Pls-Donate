@@ -318,10 +318,10 @@
     "Huge Hell Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 75
+            "Normal": 72
         },
         "Golden": {
-            "Normal": 80    
+            "Normal": 77    
         }
     },
     "Huge Marshmallow Agony": {
