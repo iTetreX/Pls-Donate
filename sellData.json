@@ -313,25 +313,16 @@
     "Huge Happy Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 70
-        },
-        "Rainbow": {
-            "Normal": 200
+            "Normal": 66
         }
     },
     "Huge Hell Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 75
+            "Normal": 70
         },
         "Golden": {
-            "Normal": 80    
-        }
-    },
-    "Huge Marshmallow Agony": {
-        "Priority": 10,
-        "Normal": {
-            "Normal": 105
+            "Normal": 75    
         }
     },
 
