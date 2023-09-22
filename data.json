@@ -11,10 +11,10 @@
     "Huge Hell Rock": {
         "Priority": 2,
         "Normal": {
-            "Normal": 65
+            "Normal": 55
         },
         "Golden": {
-            "Normal": 70
+            "Normal": 60
         },
         "Rainbow": {
             "Normal": 180
