@@ -13,95 +13,7 @@
     "Diamond Cat": {
         "Priority": 100,
         "Normal": {
-            "Normal": 9
-        },
-        "Golden": {
-            "Normal": 13
-        }
-    },
-    "Hologram Axolotl": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 5.25
-        }
-    },
-    "Emerald Monkey": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 4
-        }
-    },
-    "Hologram Tiger": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3.75
-        }
-    },
-    "Super Caypbara": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 6.75
-        }
-    },
-    "Redstone Cat": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3.2
-        }
-    },
-    "Hologram Shark": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3.2
-        }
-    },
-    "Cosmic Axolotl": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3,
-            "Shiny": 10
-        }
-    },
-    "Balloon Dragon": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3
-        }
-    },
-    "Neon Cat": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3
-        }
-    },
-    "Storm Dominus": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3
-        }
-    },
-    "Cool Cat": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3
-        }
-    },
-    "Jelly Corgi": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3
-        }
-    },
-    "Nightmare Spirit": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3.2
-        }
-    },
-    "Atlantean Orca": {
-        "Priority": 110,
-        "Normal": {
-            "Normal": 3
+            "Normal": 10
         }
     },
 
@@ -109,133 +21,7 @@
     "Cosmic Dragon": {
         "Priority": 120,
         "Normal": {
-            "Normal": 4.5
-        }
-    },
-    "Keyboard Cat": {
-        "Priority": 120,
-        "Normal": {
             "Normal": 6
-        }
-    },
-    "Floppa": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 5.5
-        }
-    },
-    "Mosaic Griffin": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 5.2
-        }
-    },
-    "Mosaic Corgi": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 5
-        }
-    },
-    "Mosaic Dove": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4.5
-        }
-    },
-    "Crystal Dog": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4.5
-        }
-    },
-    "Crystal Deer": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4.5
-        }
-    },
-    "Super Capybara": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 6
-        }
-    },
-    "Neon Twilight Cat": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4
-        }
-    },
-    "Neon Twilight Tiger": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4
-        }
-    },
-    "Anime Monkey": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 5
-        }
-    },
-    "Anime Corgi": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 5
-        }
-    },
-    "Grinch Cat": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4.3
-        }
-    },
-    "Balloon Corgi": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4.3
-        }
-    },
-    "Neon Dog": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4.1
-        }
-    },
-    "Clout Cat": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4
-        }
-    },
-    "Empyrean Dominus": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4.1
-        }
-    },
-    "Jelly Panda": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4.3
-        }
-    },
-    "Mosaic Lamb": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 5.5
-        }
-    },
-    "Nightmare Bear": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 5.5
-        }
-    },
-    "Atlantean Stingray": {
-        "Priority": 120,
-        "Normal": {
-            "Normal": 4.1
         }
     },
 
@@ -243,49 +29,7 @@
     "Cosmic Agony": {
         "Priority": 130,
         "Normal": {
-            "Normal": 6
-        }
-    },
-    "Present Chest Mimic": {
-        "Priority": 130,
-        "Normal": {
             "Normal": 8
-        }
-    },
-    "Nightfall Ram": {
-        "Priority": 130,
-        "Normal": {
-            "Normal": 8
-        }
-    },
-    "Nightfall Tiger": {
-        "Priority": 130,
-        "Normal": {
-            "Normal": 17.5
-        }
-    },
-    "Inferno Dominus": {
-        "Priority": 130,
-        "Normal": {
-            "Normal": 7
-        }
-    },
-    "Jelly Piggy": {
-        "Priority": 130,
-        "Normal": {
-            "Normal": 6
-        }
-    },
-    "Stealth Bobcat": {
-        "Priority": 130,
-        "Normal": {
-            "Normal": 9
-        }
-    },
-    "Atlantean Dolphin": {
-        "Priority": 130,
-        "Normal": {
-            "Normal": 6
         }
     },
 
@@ -293,19 +37,19 @@
     "Otter": {
         "Priority": 140,
         "Normal": {
-            "Normal": 9
+            "Normal": 10
         }
     },
     "Ice Cream Cone": {
         "Priority": 140,
         "Normal": {
-            "Normal": 8
+            "Normal": 10
         }
     },
     "Pony": {
         "Priority": 140,
         "Normal": {
-            "Normal": 8
+            "Normal": 10
         }
     },
 
