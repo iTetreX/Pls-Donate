@@ -10,44 +10,140 @@
     },
 
     "1 Point Exclusive Pets": {},
-    "Diamond Cat": {
+    "Cosmic Axolotl": {
         "Priority": 100,
         "Normal": {
-            "Normal": 10
+            "Normal": 3
+        }
+    },
+    "Redstone Cat": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
+        }
+    },
+    "Hologram Shark": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
+        }
+    },
+    "Atlantean Orca": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
+        }
+    },
+    "Nightmare Spirit": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3.5
+        }
+    },
+    "Jelly Corgi": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
+        }
+    },
+    "Knife Cat": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
+        }
+    },
+    "Storm Dominus": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
         }
     },
 
     "2 Point Exclusive Pets": {},
     "Cosmic Dragon": {
-        "Priority": 120,
+        "Priority": 110,
         "Normal": {
             "Normal": 6
+        }
+    },
+    "Super Capybara": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Neon Dog": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6.25
+        }
+    },
+    "Neon Twilight Tiger": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Grinch Cat": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Emerald Monkey": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Nightmare Bear": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Crystal Dog": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Rainbow Unicorn": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6.5
         }
     },
 
     "3 Point Exclusive Pets": {},
     "Cosmic Agony": {
-        "Priority": 130,
+        "Priority": 120,
         "Normal": {
             "Normal": 8
+        }
+    },
+    "Diamond Cat": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 10
         }
     },
 
     "4 Point Exclusive Pets": {},
     "Otter": {
-        "Priority": 140,
+        "Priority": 130,
         "Normal": {
             "Normal": 10
         }
     },
     "Ice Cream Cone": {
-        "Priority": 140,
+        "Priority": 130,
         "Normal": {
             "Normal": 10
         }
     },
     "Pony": {
-        "Priority": 140,
+        "Priority": 130,
         "Normal": {
             "Normal": 10
         }
@@ -67,6 +163,24 @@
         },
         "Golden": {
             "Normal": 70    
+        }
+    },
+    "Huge Goblin": {
+        "Priority": 10,
+        "Normal": {
+            "Normal": 80
+        }
+    },
+    "Huge Rainbow Slime": {
+        "Priority": 10,
+        "Normal": {
+            "Normal": 82
+        }
+    },
+    "Huge Clover Unicorn": {
+        "Priority": 10,
+        "Normal": {
+            "Normal": 170
         }
     },
 
@@ -269,16 +383,31 @@
     "Comet Agony": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.5,
+            "Shiny": 1.5
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 1,
+            "Shiny": 2
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 1.5,
+            "Shiny": 2.5
+        }
+    },
+    "Comet Cyclops": {
+        "Priority": 1000,
+        "Normal": {
+            "Normal": 0.5,
+            "Shiny": 1.5
+        },
+        "Golden": {
+            "Normal": 1,
+            "Shiny": 2
+        },
+        "Rainbow": {
+            "Normal": 1.5,
+            "Shiny": 2.5
         }
     },
     "Easter Dominus": {
