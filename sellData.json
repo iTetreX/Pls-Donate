@@ -84,6 +84,18 @@
             "Normal": 3
         }
     },
+    "Neon Cat": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
+        }
+    },
+    "Capybara": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 6
+        }
+    },
 
     "2 Point Exclusive Pets": {},
     "Cosmic Dragon": {
@@ -158,6 +170,24 @@
             "Normal": 6
         }
     },
+    "Jelly Panda": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Anime Corgi": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Empyrean Dominus": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
 
     "3 Point Exclusive Pets": {},
     "Cosmic Agony": {
@@ -190,6 +220,30 @@
             "Normal": 9
         }
     },
+    "Anime Agony": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Orca": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Amethyst Dragon": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Pop Cat": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 12
+        }
+    },
 
     "4 Point Exclusive Pets": {},
     "Otter": {
@@ -216,12 +270,18 @@
             "Normal": 12
         }
     },
+    "Sea Dragon": {
+        "Priority": 130,
+        "Normal": {
+            "Normal": 12
+        }
+    },
 
     "Huge Pets": {},
     "Huge Happy Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 62.5
+            "Normal": 60
         }
     },
     "Huge Hell Rock": {
@@ -526,6 +586,21 @@
         }
     },
     "Party Squirrel": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 0.7,
+            "Shiny": 1.75
+        },
+        "Golden": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Rainbow": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        }
+    },
+    "Party Shark": {
         "Priority": 1010,
         "Normal": {
             "Normal": 0.7,
