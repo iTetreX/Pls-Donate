@@ -45,6 +45,14 @@
         "Priority": 50
     },
 
+    "No Point Exclusive Pets": {},
+    "Hippomelon": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
+        }
+    },
+
     "1 Point Exclusive Pets": {},
     "Cosmic Axolotl": {
         "Priority": 100,
@@ -216,6 +224,18 @@
             "Normal": 6
         }
     },
+    "Balloon Corgi": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Anime Monkey": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
 
     "3 Point Exclusive Pets": {},
     "Cosmic Agony": {
@@ -272,6 +292,30 @@
             "Normal": 12
         }
     },
+    "Balloon Axolotl": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Inferno Dominus": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Keyboard Cat": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Nightmare Kraken": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
 
     "4 Point Exclusive Pets": {},
     "Otter": {
@@ -309,16 +353,16 @@
     "Huge Happy Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 60
+            "Normal": 62.5
         }
     },
     "Huge Hell Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 65
+            "Normal": 70
         },
         "Golden": {
-            "Normal": 70    
+            "Normal": 75
         }
     },
     "Huge Goblin": {
