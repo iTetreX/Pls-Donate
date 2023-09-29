@@ -4,16 +4,32 @@
         "Price": 6,
         "Priority": 50
     },
-    "Exclusive Egg 16": {
-        "Price": 65,
-        "Priority": 50
-    },
     "Sailor Egg": {
-        "Price": 5.5,
+        "Price": 6.5,
         "Priority": 50
     },
     "Quest Egg 1": {
-        "Price": 5,
+        "Price": 5.5,
+        "Priority": 50
+    },
+    "Tiki Egg": {
+        "Price": 10,
+        "Priority": 50
+    },
+    "Exclusive Egg 13": {
+        "Price": 75,
+        "Priority": 50
+    },
+    "Exclusive Egg 14": {
+        "Price": 75,
+        "Priority": 50
+    },
+    "Exclusive Egg 15": {
+        "Price": 75,
+        "Priority": 50
+    },
+    "Exclusive Egg 16": {
+        "Price": 65,
         "Priority": 50
     },
 
