@@ -16,6 +16,18 @@
         "Price": 10,
         "Priority": 50
     },
+    "Exclusive Egg 10": {
+        "Price": 100,
+        "Priority": 50
+    },
+    "Exclusive Egg 11": {
+        "Price": 110,
+        "Priority": 50
+    },
+    "Exclusive Egg 12": {
+        "Price": 100,
+        "Priority": 50
+    },
     "Exclusive Egg 13": {
         "Price": 80,
         "Priority": 50
