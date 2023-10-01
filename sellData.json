@@ -258,6 +258,12 @@
             "Normal": 6
         }
     },
+    "Mosaic Griffin": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
 
     "3 Point Exclusive Pets": {},
     "Cosmic Agony": {
@@ -387,7 +393,7 @@
     "Huge Happy Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 62.5
+            "Normal": 65
         }
     },
     "Huge Hell Rock": {
