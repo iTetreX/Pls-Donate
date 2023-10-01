@@ -44,6 +44,10 @@
         "Price": 65,
         "Priority": 50
     },
+    "Event Egg 1": {
+        "Price": 20,
+        "Priority": 200
+    },
 
     "No Point Exclusive Pets": {},
     "Hippomelon": {
@@ -130,6 +134,12 @@
         "Priority": 100,
         "Normal": {
             "Normal": 6
+        }
+    },
+    "Super Cat": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
         }
     },
 
@@ -236,6 +246,18 @@
             "Normal": 6
         }
     },
+    "Mosaic Dove": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Crystal Deer": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
 
     "3 Point Exclusive Pets": {},
     "Cosmic Agony": {
@@ -317,6 +339,12 @@
         }
     },
     "Neon Twilight Dragon": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Jelly Piggy": {
         "Priority": 120,
         "Normal": {
             "Normal": 9
