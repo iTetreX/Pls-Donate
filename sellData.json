@@ -316,6 +316,12 @@
             "Normal": 9
         }
     },
+    "Neon Twilight Dragon": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
 
     "4 Point Exclusive Pets": {},
     "Otter": {
