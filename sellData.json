@@ -48,6 +48,10 @@
         "Price": 20,
         "Priority": 200
     },
+    "Season 2 Epic Gift": {
+        "Price": 120,
+        "Priority": 200
+    },
 
     "No Point Exclusive Pets": {},
     "Hippomelon": {
@@ -137,6 +141,12 @@
         }
     },
     "Super Cat": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
+        }
+    },
+    "Balloon Dragon": {
         "Priority": 100,
         "Normal": {
             "Normal": 3
