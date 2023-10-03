@@ -178,6 +178,12 @@
             "Normal": 6
         }
     },
+    "Neon Twilight Cat": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
     "Grinch Cat": {
         "Priority": 110,
         "Normal": {
@@ -274,6 +280,24 @@
             "Normal": 6
         }
     },
+    "Atlantean Stingray": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Super Corgi": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Cool Corgi": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 6
+        }
+    },
 
     "3 Point Exclusive Pets": {},
     "Cosmic Agony": {
@@ -366,6 +390,18 @@
             "Normal": 9
         }
     },
+    "Neon Griffin": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Nightfall Tiger": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
 
     "4 Point Exclusive Pets": {},
     "Otter": {
@@ -393,6 +429,12 @@
         }
     },
     "Sea Dragon": {
+        "Priority": 130,
+        "Normal": {
+            "Normal": 12
+        }
+    },
+    "Gargoyle Dragon": {
         "Priority": 130,
         "Normal": {
             "Normal": 12
@@ -792,6 +834,68 @@
         "Rainbow": {
             "Normal": 1.4,
             "Shiny": 2.45
+        }
+    },
+
+    "3 Points Event Pets": {},
+    "Party Panda": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Golden": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        },
+        "Rainbow": {
+            "Normal": 1.75,
+            "Shiny": 2.8
+        }
+    },
+    "Party Dragon": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Golden": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        },
+        "Rainbow": {
+            "Normal": 1.75,
+            "Shiny": 2.8
+        }
+    },
+    "Pirate Parrot": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Golden": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        },
+        "Rainbow": {
+            "Normal": 1.75,
+            "Shiny": 2.8
+        }
+    },
+    "Party Crown Elephant": {
+        "Priority": 1010,
+        "Normal": {
+            "Normal": 1.05,
+            "Shiny": 2.1
+        },
+        "Golden": {
+            "Normal": 1.4,
+            "Shiny": 2.45
+        },
+        "Rainbow": {
+            "Normal": 1.75,
+            "Shiny": 2.8
         }
     }
 }
