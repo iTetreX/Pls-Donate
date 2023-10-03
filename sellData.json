@@ -403,7 +403,7 @@
     "Huge Happy Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 65
+            "Normal": 62.5
         }
     },
     "Huge Hell Rock": {
@@ -413,24 +413,6 @@
         },
         "Golden": {
             "Normal": 75
-        }
-    },
-    "Huge Goblin": {
-        "Priority": 10,
-        "Normal": {
-            "Normal": 80
-        }
-    },
-    "Huge Rainbow Slime": {
-        "Priority": 10,
-        "Normal": {
-            "Normal": 82
-        }
-    },
-    "Huge Clover Unicorn": {
-        "Priority": 10,
-        "Normal": {
-            "Normal": 170
         }
     },
 
