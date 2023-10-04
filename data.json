@@ -23,10 +23,10 @@
     "Huge Happy Rock": {
         "Priority": 2,
         "Normal": {
-            "Normal": 53
+            "Normal": 55
         },
         "Golden": {
-            "Normal": 53
+            "Normal": 55
         },
         "Rainbow": {
             "Normal": 150
@@ -47,7 +47,7 @@
     "Exclusive Egg 13": 65,
     "Exclusive Egg 14": 65,
     "Exclusive Egg 15": 65,
-    "Exclusive Egg 16": 53,
+    "Exclusive Egg 16": 55,
     "Sandcastle Egg": 50,
     "Pirate Egg": 15,
     "Sailor Egg": 4.5,
