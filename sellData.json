@@ -50,7 +50,11 @@
     },
     "Season 2 Epic Gift": {
         "Price": 120,
-        "Priority": 200
+        "Priority": 75
+    },
+    "Easter 2023 Gift": {
+        "Price": 24,
+        "Priority": 75
     },
 
     "No Point Exclusive Pets": {},
