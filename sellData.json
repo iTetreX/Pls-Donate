@@ -52,6 +52,10 @@
         "Price": 120,
         "Priority": 75
     },
+    "Season 2 Rare Gift": {
+        "Price": 120,
+        "Priority": 75
+    },
     "Easter 2023 Gift": {
         "Price": 22.5,
         "Priority": 75
@@ -407,6 +411,12 @@
         }
     },
     "Sleipnir": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Koala": {
         "Priority": 120,
         "Normal": {
             "Normal": 9
