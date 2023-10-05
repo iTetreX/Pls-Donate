@@ -41,7 +41,7 @@
         "Priority": 50
     },
     "Exclusive Egg 16": {
-        "Price": 65,
+        "Price": 60,
         "Priority": 50
     },
     "Event Egg 1": {
@@ -417,6 +417,12 @@
         }
     },
     "Koala": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Starfall Dragon": {
         "Priority": 120,
         "Normal": {
             "Normal": 9
