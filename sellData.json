@@ -406,6 +406,12 @@
             "Normal": 9
         }
     },
+    "Sleipnir": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
 
     "4 Point Exclusive Pets": {},
     "Otter": {
@@ -455,10 +461,10 @@
     "Huge Hell Rock": {
         "Priority": 10,
         "Normal": {
-            "Normal": 70
+            "Normal": 64
         },
         "Golden": {
-            "Normal": 75
+            "Normal": 69
         }
     },
 
