@@ -460,6 +460,12 @@
             "Normal": 12
         }
     },
+    "Nature Dragon": {
+        "Priority": 130,
+        "Normal": {
+            "Normal": 12
+        }
+    },
 
     "Huge Pets": {},
     "Huge Happy Rock": {
