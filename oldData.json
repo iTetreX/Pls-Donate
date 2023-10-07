@@ -1,0 +1,77 @@
+{
+    "convertPointHuge": 2,
+    "AllGifts": 1,
+    "GiftsPriority": 3,
+    "AllTitanics": 7000,
+    "TitanicsPriority": 1,
+    "AllHuges": 55,
+    "HugesPriority": 2,
+    "AllExclusives": 0.9,
+    "AllEvents": 0.03,
+    "Huge Hell Rock": {
+        "Priority": 2,
+        "Normal": {
+            "Normal": 54
+        },
+        "Golden": {
+            "Normal": 54
+        },
+        "Rainbow": {
+            "Normal": 180
+        }
+    },
+    "Huge Happy Rock": {
+        "Priority": 2,
+        "Normal": {
+            "Normal": 40
+        },
+        "Golden": {
+            "Normal": 40
+        },
+        "Rainbow": {
+            "Normal": 150
+        }
+    },
+    "Exlusive Egg 1": 400,
+    "Exlusive Egg 2": 400,
+    "Exlusive Egg 3": 800,
+    "Exlusive Egg 4": 180,
+    "Exlusive Egg 5": 180,
+    "Exlusive Egg 6": 180,
+    "Exlusive Egg 7": 120,
+    "Exlusive Egg 8": 100,
+    "Exlusive Egg 9": 100,
+    "Exclusive Egg 10": 85,
+    "Exclusive Egg 11": 95,
+    "Exclusive Egg 12": 90,
+    "Exclusive Egg 13": 65,
+    "Exclusive Egg 14": 65,
+    "Exclusive Egg 15": 65,
+    "Exclusive Egg 16": 45,
+    "Sandcastle Egg": 50,
+    "Pirate Egg": 15,
+    "Sailor Egg": 4.5,
+    "Quest Egg": 4,
+    "Tiki Egg": 8,
+    "Huge Machine Egg 1": 50,
+    "Huge Machine Egg 2": 100,
+    "Halloween Gift": 15,
+    "Christmas Stocking": 17.5,
+    "New Years 2023 Gift": 5,
+    "Easter 2023 Gift": 19,
+    "Anniversary Gift 2": 12.5,
+    "Anniversary Gift": 1.5,
+    "Hype Gift 1": 0.9,
+    "Hype Gift 2": 0.9,
+    "Hype Gift 3": 0.9,
+    "Season 1 Basic Gift": 15,
+    "Season 1 Rare Gift": 20,
+    "Season 1 Epic Gift": 33,
+    "Season 1 Legendary Gift": 80,
+    "Season 1 Mythical Gift": 225,
+    "Season 2 Basic Gift": 20,
+    "Season 2 Rare Gift": 25,
+    "Season 2 Epic Gift": 95,
+    "Season 2 Legendary Gift": 175,
+    "Season 2 Mythical Gift": 225
+}
