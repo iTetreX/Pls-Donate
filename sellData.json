@@ -298,6 +298,12 @@
             "Normal": 6
         }
     },
+    "Mosaic Elephant": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
     "Crystal Deer": {
         "Priority": 110,
         "Normal": {
