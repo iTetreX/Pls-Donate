@@ -170,6 +170,12 @@
             "Normal": 3
         }
     },
+    "Tiedye Dragon": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 5
+        }
+    },
 
     "2 Point Exclusive Pets": {},
     "Cosmic Dragon": {
