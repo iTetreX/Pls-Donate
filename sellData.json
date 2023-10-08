@@ -450,6 +450,12 @@
             "Normal": 9
         }
     },
+    "Atlantean Dolphin": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
 
     "4 Point Exclusive Pets": {},
     "Otter": {
