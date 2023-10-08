@@ -160,6 +160,12 @@
             "Normal": 3
         }
     },
+    "Cool Cat": {
+        "Priority": 100,
+        "Normal": {
+            "Normal": 3
+        }
+    },
 
     "2 Point Exclusive Pets": {},
     "Cosmic Dragon": {
@@ -276,13 +282,19 @@
             "Normal": 6
         }
     },
-    "Crystal Deer": {
+    "Mosaic Griffin": {
         "Priority": 110,
         "Normal": {
             "Normal": 6
         }
     },
-    "Mosaic Griffin": {
+    "Mosaic Corgi": {
+        "Priority": 110,
+        "Normal": {
+            "Normal": 6
+        }
+    },
+    "Crystal Deer": {
         "Priority": 110,
         "Normal": {
             "Normal": 6
@@ -405,6 +417,12 @@
         }
     },
     "Nightfall Tiger": {
+        "Priority": 120,
+        "Normal": {
+            "Normal": 9
+        }
+    },
+    "Nightfall Ram": {
         "Priority": 120,
         "Normal": {
             "Normal": 9
