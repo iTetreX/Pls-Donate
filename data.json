@@ -4,17 +4,17 @@
     "GiftsPriority": 3,
     "AllTitanics": 7000,
     "TitanicsPriority": 1,
-    "AllHuges": 30,
+    "AllHuges": 45,
     "HugesPriority": 2,
     "AllExclusives": 0.9,
     "AllEvents": 0.03,
     "Huge Hell Rock": {
         "Priority": 2,
         "Normal": {
-            "Normal": 30
+            "Normal": 45
         },
         "Golden": {
-            "Normal": 30
+            "Normal": 45
         },
         "Rainbow": {
             "Normal": 100
@@ -23,10 +23,10 @@
     "Huge Happy Rock": {
         "Priority": 2,
         "Normal": {
-            "Normal": 30
+            "Normal": 45
         },
         "Golden": {
-            "Normal": 30
+            "Normal": 45
         },
         "Rainbow": {
             "Normal": 100
