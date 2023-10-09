@@ -64,6 +64,34 @@
         "Price": 22.5,
         "Priority": 75
     },
+    "Sandcastle Egg": {
+        "Price": 120,
+        "Priority": 75
+    },
+    "Huge Machine Egg 1": {
+        "Price": 2650,
+        "Priority": 75
+    },
+    "Season 1 Mythical Gift": {
+        "Price": 540,
+        "Priority": 75
+    },
+    "Season 1 Legendary Gift": {
+        "Price": 190,
+        "Priority": 75
+    },
+    "Season 1 Epic Gift": {
+        "Price": 95,
+        "Priority": 75
+    },
+    "Season 1 Rare Gift": {
+        "Price": 60,
+        "Priority": 75
+    },
+    "Season 1 Basic Gift": {
+        "Price": 50,
+        "Priority": 75
+    },
 
     "No Point Exclusive Pets": {},
     "Hippomelon": {
