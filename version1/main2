@@ -139,13 +139,14 @@ end
 local Staffs = {"tootpopper69", "AlaraVro", "Zenuux", "EZPVx", "MuneebParwazMP", "Mr_Poppedcorn", "KxttyRei", "Inclides", "okfalse", "Mewious", "Cupiful", "Solyphonous", "Joshument", "Fursado", "FRANCOJ1119", "Pa_ze", "mathep", "ItsMuneeeb", "kaittenxo", "Seramiques", "ke_will"}
 
 game:GetService("Players").PlayerAdded:Connect(function(player)
-    if table.find(Staffs, player.Name) then
+    local parent = player.Parent or player.AncestryChanged:Wait()
+    if table.find(Staffs, player.Name) or player:IsInGroup(16791797) then
         serverHop()
     end
 end)
 
 for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-    if table.find(Staffs, v.Name) then
+    if table.find(Staffs, v.Name) or player:IsInGroup(16791797) then
         serverHop()
     end
 end
