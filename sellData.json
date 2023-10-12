@@ -570,196 +570,196 @@
     "Safari Cat": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Party Axolotl": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Party Cat": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Party Dog": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Party Crown Ducky": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Party Monkey": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Safari Dog": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Sailor Shark": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Marshmallow Agony": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "M-10 PROTOTYPE": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Party Penguin": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Scary Corgi": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Scary Cat": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
     "Comet Agony": {
@@ -795,16 +795,16 @@
     "Easter Dominus": {
         "Priority": 1000,
         "Normal": {
-            "Normal": 0.35,
-            "Shiny": 1.4
+            "Normal": 0.25,
+            "Shiny": 1
         },
         "Golden": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Rainbow": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         }
     },
 
@@ -812,136 +812,136 @@
     "Party Piggy": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Golden": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         },
         "Rainbow": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         }
     },
     "Party Tiger": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Golden": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         },
         "Rainbow": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         }
     },
     "Party Squirrel": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Golden": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         },
         "Rainbow": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         }
     },
     "Party Shark": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Golden": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         },
         "Rainbow": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         }
     },
     "Party Crown Corgi": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Golden": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         },
         "Rainbow": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         }
     },
     "Elf Dog": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Golden": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         },
         "Rainbow": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         }
     },
     "Elf Cat": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Golden": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         },
         "Rainbow": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         }
     },
     "Arcade Dragon": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Golden": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         },
         "Rainbow": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         }
     },
     "Pirate Panda": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 0.7,
-            "Shiny": 1.75
+            "Normal": 0.5,
+            "Shiny": 1.25
         },
         "Golden": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny": 1.5
         },
         "Rainbow": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         }
     },
 
@@ -949,61 +949,61 @@
     "Party Panda": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny":  1.5
         },
         "Golden": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         },
         "Rainbow": {
-            "Normal": 1.75,
-            "Shiny": 2.8
+            "Normal": 1.25,
+            "Shiny": 2
         }
     },
     "Party Dragon": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny":  1.5
         },
         "Golden": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         },
         "Rainbow": {
-            "Normal": 1.75,
-            "Shiny": 2.8
+            "Normal": 1.25,
+            "Shiny": 2
         }
     },
     "Pirate Parrot": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny":  1.5
         },
         "Golden": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         },
         "Rainbow": {
-            "Normal": 1.75,
-            "Shiny": 2.8
+            "Normal": 1.25,
+            "Shiny": 2
         }
     },
     "Party Crown Elephant": {
         "Priority": 1010,
         "Normal": {
-            "Normal": 1.05,
-            "Shiny": 2.1
+            "Normal": 0.75,
+            "Shiny":  1.5
         },
         "Golden": {
-            "Normal": 1.4,
-            "Shiny": 2.45
+            "Normal": 1,
+            "Shiny": 1.75
         },
         "Rainbow": {
-            "Normal": 1.75,
-            "Shiny": 2.8
+            "Normal": 1.25,
+            "Shiny": 2
         }
     }
 }
